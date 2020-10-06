@@ -1,5 +1,5 @@
 # Wemakeli
-A danmaku video website build with only php
+A danmaku video website build with php
 
 使用了以下Github项目的一部分
 https://github.com/stevenjoezhang/live2d-widget
