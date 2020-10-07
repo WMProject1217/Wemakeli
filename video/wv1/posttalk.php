@@ -1,5 +1,5 @@
 <?php
-$username = $_POST['username'];
+$username = $_COOKIE['username'];
 $usertalk = $_POST['usertalk'];
 $timenowh=date("H");
 $timenowm=date("i");
