@@ -1,5 +1,5 @@
 <?php
-$username = $_POST['username'];
+$username = $_COOKIE['username'];
 $usertalk = $_POST['usertalk'];
 $timenowh=date("H");
 $timenowm=date("i");
@@ -8,6 +8,5 @@ print date("Y-m-d") . "   " .  $timenowh . ":" .  $timenowm . ":" .  $timenows .
 $text=date("Y-m-d") . "   " .  $timenowh . ":" .  $timenowm . ":" .  $timenows . "" . "<br>" . $username . "<br>" . $usertalk . "<br>" ;
 $filename = fopen("talk.json", "a");
 fwrite($filename, $text);
-end:
 ?>
-<meta http-equiv='refresh' content=1;url='index.php'>
+<meta http-equiv='refresh' content=1;url='./index.php'>
