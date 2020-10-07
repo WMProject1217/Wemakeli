@@ -31,10 +31,10 @@ echo "<style>";
 echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
 echo "</style>";
 ?>
-<link href="./src/css/scojs.css" rel="stylesheet">
-<link href="./src/css/colpick.css" rel="stylesheet">
-<link href="./src/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="./src/css/main.css">
+<link href="../src/css/scojs.css" rel="stylesheet">
+<link href="../src/css/colpick.css" rel="stylesheet">
+<link href="../src/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../src/css/main.css">
 <?php
 echo "</head>";
 echo "<body>";
@@ -89,12 +89,12 @@ if (isset($_COOKIE["username"])){
   echo "</body>";
 }
 ?>
-<script src="./src/js/jquery-2.1.4.min.js"></script>
-<script src="./src/js/jquery.shCircleLoader.js"></script>
-<script src="./src/js/sco.tooltip.js"></script>
-<script src="./src/js/colpick.js"></script>
-<script src="./src/js/jquery.danmu.js"></script>
-<script src="./src/js/main.js"></script>
+<script src="../src/js/jquery-2.1.4.min.js"></script>
+<script src="../src/js/jquery.shCircleLoader.js"></script>
+<script src="../src/js/sco.tooltip.js"></script>
+<script src="../src/js/colpick.js"></script>
+<script src="../src/js/jquery.danmu.js"></script>
+<script src="../src/js/main.js"></script>
 <script>
 
 $("#danmup").DanmuPlayer({

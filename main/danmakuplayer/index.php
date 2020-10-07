@@ -54,7 +54,7 @@ css+='</style>';
     //试看时间
     var trytime_f= 3;
     //违规词
-    var pbgjz = ['草','操','妈','逼','滚','网址','网站','支付宝','企','q','n','o','c','m','e'];
+    var pbgjz = ['NMSL'];
     //弹幕库获取
     if(playlink!=''){ }else {var diyvodid = 1;};
     diyid = md5(vodurl),diysid = 0;
