@@ -7,7 +7,7 @@ fclose($websitesettings);
 echo "<meta charset='UTF-8'>";
 
 //td.topline
-echo "<table border='1'>";
+echo "<table border='1' id='topline'>";
 echo "<tr>";
 echo "<td class='talk'>";
 echo "<a href='" . $websiteaddress . "'>";
@@ -30,7 +30,7 @@ echo "</td>";
 echo "</tr>";
 echo "</table>";
 //td.topline
-echo "<table border='1'>";
+echo "<table border='1' id='toplinelogin'>";
 echo "<tr>";
 echo "<td class='accout'>";
 if (isset($_COOKIE["username"])){

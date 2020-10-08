@@ -6,10 +6,18 @@ $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 echo "<meta charset='UTF-8'>";
 
-//td.topline
-echo "<table border='1'>";
+//td.toplineback
+echo "<table border='1' id='toplineback'>";
 echo "<tr>";
-echo "<td class='talk'>";
+echo "<td class='back'>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+
+//td.topline
+echo "<table border='1' id='topline'>";
+echo "<tr>";
+echo "<td class='topline'>";
 echo "<a href='" . $websiteaddress . "'>";
 echo "<input name='" . $websitename . "' type='button' id='topline_websitename' title='" . $websitename . "' value='" . $websitename . "'>";
 echo "</a>";
@@ -25,12 +33,11 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/readlist.php'>";
 echo "<input name='专栏' type='button' id='topline_readlist' title='专栏' value='专栏'>";
 echo "</a>";
-echo "</a>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
 //td.topline
-echo "<table border='1'>";
+echo "<table border='1' id='toplinelogin'>";
 echo "<tr>";
 echo "<td class='accout'>";
 if (isset($_COOKIE["username"])){

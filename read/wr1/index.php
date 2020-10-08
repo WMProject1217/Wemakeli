@@ -30,8 +30,15 @@ echo "<body>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
+//td.titleblock
+echo "<table border='1' id='titleblock'>";
+echo "<tr>";
+echo "<td class='titleblock'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $readnumber . " , 阅读 " . $playnumber . " , UP : " . $uploadmaster . "</div>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 echo "<pre>";
 readfile("text.txt");
 echo "</pre>";

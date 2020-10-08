@@ -39,8 +39,15 @@ echo "</style>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
+//td.titleblock
+echo "<table border='1' id='titleblock'>";
+echo "<tr>";
+echo "<td class='titleblock'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 ?>
 <div id="danmup" style="left: 50%;margin-left:-400px;top:100px">
 

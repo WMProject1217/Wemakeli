@@ -24,12 +24,7 @@ $danmakudata=@ fread($danmakufile,filesize("danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
 echo "<head>";
 echo "<title>" . $title . "_" . $websitename . "</title>";
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/autoexec.css'>";
-echo "<script src='" . $websiteaddress . "/autoexec.js'></script>";
-echo "<style>";
-echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
-echo "</style>";
+include('../patterns/autoexec.php');
 ?>
 <link href="../src/css/scojs.css" rel="stylesheet">
 <link href="../src/css/colpick.css" rel="stylesheet">
@@ -39,8 +34,15 @@ echo "</style>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
+//td.titleblock
+echo "<table border='1' id='titleblock'>";
+echo "<tr>";
+echo "<td class='titleblock'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 ?>
 <div id="danmup" style="left: 50%;margin-left:-400px;top:100px">
 

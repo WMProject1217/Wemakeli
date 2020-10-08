@@ -30,9 +30,15 @@ echo "<body>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
+echo "<table border='1' id='titleblock'>";
+echo "<tr>";
+echo "<td class='titleblock'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $audionumber . " , 播放 " . $playnumber . " , UP : " . $uploadmaster . "</div>";
-echo "<audio controls>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+echo "<audio controls id='audioplayer'>";
 echo "<source src='./audio.wav' />";
 echo "</audio>";
 //td.talk

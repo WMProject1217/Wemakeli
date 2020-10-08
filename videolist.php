@@ -18,6 +18,6 @@ echo "</head>";
 include('./main/patterns/topline.php');
 echo "<h3>视频列表</h3>";
 echo "<pre>";
-readfile('videolist.wmst');
+readfile('./main/wmst/videolist.wmst');
 echo "</pre>";
 ?>
