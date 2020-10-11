@@ -9,17 +9,14 @@ fclose($websitesettings);
 <html>
 <?php
 echo "<head>";
-echo "<title>上传视频_" . $websitename . "</title>";
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
-echo "<script src='" . $websiteaddress . "/autoexec.js'></script>"; 
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/autoexec.css'>";
-echo "<meta charset='UTF-8'>";
-echo "<style>";
-echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
-echo "</style>";
+echo "<title>投稿视频_" . $websitename . "</title>";
+include('./main/patterns/autoexec.php');
 echo "</head>";
-
+echo "<body>";
 include('./main/patterns/topline.php');
+echo "<table border='1' id=maindataindex>";
+echo "<tr>";
+echo "<td class='maindata'>";
 ?>
 
 <body>
@@ -45,5 +42,10 @@ enctype="multipart/form-data">
 <br>
 <div></div>
 <br>
-</body>
+<?php
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+echo "</body>";
+?>
 </html>

@@ -18,7 +18,13 @@ if ($password=="fc0598218e3b040ab2a12106be93b2883224318c") {
 }
 round:
 $username='WMProject1217';
+$useraccout="WMProject1217";
+$useruid="1";
 echo setcookie("username",$username,time()+65535,'/');
+echo setcookie("useraccout",$useraccout,time()+65535,'/');
+echo setcookie("useruid",$useruid,time()+65535,'/');
+echo setcookie("userpassword",$password,time()+65535,'/');
+
 echo "<br>Login succcessful<br>";
 echo isset($_COOKIE["username"]);
 echo "<meta http-equiv='refresh' content=1;url='$websiteaddress/index.php'>";

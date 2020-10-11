@@ -6,16 +6,13 @@ $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 echo "<head>";
 echo "<title>用户中心_" . $websitename . "</title>";
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/autoexec.css'>";
-echo "<script src='" . $websiteaddress . "/autoexec.js'></script>"; 
-echo "<style>";
-echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
-echo "</style>";
+include('./main/patterns/autoexec.php');
 echo "</head>";
 echo "<body>";
 include('./main/patterns/topline.php');
-
+echo "<table border='1' id=maindataindex>";
+echo "<tr>";
+echo "<td class='MESSAGE'>";
 //td.warning
 echo "<table border='1'>";
 echo "<tr>";
@@ -29,3 +26,8 @@ echo "Error 0x00000027<br>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+echo "</body>";
+?>

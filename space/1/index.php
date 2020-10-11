@@ -18,7 +18,7 @@ echo "<title>" . $username . "_" . $websitename . "</title>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
-echo "<table border='1' id='maindataindex'>";
+echo "<table id='maindataindex'>";
 echo "<tr>";
 echo "<td class='maindata'>";
 echo "";

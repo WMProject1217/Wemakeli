@@ -1,5 +1,5 @@
 <?php
-$username = $_POST['username'];
-setcookie("username", $username, time()+16777215);
+$password = $_POST['userpassword'];
+echo $password;
+echo "<meta http-equiv='refresh' content=1;url='./database/login/" . $_POST['username'] . ".php?password=" . $password ."'>";
 ?>
-<meta http-equiv='refresh' content=1;url='index.php'>

@@ -24,12 +24,7 @@ $danmakudata=@ fread($danmakufile,filesize("danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
 echo "<head>";
 echo "<title>" . $title . "_" . $websitename . "</title>";
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/autoexec.css'>";
-echo "<script src='" . $websiteaddress . "/autoexec.js'></script>";
-echo "<style>";
-echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
-echo "</style>";
+include('../patterns/autoexec.php');
 ?>
 <link href="../src/css/scojs.css" rel="stylesheet">
 <link href="../src/css/colpick.css" rel="stylesheet">
@@ -39,15 +34,11 @@ echo "</style>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
-//td.titleblock
-echo "<table border='1' id='titleblock'>";
+echo "<table id='maindataindex'>";
 echo "<tr>";
-echo "<td class='titleblock'>";
+echo "<td class='maindata'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
-echo "</td>";
-echo "</tr>";
-echo "</table>";
 ?>
 <div id="danmup" style="left: 50%;margin-left:-400px;top:100px">
 
@@ -70,26 +61,32 @@ echo "<br>";
 echo "<br>";
 //td.talk
 if (isset($_COOKIE["username"])){
-  echo "<table border='1'>";
+  echo "<table>";
   echo "<tr>";
   echo "<td class='talk'>";
   echo "<div>评论区</div>";
   echo "<form action='posttalk.php' method='POST'>";
-  echo "<input type='text' name='usertalk' value=''>";
+  echo "<textarea style='OVERFLOW:  Visble' name='usertalk' value='' id='talkboxinput'></textarea>";
   echo "<input type='submit' value='提交'>";
   echo "</form>";
   @ include('talk.php');
   echo "</td>";
   echo "</tr>";
   echo "</table>";
+  echo "</td>";
+  echo "</tr>";
+  echo "</table>";
   echo "</body>";
 }else{
-  echo "<table border='1'>";
+  echo "<table>";
   echo "<tr>";
   echo "<td class='talk'>";
   echo "<div>评论区</div>";
   echo "你必须登录才能发表评论。";
   @ include('talk.php');
+  echo "</td>";
+  echo "</tr>";
+  echo "</table>";
   echo "</td>";
   echo "</tr>";
   echo "</table>";
@@ -105,7 +102,7 @@ if (isset($_COOKIE["username"])){
 <script>
 
 $("#danmup").DanmuPlayer({
-    src:"video.wmprojectvideo",
+    src:"video.mp4",
     height: "480px", //区域的高度
     width: "800px" //区域的宽度
     ,urlToGetDanmu:"<?php echo $websiteaddress?>/video/<?php echo $videonumber?>/query.php"

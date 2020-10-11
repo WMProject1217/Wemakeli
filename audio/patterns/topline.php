@@ -4,14 +4,29 @@ $websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>
 $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
+$useruid=$_COOKIE['useruid'];
+$userspacesettings = @ fopen("$websiteaddress/space/$useruid/space.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
+$visitcontrol = fgets($userspacesettings);
+$indexwords = fgets($userspacesettings);
+$userimage = fgets($userspacesettings);
+fclose($userspacesettings);
+
 echo "<meta charset='UTF-8'>";
 
-//td.topline
-echo "<table border='1' id='topline'>";
+//td.toplineback
+echo "<table id='toplineback'>";
 echo "<tr>";
-echo "<td class='talk'>";
+echo "<td class='back'>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+
+//td.topline
+echo "<table  id='topline'>";
+echo "<tr>";
+echo "<td class='topline'>";
 echo "<a href='" . $websiteaddress . "'>";
-echo "<input name='" . $websitename . "' type='button' id='topline_websitename' title='" . $websitename . "' value='" . $websitename . "'>";
+echo "<img src=' $websiteaddress/main/picture/website/titleimage.png' id='websitetitleimage' title='$websitename' alt='$websitename'></img>";
 echo "</a>";
 echo "<a href='" . $websiteaddress . "'>";
 echo "<input name='主页' type='button' id='topline_websitemain' title='主页' value='主页'>";
@@ -25,16 +40,19 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/readlist.php'>";
 echo "<input name='专栏' type='button' id='topline_readlist' title='专栏' value='专栏'>";
 echo "</a>";
-echo "</a>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
 //td.topline
-echo "<table border='1' id='toplinelogin'>";
+echo "<table id='toplinelogin'>";
 echo "<tr>";
 echo "<td class='accout'>";
 if (isset($_COOKIE["username"])){
-  echo $_COOKIE["username"];
+  $username=$_COOKIE['username'];
+  echo "<a href='" . $websiteaddress . "/space/$useruid/index.php'>";
+  echo "<img src=' $websiteaddress/space/$useruid/user.png' id='toplineuserimage' title='$username' alt='$username'></img>";
+  echo "<echo id=toplineecho>$username</echo>";
+  echo "</a>";
   echo "<a href='" . $websiteaddress . "/uploadvideo.php'>";
   echo "<input name='投稿视频' type='button' id='topline_workcenter' title='投稿视频' value='投稿视频'>";
   echo "</a>";

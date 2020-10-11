@@ -6,7 +6,7 @@ $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 
 //td.leftline
-echo "<table border='1' id='leftline'>";
+echo "<table id='leftline'>";
 echo "<tr>";
 echo "<td class='leftline'>";
 echo "<a href='" . $websiteaddress . "/video/wv-1/'>";
@@ -43,7 +43,7 @@ echo "<div id='videologotitle'>Music24 00012</div>";
 echo "</a>";
 echo "<a href='" . $websiteaddress . "/audio/wa2/'>";
 echo "<img src='" . $websiteaddress . "/main/picture/wa2/logo.png' id='videologo'></img>";
-echo "<div id='videologotitle'>Music29 000055</div>";
+echo "<div id='videologotitle'>Music29 00005</div>";
 echo "</a>";
 echo "</a>";
 echo "</td>";

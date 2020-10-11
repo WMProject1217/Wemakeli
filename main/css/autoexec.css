@@ -2,34 +2,37 @@
 body {
     background:#FFFFFF no-repeat right top;
 }
-#toplineback{
-    position: absolute;
-    background-color:#000000;
-    top:5px;
-    width:99%;
-    height:37px;
-}
-#topline {
-    position: absolute;
-    top:5px;
-    background-color:#000000;
-    color:white;
-}
-#toplinelogin{
-    position: absolute;
-    top:5px;
-    right:5px;
-    background-color:#000000;
-    color:white;
-}
 #leftline{
     position: absolute;
     background-color: #66CCFF;
     float:left;
     text-align:left;
-    top:37px;
+    top:55px;
     height:1300px;
-    width:20%;
+    width:19%;
+}
+#toplineback{
+    position: absolute;
+    background-color:#000000;
+    top:5px;
+    width:99%;
+    height:50px;
+}
+#topline {
+    position: absolute;
+    left:196px;
+    top:5px;
+    height:50px;
+    background-color:#000000;
+    color:#FFFFFF;
+}
+#toplinelogin{
+    position: absolute;
+    top:5px;
+    right:5px;
+    height:50px;
+    background-color:#000000;
+    color:#FFFFFF;
 }
 #bottomline{
     position:fixed;
@@ -38,20 +41,32 @@ body {
 }
 #maindata{
     position: absolute;
-    top:37px;
-    height:100%;
+    top:55px;
     left:20%;
     width:80%;
 }
+#maindataindex{
+    position: absolute;
+    top:55px;
+    width:99%;
+}
 #videologo{
     height:120px;
-    width:99%
+    width:99%;
 }
 #videologotitle{
-    background-color:#EEEE00;
-    color:#EE0000;
     position: relative;
     top:-30px;
+    width:99%;
+    background-color:#EEEE00;
+    color:#EE0000;
+}
+#toplineuserimage{
+    position: absolute;
+    top:0px;
+    left:-50px;
+    width:50px;
+    height:50px;
 }
 #titleblock{
     position:relative;
@@ -60,4 +75,18 @@ body {
 #audioplayer{
     position:relative;
     top:30px;
+}
+#toplineecho{
+    color:#FFFFFF;
+}
+#websitetitleimage{
+    position: absolute;
+    left:-196px;
+    top:0px;
+    height:50px;
+    width:196px;
+}
+#talkboxinput{
+    width:384px;
+    height:72px;
 }
