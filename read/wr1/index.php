@@ -19,19 +19,15 @@ fwrite($countfile,$playnumber);
 fclose($countfile);
 echo "<head>";
 echo "<title>" . $title . "_" . $websitename . "</title>";
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/autoexec.css'>";
-echo "<script src='" . $websiteaddress . "/autoexec.js'></script>";
-echo "<style>";
-echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
-echo "</style>";
-echo "</head>";
-echo "<body>";
+include('../patterns/autoexec.php');
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
+echo "<table id='maindataindex'>";
+echo "<tr>";
+echo "<td class='maindata'>";
 //td.titleblock
-echo "<table border='1' id='titleblock'>";
+echo "<table>";
 echo "<tr>";
 echo "<td class='titleblock'>";
 echo "<h3>" . $title . "</h3>";
@@ -56,6 +52,9 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
+    echo "</td>";
+    echo "</tr>";
+    echo "</table>";
     echo "</body>";
   }else{
     echo "<table border='1'>";
@@ -64,6 +63,9 @@ if (isset($_COOKIE["username"])){
     echo "<div>评论区</div>";
     echo "你必须登录才能发表评论。";
     @ include('talk.php');
+    echo "</td>";
+    echo "</tr>";
+    echo "</table>";
     echo "</td>";
     echo "</tr>";
     echo "</table>";

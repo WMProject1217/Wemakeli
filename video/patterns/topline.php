@@ -4,13 +4,14 @@ $websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>
 $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
+if (isset($_COOKIE["useruid"])){
 $useruid=$_COOKIE['useruid'];
 $userspacesettings = @ fopen("$websiteaddress/space/$useruid/space.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
 $visitcontrol = fgets($userspacesettings);
 $indexwords = fgets($userspacesettings);
 $userimage = fgets($userspacesettings);
 fclose($userspacesettings);
-
+}
 echo "<meta charset='UTF-8'>";
 
 //td.toplineback
