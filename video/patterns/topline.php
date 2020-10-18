@@ -6,11 +6,7 @@ $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 if (isset($_COOKIE["useruid"])){
 $useruid=$_COOKIE['useruid'];
-$userspacesettings = @ fopen("$websiteaddress/space/$useruid/space.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
-$visitcontrol = fgets($userspacesettings);
-$indexwords = fgets($userspacesettings);
-$userimage = fgets($userspacesettings);
-fclose($userspacesettings);
+$userimage = "$websiteaddress/user/$useruid/user.png";
 }
 echo "<meta charset='UTF-8'>";
 
@@ -50,8 +46,8 @@ echo "<tr>";
 echo "<td class='accout'>";
 if (isset($_COOKIE["username"])){
   $username=$_COOKIE['username'];
-  echo "<a href='" . $websiteaddress . "/space/$useruid/index.php'>";
-  echo "<img src=' $websiteaddress/space/$useruid/user.png' id='toplineuserimage' title='$username' alt='$username'></img>";
+  echo "<a href='" . $websiteaddress . "/user/$useruid/index.php'>";
+  echo "<img src='$userimage' id='toplineuserimage' title='$username' alt='$username'></img>";
   echo "<echo id=toplineecho>$username</echo>";
   echo "</a>";
   echo "<a href='" . $websiteaddress . "/uploadvideo.php'>";

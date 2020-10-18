@@ -1,9 +1,4 @@
 ﻿<?php //By WMProject1217
-/*$filepath = "http://" . $_SERVER['HTTP_HOST'] . "/settings.wmst";
-$websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>Error 0x00000001<br>Website info load unsuccessful.");
-$websitename = fgets($websitesettings);
-$websiteaddress = fgets($websitesettings);
-fclose($websitesettings);*/
 echo "<head>";
 include('./main/patterns/autoexec.php');
 echo "<title>" . $websitename . "</title>";
@@ -67,11 +62,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
-
-    echo "</td>";
-    echo "</tr>";
-    echo "</table>";
-    echo "</body>";
+    goto netfx;
   }else{
     echo "<table border='1'>";
     echo "<tr>";
@@ -82,10 +73,11 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
-
-    echo "</td>";
-    echo "</tr>";
-    echo "</table>";
-    echo "</body>";
+    goto netfx;
 }
+netfx:
+echo "</td>";
+echo "</tr>";
+echo "</table>";
+echo "</body>";
 ?>

@@ -1,0 +1,100 @@
+
+/* sco.tooltip714.js */
+.tooltip714 {
+    margin: 0;
+	padding: 4px;
+	/*width: 12em;*/
+	width: auto;
+	z-index: 10001;
+	position: absolute;
+	background: rgba(255, 255, 255,.9);
+	color: black;
+	font-size: 12px;
+	display: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: dodgerblue 2px solid;
+	/*opacity: .9;*/
+	/*filter: alpha(opacity=50);*/
+
+}
+
+.tooltip714 .pointer714 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin: 0;
+}
+
+.tooltip714.pos_e .pointer714 {
+	border-right: 8px solid #444;
+	border-top: 8px dashed transparent;
+	border-bottom: 8px dashed transparent;
+	left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.tooltip714.pos_w .pointer714 {
+	border-left: 8px solid #444;
+	border-top: 8px dashed transparent;
+	border-bottom: 8px dashed transparent;
+	right: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.tooltip714.pos_n .pointer714 {
+	border-top: 8px solid dodgerblue;
+	border-left: 8px dashed transparent;
+	border-right: 8px dashed transparent;
+	left: 50%;
+	margin-left: -8px;
+	bottom: -8px;
+
+}
+
+.tooltip714.pos_s .pointer714 {
+	border-bottom: 8px solid #444;
+	border-left: 8px dashed transparent;
+	border-right: 8px dashed transparent;
+	left: 50%;
+	margin-left: -8px;
+	top: -8px;
+}
+
+.tooltip714.pos_nw .pointer714 {
+	border-top: 14px solid #444;
+	border-left: 14px dashed transparent;
+	border-right: 0px dashed transparent;
+	left: 100%;
+	margin-left: -20px;
+	bottom: -13px;
+}
+
+.tooltip714.pos_sw .pointer714 {
+	border-bottom: 14px solid #444;
+	border-left: 14px dashed transparent;
+	border-right: 0px dashed transparent;
+	left: 100%;
+	margin-left: -20px;
+	top: -13px;
+}
+
+.tooltip714.pos_se .pointer714 {
+	border-bottom: 14px solid #444;
+	border-right: 14px dashed transparent;
+	border-left: 0px dashed transparent;
+	left: 8px;
+	top: -13px;
+}
+
+.tooltip714.pos_ne .pointer714 {
+	border-top: 14px solid #444;
+	border-right: 14px dashed transparent;
+	border-left: 0px dashed transparent;
+	left: 8px;
+	bottom: -13px;
+}
+
