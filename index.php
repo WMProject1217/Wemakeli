@@ -6,11 +6,9 @@ echo "</head>";
 echo "<body>";
 include('./main/patterns/topline.php');
 include('./main/patterns/leftline.php');
-echo "<table id='maindata'>";
+echo "<table>";
 echo "<tr>";
-echo "<td class='videopush'>";
-
-echo "<br>";
+echo "<td id='maindata'>";
 echo "<br>";
 print "By WMProject1217<br>";
 print "奥利给!淦就完了!<br>我们遇到什么困难,也不要怕!微笑着面对它!消除恐惧的最好办法就是面对恐惧!坚持,才是胜利!加油,奥利给!<br>";
@@ -19,7 +17,7 @@ echo "使用了以下Github项目的一部分<br>";
 echo "https://github.com/stevenjoezhang/live2d-widget<br>";
 echo "https://github.com/chiruom/DanmuPlayer<br>";
 echo "当前项目的Github地址<br>";
-echo "https://github.com/wmproject1217/wemakeli<br>";
+echo "<a href='https://github.com/wmproject1217/wemakeli' target='_blank'>https://github.com/wmproject1217/wemakeli</a><br>";
 //td.videopush
 echo "<table border='1'>";
 echo "<tr>";

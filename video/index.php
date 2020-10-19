@@ -32,6 +32,7 @@ echo "<link href='$websiteaddress/main/css/scojs.css' rel='stylesheet'>";
 echo "<link href='$websiteaddress/main/css/colpick.css' rel='stylesheet'>";
 echo "<link href='$websiteaddress/main/css/bootstrap.css' rel='stylesheet'>";
 echo "<link rel='stylesheet' href='$websiteaddress/main/css/main.css'>";
+echo "</head>";
 echo "<body>";
 include('./patterns/topline.php');
 echo "<table id='maindataindex'>";
@@ -63,7 +64,7 @@ if (isset($_COOKIE["username"])){
   echo "<tr>";
   echo "<td class='talk'>";
   echo "<div>评论区</div>";
-  echo "<form action='./$videolabel/posttalk.php' method='POST'>";
+  echo "<form action='./$videolabel/posttalk.php?video=$videolabel' method='POST'>";
   echo "<textarea style='OVERFLOW:  Visble' name='usertalk' value='' id='talkboxinput'></textarea>";
   echo "<input type='submit' value='提交'>";
   echo "</form>";

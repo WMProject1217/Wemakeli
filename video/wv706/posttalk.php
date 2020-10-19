@@ -1,4 +1,5 @@
 <?php
+$videolabel=$_GET['video'];
 $username = $_COOKIE['username'];
 $usertalk = $_POST['usertalk'];
 $timenowh=date("H");
@@ -8,5 +9,5 @@ print date("Y-m-d") . "   " .  $timenowh . ":" .  $timenowm . ":" .  $timenows .
 $text=date("Y-m-d") . "   " .  $timenowh . ":" .  $timenowm . ":" .  $timenows . "" . "<br>" . $username . "<br>" . $usertalk . "<br>" ;
 $filename = fopen("talk.json", "a");
 fwrite($filename, $text);
+echo "<meta http-equiv='refresh' content=1;url='../index.php?video=$videolabel'>";
 ?>
-<meta http-equiv='refresh' content=1;url='./index.php'>

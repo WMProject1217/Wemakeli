@@ -4,12 +4,11 @@ $websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>
 $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
-$useruid=$_COOKIE['useruid'];
-$userspacesettings = @ fopen("$websiteaddress/user/$useruid/space.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
-$visitcontrol = fgets($userspacesettings);
-$indexwords = fgets($userspacesettings);
-$userimage = fgets($userspacesettings);
-fclose($userspacesettings);
+if (isset($_COOKIE["useruid"])){
+  $useruid=$_COOKIE['useruid'];
+  $userimage = "$websiteaddress/user/$useruid/user.png";
+  fclose($userspacesettings);
+}
 
 echo "<meta charset='UTF-8'>";
 

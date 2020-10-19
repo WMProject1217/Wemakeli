@@ -38,6 +38,9 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/readlist.php'>";
 echo "<input name='专栏' type='button' id='topline_readlist' title='专栏' value='专栏'>";
 echo "</a>";
+echo "<a href='" . $websiteaddress . "/file/'>";
+echo "<input name='文件' type='button' id='topline_readlist' title='文件' value='文件'>";
+echo "</a>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
@@ -62,17 +65,16 @@ if (isset($_COOKIE["username"])){
   echo "</a>";
   echo "<a href='" . $websiteaddress . "/accoutlogoff.php'>";
   echo "<input name='退出登录' type='button' id='topline_logoff' title='退出登录' value='退出登录'>";
-  echo "</a>";
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
+  goto ntxlgnbr;
 }else{
   echo "用户未登录";
   echo "<a href='" . $websiteaddress . "/accoutlogin.php'>";
   echo "<input name='登录' type='button' id='topline_login' title='登录' value='登录'>";
-  echo "</a>";
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
+  goto ntxlgnbr;
 }
+ntxlgnbr:
+echo "</a>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 ?>

@@ -5,12 +5,9 @@ $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 if (isset($_COOKIE["useruid"])){
-$useruid=$_COOKIE['useruid'];
-$userspacesettings = @ fopen("$websiteaddress/space/$useruid/space.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
-$visitcontrol = fgets($userspacesettings);
-$indexwords = fgets($userspacesettings);
-$userimage = fgets($userspacesettings);
-fclose($userspacesettings);
+  $useruid=$_COOKIE['useruid'];
+  $userimage = "$websiteaddress/user/$useruid/user.png";
+  fclose($userspacesettings);
 }
 echo "<meta charset='UTF-8'>";
 
@@ -41,6 +38,9 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/readlist.php'>";
 echo "<input name='专栏' type='button' id='topline_readlist' title='专栏' value='专栏'>";
 echo "</a>";
+echo "<a href='" . $websiteaddress . "/file/'>";
+echo "<input name='文件' type='button' id='topline_readlist' title='文件' value='文件'>";
+echo "</a>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
@@ -50,8 +50,8 @@ echo "<tr>";
 echo "<td class='accout'>";
 if (isset($_COOKIE["username"])){
   $username=$_COOKIE['username'];
-  echo "<a href='" . $websiteaddress . "/space/$useruid/index.php'>";
-  echo "<img src=' $websiteaddress/space/$useruid/user.png' id='toplineuserimage' title='$username' alt='$username'></img>";
+  echo "<a href='" . $websiteaddress . "/user/$useruid/index.php'>";
+  echo "<img src='$userimage' id='toplineuserimage' title='$username' alt='$username'></img>";
   echo "<echo id=toplineecho>$username</echo>";
   echo "</a>";
   echo "<a href='" . $websiteaddress . "/uploadvideo.php'>";
@@ -65,17 +65,16 @@ if (isset($_COOKIE["username"])){
   echo "</a>";
   echo "<a href='" . $websiteaddress . "/accoutlogoff.php'>";
   echo "<input name='退出登录' type='button' id='topline_logoff' title='退出登录' value='退出登录'>";
-  echo "</a>";
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
+  goto ntxlgnbr;
 }else{
   echo "用户未登录";
   echo "<a href='" . $websiteaddress . "/accoutlogin.php'>";
   echo "<input name='登录' type='button' id='topline_login' title='登录' value='登录'>";
-  echo "</a>";
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
+  goto ntxlgnbr;
 }
+ntxlgnbr:
+echo "</a>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 ?>
