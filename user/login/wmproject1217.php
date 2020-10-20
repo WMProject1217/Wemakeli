@@ -20,10 +20,10 @@ round:
 $username='WMProject1217';
 $useraccout="WMProject1217";
 $useruid="1";
-echo setcookie("username",$username,time()+65535,'/');
-echo setcookie("useraccout",$useraccout,time()+65535,'/');
-echo setcookie("useruid",$useruid,time()+65535,'/');
-echo setcookie("userpassword",$password,time()+65535,'/');
+echo setcookie("username",$username,time()+16777215,'/');
+echo setcookie("useraccout",$useraccout,time()+16777215,'/');
+echo setcookie("useruid",$useruid,time()+16777215,'/');
+echo setcookie("userpassword",$password,time()+16777215,'/');
 
 echo "<br>Login succcessful<br>";
 echo isset($_COOKIE["username"]);
