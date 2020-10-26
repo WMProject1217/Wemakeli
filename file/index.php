@@ -7,7 +7,7 @@ echo "<body>";
 include('../main/patterns/topline.php');
 echo "<table>";
 echo "<tr>";
-echo "<td id='maindataindex'>";
+echo "<td class='maindataindex'>";
 echo "从这里下载文件";
 echo "</td>";
 echo "</tr>";
