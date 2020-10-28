@@ -17,7 +17,7 @@ while(!feof($userdb)) {
             echo "$passwordck<br>";
             echo $passwordsha1 . "<br>";
             echo "如果浏览器未响应，请<a href='./accoutlogin.php'>单击此处</a>";
-            //echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
+            echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
             goto expsk;
         }else{
             $useruid=$userline[0];
@@ -28,7 +28,7 @@ while(!feof($userdb)) {
             setcookie("useraccout",$userline[1],time()+16777215,'/');
             setcookie("useruid",$useruid,time()+16777215,'/');
             setcookie("userpassword",$userline[2],time()+16777215,'/');
-            //echo "<meta http-equiv='refresh' content=1;url='./'>";
+            echo "<meta http-equiv='refresh' content=1;url='./'>";
             goto edxkx;
         }
     }else{
@@ -38,7 +38,7 @@ while(!feof($userdb)) {
 }
 echo "用户不存在，请重新登录<br>";
 echo "如果浏览器未响应，请<a href='./accoutlogin.php'>单击此处</a>";
-//echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
+echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
 expsk:
 fclose($userdb);
 goto ends;
@@ -46,6 +46,6 @@ goto ends;
 edxkx:
 echo "登录成功<br>";
 echo "如果浏览器未响应，请<a href='../index.php'>单击此处</a>";
-//echo "<meta http-equiv='refresh' content=3;url='./index.php'>";
+echo "<meta http-equiv='refresh' content=3;url='./index.php'>";
 ends:
 ?>
