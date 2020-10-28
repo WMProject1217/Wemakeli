@@ -1,4 +1,4 @@
-<?php
+<?php //By WMProject1217
 $username=$_POST['username'];
 $password=$_POST['userpassword'];
 if($username=='rootadmin'){
@@ -7,7 +7,8 @@ if($username=='rootadmin'){
 $userdb=fopen('../user/user.wmst', "r") or die("<meta http-equiv='refresh' content=1;url='../error/nouserdb.html'>");
 while(!feof($userdb)) {
     $userutil=fgets($userdb);
-    $userline=explode('=',$userutil);
+    $userlineg=explode(';',$userutil);
+    $userline=explode('=',$userlineg[0]);
     if($userline[1]=="$username"){
         $passwordck=$userline[2];
         $passwordsha1=sha1($password);
