@@ -28,7 +28,6 @@ while(!feof($userdb)) {
             setcookie("useraccout",$userline[1],time()+16777215,'/');
             setcookie("useruid",$useruid,time()+16777215,'/');
             setcookie("userpassword",$userline[2],time()+16777215,'/');
-            echo "<meta http-equiv='refresh' content=1;url='./'>";
             goto edxkx;
         }
     }else{
@@ -46,6 +45,6 @@ goto ends;
 edxkx:
 echo "登录成功<br>";
 echo "如果浏览器未响应，请<a href='../index.php'>单击此处</a>";
-echo "<meta http-equiv='refresh' content=3;url='./index.php'>";
+echo "<meta http-equiv='refresh' content=3;url='../index.php'>";
 ends:
 ?>

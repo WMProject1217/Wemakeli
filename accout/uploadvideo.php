@@ -10,13 +10,13 @@ fclose($websitesettings);
 <?php
 echo "<head>";
 echo "<title>投稿视频_" . $websitename . "</title>";
-include('./main/patterns/autoexec.php');
+include('../main/patterns/autoexec.php');
 echo "</head>";
 echo "<body>";
-include('./main/patterns/topline.php');
-echo "<table border='1' id=maindataindex>";
+include('../main/patterns/topline.php');
+echo "<table class='maindataindex'>";
 echo "<tr>";
-echo "<td class='maindata'>";
+echo "<td>";
 ?>
 
 <body>

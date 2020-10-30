@@ -5,10 +5,12 @@ $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 
-echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
+
+echo "<link rel='stylesheet' href='" . $websiteaddress . "/main/live2d-widget/font-awesome.min.css'>";
 echo "<script src='" . $websiteaddress . "/main/js/autoexec.js'></script>"; 
 echo "<link rel='stylesheet' href='" . $websiteaddress . "/main/css/autoexec.css'>";
-echo "<link rel='stylesheet' href='" . $websiteaddress . "/user/patterns/userspace.css'>";
+echo "<script src='" . $websiteaddress . "/main/live2d-widget/autoload.js'></script>";
+echo "<link href='" . $websiteaddress . "/webicon.ico' rel='icon' type='image/ico'>";
 echo "<style>";
 echo "pre { white-space: pre-wrap; word-wrap: break-word; }";
 echo "</style>";

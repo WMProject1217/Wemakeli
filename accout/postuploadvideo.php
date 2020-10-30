@@ -7,7 +7,7 @@ fclose($websitesettings);
 header ("content-type: text/html; charset=utf-8");
 $file=$_FILES["file"]["tmp_name"];
 $filename=$_FILES["file"]["name"];
-$path="./temp/video/";
+$path="../temp/video/";
 $res=move_uploaded_file($file, $path.$filename);
 if($res){
 echo "文件上传成功:" . $path . $filename;

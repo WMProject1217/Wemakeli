@@ -13,7 +13,7 @@ include('../main/patterns/topline.php');
 echo "<table class=maindataindex>";
 echo "<tr>";
 echo "<td>";
-echo "<a href='" . $websiteaddress . "/accoutcreate.php'>";
+echo "<a href='" . $websiteaddress . "/accout/accoutcreate.php'>";
 echo "<input name='注册新用户' type='button' class='accout_create' title='注册新用户' value='注册新用户'>";
 echo "</a>";
 echo "<br>";

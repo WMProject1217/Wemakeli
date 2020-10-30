@@ -5,7 +5,7 @@ $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
 echo "<head>";
-echo "<title>创作中心_" . $websitename . "</title>";
+echo "<title>收藏_" . $websitename . "</title>";
 include('../main/patterns/autoexec.php');
 echo "</head>";
 echo "<body>";
