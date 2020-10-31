@@ -38,7 +38,7 @@ if (isset($_COOKIE["username"])){
     echo "<td class='talk'>";
     echo "<div>评论区</div>";
     echo "<form action='posttalk.php' method='POST'>";
-    echo "<textarea style='OVERFLOW:  Visble' name='usertalk' value='' id='talkboxinput'></textarea>";
+    echo "<textarea style='OVERFLOW:  Visble' name='usertalk' value='' class='talkboxinput'></textarea>";
     echo "<input type='submit' value='提交'>";
     echo "</form>";
     @ include('talk.php');

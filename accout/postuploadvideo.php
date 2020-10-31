@@ -1,9 +1,5 @@
 ﻿<?php  //By WMProject1217
-$filepath = "http://" . $_SERVER['HTTP_HOST'] . "/settings.wmst";
-$websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>Error 0x00000001<br>Website info load unsuccessful.");
-$websitename = fgets($websitesettings);
-$websiteaddress = fgets($websitesettings);
-fclose($websitesettings);
+include()
 header ("content-type: text/html; charset=utf-8");
 $file=$_FILES["file"]["tmp_name"];
 $filename=$_FILES["file"]["name"];

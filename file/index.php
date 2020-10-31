@@ -1,10 +1,10 @@
 <?php //By WMProject1217
 echo "<head>";
-include('../main/patterns/autoexec.php');
+include('./patterns/autoexec.php');
 echo "<title>文件_" . $websitename . "</title>";
 echo "</head>";
 echo "<body>";
-include('../main/patterns/topline.php');
+include('./patterns/topline.php');
 echo "<table>";
 echo "<tr>";
 echo "<td class='maindataindex'>";

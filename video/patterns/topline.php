@@ -1,9 +1,4 @@
 <?php //By WMProject1217
-$filepath = "http://" . $_SERVER['HTTP_HOST'] . "/settings.wmst";
-$websitesettings = fopen($filepath, "r") or die("<title>Error 0x00000001</title>Error 0x00000001<br>Website info load unsuccessful.");
-$websitename = fgets($websitesettings);
-$websiteaddress = fgets($websitesettings);
-fclose($websitesettings);
 if (isset($_COOKIE["useruid"])){
 $useruid=$_COOKIE['useruid'];
 $userimage = "$websiteaddress/user/$useruid/user.png";
