@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html>
-<?php //By WMProject1217
-$filepath = "http://" . $_SERVER['HTTP_HOST'] . "/settings.wmst";
+<?php //by WMProject1217
+echo "<!DOCTYPE html>";
+echo "<html>";
+$websiteroot = rtrim(str_replace('\\','/', $_SERVER['DOCUMENT_ROOT']), '/');
+$filepath = "$websiteroot/settings.wmst";
 $websitesettings = @ fopen($filepath, "r") or die("<title>Error 0x00000001</title>Error 0x00000001<br>Website info load unsuccessful.");
 $websitename = fgets($websitesettings);
 $websiteaddress = fgets($websitesettings);
 fclose($websitesettings);
-$videoinfofile = @ fopen("info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
+$videoinfofile = @ fopen("./info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
 $title = fgets($videoinfofile);
 $outputtime = fgets($videoinfofile);
 $uploadmaster = fgets($videoinfofile);
 $videonumber= fgets($videoinfofile);
 fclose($videoinfofile);
-$countfile = @ fopen("count.wmst", "r");
+$countfile = @ fopen("./$videolabel/count.wmst", "r");
 $playnumber=fgets($countfile);
 $playnumber = $playnumber + 1;
 fclose($countfile);
-$countfile = @ fopen("count.wmst", "w");
+$countfile = @ fopen("./$videolabel/count.wmst", "w");
 fwrite($countfile,$playnumber);
 fclose($countfile);
-$danmakufile =@ fopen('danmaku.wml', "r");
-$danmakudata=@ fread($danmakufile,filesize("danmaku.wml"));
+$danmakufile =@ fopen("./$videolabel/danmaku.wml", "r");
+$danmakudata=@ fread($danmakufile,filesize("./$videolabel/danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
+fclose($danmakufile);
 echo "<head>";
 echo "<title>" . $title . "_" . $websitename . "</title>";
 include('../patterns/autoexec.php');
-?>
-<link href="../src/css/scojs.css" rel="stylesheet">
-<link href="../src/css/colpick.css" rel="stylesheet">
-<link href="../src/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="../src/css/main.css">
-<?php
+echo "<link href='$websiteaddress/main/css/scojs.css' rel='stylesheet'>";
+echo "<link href='$websiteaddress/main/css/colpick.css' rel='stylesheet'>";
+echo "<link href='$websiteaddress/main/css/bootstrap.css' rel='stylesheet'>";
+echo "<link rel='stylesheet' href='$websiteaddress/main/css/main.css'>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
-echo "<table id='maindataindex'>";
+echo "<table class='maindataindex'>";
 echo "<tr>";
-echo "<td class='maindata'>";
+echo "<td>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
 ?>
@@ -93,12 +93,12 @@ if (isset($_COOKIE["username"])){
   echo "</body>";
 }
 ?>
-<script src="../src/js/jquery-2.1.4.min.js"></script>
-<script src="../src/js/jquery.shCircleLoader.js"></script>
-<script src="../src/js/sco.tooltip.js"></script>
-<script src="../src/js/colpick.js"></script>
-<script src="../src/js/jquery.danmu.js"></script>
-<script src="../src/js/main.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/jquery-2.1.4.min.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/jquery.shCircleLoader.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/sco.tooltip.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/colpick.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/jquery.danmu.js"></script>
+<script src="<?php echo $websiteaddress?>/main/js/main.js"></script>
 <script>
 
 $("#danmup").DanmuPlayer({

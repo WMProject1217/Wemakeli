@@ -34,9 +34,9 @@ echo "<link rel='stylesheet' href='$websiteaddress/main/css/main.css'>";
 echo "</head>";
 echo "<body>";
 include('../patterns/topline.php');
-echo "<table id='maindataindex'>";
+echo "<table class='maindataindex'>";
 echo "<tr>";
-echo "<td class='maindata'>";
+echo "<td>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
 ?>
