@@ -1,4 +1,4 @@
-﻿console.log(`Wemakeli Version 0.7.16 Build 386
+﻿console.log(`Wemakeli Version 0.8.1 Build 517
 Build on PHP7.3.4nts
 Made by WMProject1217
 你们可能不知道只用20万赢到578万是什么概念。

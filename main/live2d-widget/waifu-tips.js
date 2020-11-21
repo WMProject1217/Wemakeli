@@ -65,7 +65,7 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				const script = document.createElement("script");
-				script.src = "http://192.168.1.12/main/live2d-widget/asteroids.js";
+				script.src = "http://192.168.2.5/main/live2d-widget/asteroids.js";
 				document.head.appendChild(script);
 			}
 		});
@@ -77,7 +77,7 @@ function loadWidget(config) {
 			Live2D.captureFrame = true;
 		});
 		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("http://192.168.1.12/live2d-widget");
+			open("http://192.168.2.5/live2d-widget");
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());

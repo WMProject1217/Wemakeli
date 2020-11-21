@@ -86,3 +86,12 @@ body {
     width:120px;
     height:120px;
 }
+p.videopust_title
+{
+    position: relative;
+    top: -30px;
+}
+pre
+{
+white-space: pre-wrap; word-wrap: break-word;
+}
