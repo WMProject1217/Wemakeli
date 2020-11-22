@@ -30,14 +30,30 @@ echo "<link rel='stylesheet' href='$wmsys_address/main/css/main.css'>";
 echo "</head>";
 echo "<body>";
 include('../pattern/topline.php');
-echo "<table class='maindataindex'>";
+echo "<table>";
 echo "<tr>";
-echo "<td>";
+echo "<td class='maindataindet'>";
 echo "<h3>" . $title . "</h3>";
-echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . " , UP : " . $uploadmaster . "</div>";
+echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . "</div>";
+echo "<table>";
+echo "<tr>";
+echo "<td class='pushonuser'>";
+echo "<a href='" . $wmsys_address . "/user/default/index.php'>";
+echo "<img src='" . $wmsys_address . "/user/default/user.png' class='pushonuserimage' title=' $uploadmaster' alt=' $uploadmaster'></img>";
+echo "</a>";
+echo "<echo class=toplineecho>" . $uploadmaster . "</echo><br>";
+echo "<echo class=toplineecho>这个人很神秘,还没有个人简介呢</echo><br>";
+echo "<a href='" . $wmsys_address . "/accout/submit.php?$uploadmaster'>";
+echo "<input name='关注' type='button' class='submit' title='关注' value='关注'></a>";
+echo "<echo> </echo";
+echo "<a href='" . $wmsys_address . "/user/space.php?$uploadmaster'>";
+echo "<input name='个人主页' type='button' class='submit' title='个人主页' value='个人主页'></a>";
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 ?>
-<div id="danmup" style="left: 50%;margin-left:-400px;top:100px">
 
+<div id="danmup" style="left: 50%;margin-left:-400px;">
 
 </div>
 <div style="display: none">
@@ -50,11 +66,6 @@ echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber .
   <span class="glyphicon" aria-hidden="true">&#xe097</span>
 </div>
 <?php
-echo "<br>";
-echo "<br>";
-echo "<br>";
-echo "<br>";
-echo "<br>";
 //td.talk
 if (isset($_COOKIE["username"])){
   echo "<table>";
