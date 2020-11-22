@@ -1,6 +1,6 @@
 <?php
 echo "<head>";
-include("../pattern/config.php");
+include("../config.php");
 include("../pattern/autoexec.php");
 echo "<title>Talk 0</title>";
 echo "</head>";

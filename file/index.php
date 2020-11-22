@@ -1,13 +1,14 @@
 <?php //By WMProject1217
+include('./config.php');
 echo "<head>";
-include('./patterns/autoexec.php');
-echo "<title>文件_" . $websitename . "</title>";
+include('./pattern/autoexec.php');
+echo "<title>文件_" . $wmsys_name . "</title>";
 echo "</head>";
 echo "<body>";
-include('./patterns/topline.php');
+include('./pattern/topline.php');
 echo "<table>";
 echo "<tr>";
-echo "<td class='maindataindex'>";
+echo "<td class='maindataindet'>";
 echo "从这里下载文件";
 echo "</td>";
 echo "</tr>";

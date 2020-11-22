@@ -1,9 +1,5 @@
 <?php //By WMProject1217
-$filepath = "http://" . $_SERVER['HTTP_HOST'] . "/settings.wmst";
-$websitesettings = @ fopen($filepath, "r") or die("<title>Error 0x00000001</title>Error 0x00000001<br>Website info load unsuccessful.");
-$websitename = fgets($websitesettings);
-$websiteaddress = fgets($websitesettings);
-fclose($websitesettings);
+include('../config.php');
 $readinfofile = @ fopen("info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Read info load unsuccessful.");
 $title = fgets($readinfofile);
 $outputtime = fgets($readinfofile);
@@ -18,11 +14,11 @@ $countfile = @ fopen("count.wmst", "w");
 fwrite($countfile,$playnumber);
 fclose($countfile);
 echo "<head>";
-echo "<title>" . $title . "_" . $websitename . "</title>";
-include('../patterns/autoexec.php');
+echo "<title>" . $title . "_" . $wmsys_name . "</title>";
+include('../pattern/autoexec.php');
 echo "</head>";
 echo "<body>";
-include('../patterns/topline.php');
+include('../pattern/topline.php');
 echo "<table class='maindataindex'>";
 echo "<tr>";
 echo "<td>";

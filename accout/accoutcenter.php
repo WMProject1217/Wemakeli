@@ -1,11 +1,11 @@
 <?php //By WMProject1217
-
+include('./config.php');
 echo "<head>";
-include('./patterns/autoexec.php');
-echo "<title>用户中心_" . $websitename . "</title>";
+include('./pattern/autoexec.php');
+echo "<title>用户中心_" . $wmsys_name . "</title>";
 echo "</head>";
 echo "<body>";
-include('./patterns/topline.php');
+include('./pattern/topline.php');
 echo "<table class=maindataindex>";
 echo "<tr>";
 echo "<td>";
