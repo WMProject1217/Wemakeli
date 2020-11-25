@@ -33,6 +33,7 @@ echo "<a href='https://github.com/wmproject1217/wemakeli' target='_blank'>当前
 echo "使用了以下Github项目的一部分<br>";
 echo "<a href='https://github.com/stevenjoezhang/live2d-widget' target='_blank'>https://github.com/stevenjoezhang/live2d-widget</a><br>";
 echo "<a href='https://github.com/chiruom/DanmuPlayer' target='_blank'>https://github.com/chiruom/DanmuPlayer</a><br>";
+echo "<a href='https://github.com/DIYgod/APlayer' target='_blank'>https://github.com/DIYgod/APlayer</a><br>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
