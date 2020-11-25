@@ -24,9 +24,29 @@ echo "<tr>";
 echo "<td>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $audionumber . " , 播放 " . $playnumber . " , UP : " . $uploadmaster . "</div>";
-echo "<audio controls>";
-echo "<source src='./audio.wav' />";
-echo "</audio>";
+echo "<div id='player'>";
+echo "<pre class='aplayer-lrc-content'>";
+echo "";
+echo "</pre>";
+echo "</div>";
+?>
+<script>
+var ap = new APlayer
+        ({
+            element: document.getElementById('player'),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+                    title: 'Music0 00003',
+                    author: "?",
+                    url: './audio.wav',
+                    pic: './logo.png'
+                    }
+        });
+ap.init();
+</script>
+<?php
 //td.talk
 if (isset($_COOKIE["username"])){
     echo "<table>";

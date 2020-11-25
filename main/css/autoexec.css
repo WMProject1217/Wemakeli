@@ -120,3 +120,7 @@ pre
 {
 white-space: pre-wrap; word-wrap: break-word;
 }
+.aplayer{
+width:360px;margin:60px auto 10px auto
+}
+.aplayer p{padding:10px 0}
