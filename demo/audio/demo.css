@@ -1,0 +1,17 @@
+.mainblock{
+position: fixed;
+left: 50%;
+top: 800px;
+width:600px;
+margin-left:-400px;
+margin-top:-400px;
+background-color: #FFFFFF;
+}
+#dv{
+position:absolute;
+top: -40px;
+left: -1px;
+height: 40px;
+width: 600px;
+background-color: #66CCFF;
+}

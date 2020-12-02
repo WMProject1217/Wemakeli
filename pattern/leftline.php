@@ -1,4 +1,4 @@
-<?php //By WMProject1217
+﻿<?php //By WMProject1217
 
 //td.leftline
 echo "<table class='leftline'>";
@@ -11,14 +11,6 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/video/wv0/'>";
 echo "<img src='" . $websiteaddress . "/main/picture/wv0/logo.png' class='videologo'></img>";
 echo "<div class='videologotitle'>测试Danmakuplayer</div>";
-echo "</a>";
-echo "<a href='" . $websiteaddress . "/video/wv1/'>";
-echo "<img src='" . $websiteaddress . "/main/picture/wv1/logo.png' class='videologo'></img>";
-echo "<div class='videologotitle'>MOPEMOPE</div>";
-echo "</a>";
-echo "<a href='" . $websiteaddress . "/video/wv2/'>";
-echo "<img src='" . $websiteaddress . "/main/picture/wv2/logo.png' class='videologo'></img>";
-echo "<div class='videologotitle'>Sad Machine</div>";
 echo "</a>";
 echo "<a href='" . $websiteaddress . "/read/wr0/'>";
 echo "<img src='" . $websiteaddress . "/main/picture/wr0/logo.png' class='videologo'></img>";
@@ -35,6 +27,18 @@ echo "</a>";
 echo "<a href='" . $websiteaddress . "/audio/wa1/'>";
 echo "<img src='" . $websiteaddress . "/main/picture/wa1/logo.png' class='videologo'></img>";
 echo "<div class='videologotitle'>Music24 00012</div>";
+echo "</a>";
+echo "<a href='" . $websiteaddress . "/audio/wa2/'>";
+echo "<img src='" . $websiteaddress . "/main/picture/wa2/logo.png' class='videologo'></img>";
+echo "<div class='videologotitle'>Music29 00005</div>";
+echo "</a>";
+echo "<a href='" . $websiteaddress . "/audio/wa2/'>";
+echo "<img src='" . $websiteaddress . "/main/picture/wa2/logo.png' class='videologo'></img>";
+echo "<div class='videologotitle'>Music29 00005</div>";
+echo "</a>";
+echo "<a href='" . $websiteaddress . "/audio/wa2/'>";
+echo "<img src='" . $websiteaddress . "/main/picture/wa2/logo.png' class='videologo'></img>";
+echo "<div class='videologotitle'>Music29 00005</div>";
 echo "</a>";
 echo "<a href='" . $websiteaddress . "/audio/wa2/'>";
 echo "<img src='" . $websiteaddress . "/main/picture/wa2/logo.png' class='videologo'></img>";
