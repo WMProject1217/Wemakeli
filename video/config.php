@@ -1,4 +1,4 @@
 <?php //By WMProject1217
-$wmsys_address="http://192.168.2.5";
+$wmsys_address="http://wemakeli.net.wm";
 $wmsys_name="Wemakeli";
 ?>
