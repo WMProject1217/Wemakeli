@@ -1,5 +1,8 @@
 <?php //By WMProject1217
-include('./config.php');
+include('../config.php');
+$wmui_classnow = "video";
+$wmui_title = $wmsys_name;
+$wmui_jumpoffheadbar=1;
 echo "<head>";
 echo "<title>视频列表_" . $wmsys_name . "</title>";
 include('../pattern/autoexec.php');
@@ -17,4 +20,5 @@ echo "</td>";
 echo "</tr>";
 echo "</table>";
 echo "</body>";
+include('../wmui/wmui.php');
 ?>

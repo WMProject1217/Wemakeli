@@ -18,7 +18,7 @@ echo "<table class='topline'>";
 echo "<tr>";
 echo "<td>";
 echo "<a href='" . $wmsys_address . "'>";
-echo "<img src=' $wmsys_address/main/picture/website/titleimage.png' class='websitetitleimage' title='$websitename' alt='$websitename'></img>";
+echo "<img src=' $wmsys_address/main/picture/common/titleimage.png' class='websitetitleimage' title='$websitename' alt='$websitename'></img>";
 echo "</a>";
 echo "<a href='" . $wmsys_address . "'>";
 echo "<input name='主页' type='button' class='topline_websitemain' title='主页' value='主页'>";

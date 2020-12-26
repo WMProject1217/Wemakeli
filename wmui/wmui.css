@@ -189,6 +189,14 @@ white-space: pre-wrap; word-wrap: break-word;
     width:18%;
     height:7%;
 }
+.bottombaruserls{
+    position: fixed;
+    background-color: #000000;
+    bottom:7%;
+    left:78.7%;
+    width:21.3%;
+    height:27%;
+}
 .pagedatamain{
     position: absolute;
     top:70px;
