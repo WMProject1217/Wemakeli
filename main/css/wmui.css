@@ -202,6 +202,69 @@ white-space: pre-wrap; word-wrap: break-word;
     top:70px;
     width:99%;
 }
+.logonpagela{
+    position:fixed;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align:left;
+    font-size:30px;
+    top:12%;
+    left:2%;
+    height:10%;
+    width:30%;
+}
+.logonpagelb{
+    position:fixed;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align:left;
+    font-size:30px;
+    top:23%;
+    left:2%;
+    height:10%;
+    width:30%;
+}
+.logonpagelc{
+    position:fixed;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-align:left;
+    font-size:30px;
+    top:34%;
+    left:2%;
+    height:10%;
+    width:30%;
+}
+.logonpageuserimage{
+    position:fixed;
+    top:12%;
+    left:34%;
+    height:40%;
+    width:21%;
+}
+.logonpageuseruid{
+    position:fixed;
+    font-size:22px;
+    top:12%;
+    left:57%;
+    height:10%;
+    width:41%;
+}
+.logonpageuserpassword{
+    position:fixed;
+    font-size:22px;
+    top:23%;
+    left:57%;
+    height:10%;
+    width:41%;
+}
+.logonpagelogonbutton{
+    position:fixed;
+    top:34%;
+    left:78%;
+    height:10%;
+    width:20%;
+}
 @keyframes noise-anim {
             0% {
                 clip: rect(27px, 9999px, 90px, 0);

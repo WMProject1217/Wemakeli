@@ -1,22 +1,24 @@
 <?php //by WMProject1217
-include('../config.php');
 echo "<!DOCTYPE html>";
 echo "<html>";
-$websiteroot = rtrim(str_replace('\\','/', $_SERVER['DOCUMENT_ROOT']), '/');
+include('../config.php');
+$wmui_backpath='../';
+$wmui_classnow='video';
+$wmui_jumpoffheadbar='1';
 $videoinfofile = @ fopen("./info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Video info load unsuccessful.");
 $title = fgets($videoinfofile);
 $outputtime = fgets($videoinfofile);
 $uploadmaster = fgets($videoinfofile);
 $videonumber= fgets($videoinfofile);
 fclose($videoinfofile);
-$countfile = @ fopen("./$videolabel/count.wmst", "r");
+$countfile = @ fopen("./count.wmst", "r");
 $playnumber=fgets($countfile);
 $playnumber = $playnumber + 1;
 fclose($countfile);
-$countfile = @ fopen("./$videolabel/count.wmst", "w");
+$countfile = @ fopen("./count.wmst", "w");
 fwrite($countfile,$playnumber);
 fclose($countfile);
-$danmakufile =@ fopen("./$videolabel/danmaku.wml", "r");
+$danmakufile =@ fopen("./danmaku.wml", "r");
 $danmakudata=@ fread($danmakufile,filesize("./$videolabel/danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
 fclose($danmakufile);
@@ -29,13 +31,13 @@ echo "<link href='$wmsys_address/main/css/bootstrap.css' rel='stylesheet'>";
 echo "<link rel='stylesheet' href='$wmsys_address/main/css/main.css'>";
 echo "</head>";
 echo "<body>";
-include('../pattern/topline.php');
+//include('../pattern/topline.php');
 echo "<table>";
 echo "<tr>";
-echo "<td class='maindataindet'>";
+echo "<td style='position: absolute;top:0px;'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . "</div>";
-echo "<table>";
+/*echo "<table>";
 echo "<tr>";
 echo "<td class='pushonuser'>";
 echo "<a href='" . $wmsys_address . "/user/default/index.php'>";
@@ -50,10 +52,10 @@ echo "<a href='" . $wmsys_address . "/user/space.php?$uploadmaster'>";
 echo "<input name='个人主页' type='button' class='submit' title='个人主页' value='个人主页'></a>";
 echo "</td>";
 echo "</tr>";
-echo "</table>";
+echo "</table>";*/
 ?>
 
-<div id="danmup" style="left: 50%;margin-left:-400px;">
+<div id="danmup" style="left: 2%;/*margin-left:-400px;*/">
 
 </div>
 <div style="display: none">
@@ -83,6 +85,7 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
+  include('../pattern/wmui.php');
   echo "</body>";
 }else{
   echo "<table>";
@@ -97,6 +100,7 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
+  include('../pattern/wmui.php');
   echo "</body>";
 }
 ?>

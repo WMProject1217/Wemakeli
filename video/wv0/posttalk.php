@@ -9,4 +9,4 @@ $text=date("Y-m-d") . "   " .  $timenowh . ":" .  $timenowm . ":" .  $timenows .
 $filename = fopen("talk.json", "a");
 fwrite($filename, $text);
 ?>
-<meta http-equiv='refresh' content=1;url='./index.php'>
+<meta http-equiv='refresh' content=0;url='./index.php'>

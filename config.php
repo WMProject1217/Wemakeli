@@ -6,7 +6,6 @@ echo "<link href='$wmsys_sysroot/webicon.ico' rel='icon' type='image/ico'>";
 $wmsys_address="http://wemakeli.net.wm";
 $wmsys_name="Wemakeli";
 $wmsys_sysroot=$wmsys_address;
-$wmsys_wmuipath=$wmsys_address . "/wmui";
 $wmsys_imagedb=$wmsys_address . "/main/picture";
 //WMSYS User Values
 if (isset($_COOKIE["username"])){
