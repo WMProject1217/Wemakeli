@@ -2,7 +2,6 @@
 echo "<br>";
 echo "<br>";
 echo "<div></div>";
-echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 echo "<link rel='stylesheet' href='$wmsys_sysroot/main/css/wmui.css'>";
 echo "<title>$wmui_title</title>";
 headbar:
@@ -33,13 +32,17 @@ if ($wmui_classnow=="about") {
     echo "<a href='$wmsys_sysroot/about/'><img src='$wmsys_imagedb/common/websitelogo.png' class='bottombarlogo' title='关于 Wemakeli'></img></a>";
 }
 if ($wmsys_userlogon=="1") {
-    echo "<a href='$wmsys_userfolder/'>";
+    echo "<a href='" . 'javascript:bottombaruserls()' . "'>";
     echo "<img src='$wmsys_userfolder/userimage.png' class='bottombaruserimage' title='$wmsys_username' alt='$username'></img>";
     echo "<echo class='bottombarusername'>$wmsys_username</echo>";
     echo "</a>";
-    echo "<table class='bottombaruserls'>";
+    echo "<table class='bottombaruserls' id='bottombaruserls'>";
     echo "<tr>";
     echo "<td>";
+    echo "<echo class='bottombaruserbtfa'>个人主页</echo>";
+    echo "<echo class='bottombaruserbtfb'>消息</echo>";
+    echo "<echo class='bottombaruserbtfc'>创作中心</echo>";
+    echo "<echo class='bottombaruserbtfd'>动态</echo>";
     echo "</td>";
     echo "</tr>";
     echo "</table>";
@@ -85,17 +88,18 @@ if ($wmui_classnow=="read") {
     echo "<echo class='bottombargtd'>专栏</echo>";
     echo "</a>";
 }
-if ($wmui_classnow=="rtmessage") {
-    echo "<a href='$wmsys_sysroot/rtmessage/'>";
-    echo "<echo class='bottombarfte'>动态</echo>";
+if ($wmui_classnow=="live") {
+    echo "<a href='$wmsys_sysroot/live/'>";
+    echo "<echo class='bottombarfte'>直播</echo>";
     echo "</a>";
 } else {
-    echo "<a href='$wmsys_sysroot/rtmessage/'>";
-    echo "<echo class='bottombargte'>动态</echo>";
+    echo "<a href='$wmsys_sysroot/live/'>";
+    echo "<echo class='bottombargte'>直播</echo>";
     echo "</a>";
 }
 echo "</td>";
 echo "</tr>";
 echo "</table>";
 endwmui:
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 ?>
