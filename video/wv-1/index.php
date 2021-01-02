@@ -24,7 +24,6 @@ $danmakunumber=substr_count($danmakudata,"\n");
 fclose($danmakufile);
 echo "<head>";
 echo "<title>" . $title . "_" . $wmsys_name . "</title>";
-include('../pattern/autoexec.php');
 echo "<link href='$wmsys_address/main/css/scojs.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/colpick.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/bootstrap.css' rel='stylesheet'>";
