@@ -242,6 +242,11 @@ white-space: pre-wrap; word-wrap: break-word;
     top:70px;
     width:99%;
 }
+.pagedatamainl{
+    position: absolute;
+    top:0px;
+    width:99%;
+}
 .logonpagela{
     position:fixed;
     background-color:#000000;

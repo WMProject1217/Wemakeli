@@ -39,10 +39,10 @@ if ($wmsys_userlogon=="1") {
     echo "<table class='bottombaruserls' id='bottombaruserls'>";
     echo "<tr>";
     echo "<td>";
-    echo "<echo class='bottombaruserbtfa'>个人主页</echo>";
-    echo "<echo class='bottombaruserbtfb'>消息</echo>";
-    echo "<echo class='bottombaruserbtfc'>创作中心</echo>";
-    echo "<echo class='bottombaruserbtfd'>动态</echo>";
+    echo "<a href='$wmsys_sysroot/user/$wmsys_useruid'><echo class='bottombaruserbtfa'>个人主页</echo></a>";
+    echo "<a href='$wmsys_sysroot/accout/message.php'><echo class='bottombaruserbtfb'>消息</echo></a>";
+    echo "<a href='$wmsys_sysroot/accout/platform.php'><echo class='bottombaruserbtfc'>创作中心</echo></a>";
+    echo "<a href='$wmsys_sysroot/accout/rtmessage.php'><echo class='bottombaruserbtfd'>动态</echo></a>";
     echo "</td>";
     echo "</tr>";
     echo "</table>";
