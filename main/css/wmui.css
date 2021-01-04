@@ -1,6 +1,9 @@
+/*By WMProject1217*/
 pre
 {
-white-space: pre-wrap; word-wrap: break-word;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    font-size:16px;
 }
 .headbar{
     position: fixed;

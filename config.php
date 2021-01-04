@@ -38,7 +38,7 @@ if ($wmsys_langmode=='zh-cn'){
     $langstr_WMUI_logon_2='登录';
 } else if ($wmsys_langmode=='en-us'){
     $langstr_WMUI_User_0='User Page';
-    $langstr_WMUI_User_1='Messgae';
+    $langstr_WMUI_User_1='Message';
     $langstr_WMUI_User_2='Platform';
     $langstr_WMUI_User_3='Dynamic';
     $langstr_WMUI_User_4='Logon';

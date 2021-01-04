@@ -24,17 +24,15 @@ $danmakunumber=substr_count($danmakudata,"\n");
 fclose($danmakufile);
 echo "<head>";
 echo "<title>" . $title . "_" . $wmsys_name . "</title>";
-include('../pattern/autoexec.php');
 echo "<link href='$wmsys_address/main/css/scojs.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/colpick.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/bootstrap.css' rel='stylesheet'>";
 echo "<link rel='stylesheet' href='$wmsys_address/main/css/main.css'>";
 echo "</head>";
 echo "<body>";
-//include('../pattern/topline.php');
-echo "<table>";
+echo "<table style='pagedatamainl'>";
 echo "<tr>";
-echo "<td style='position: absolute;top:0px;'>";
+echo "<td'>";
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . "</div>";
 /*echo "<table>";
@@ -82,10 +80,10 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
+  include('../pattern/wmui.php');
   echo "</td>";
   echo "</tr>";
   echo "</table>";
-  include('../pattern/wmui.php');
   echo "</body>";
 }else{
   echo "<table>";
@@ -97,10 +95,10 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
+  include('../pattern/wmui.php');
   echo "</td>";
   echo "</tr>";
   echo "</table>";
-  include('../pattern/wmui.php');
   echo "</body>";
 }
 ?>
