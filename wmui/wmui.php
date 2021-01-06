@@ -13,7 +13,7 @@ echo "<tr>";
 echo "<td>";
 if ($wmui_classnow<>"mainpage") {
     echo "<a href='" . $wmui_backpath . "'><echo class='headbarbackbutton'><</echo></a>";
-    echo "<a><echo class='headbaropinion'>=</echo></a>";
+    //echo "<a><echo class='headbaropinion'>=</echo></a>";
 }
 echo "<div class='headbartitle'>$wmui_title</div>";
 echo "</td>";
