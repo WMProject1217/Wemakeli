@@ -13,7 +13,7 @@ echo "<tr>";
 echo "<td>";
 if ($wmui_classnow<>"mainpage") {
     echo "<a href='" . $wmui_backpath . "'><echo class='headbarbackbutton'><</echo></a>";
-    echo "<a><echo class='headbaropinion'>=</echo></a>";
+    //echo "<a><echo class='headbaropinion'>=</echo></a>";
 }
 echo "<div class='headbartitle'>$wmui_title</div>";
 echo "</td>";
@@ -23,7 +23,7 @@ bottombar:
 if ($wmui_jumpoffbottombar=="1"){
     goto endwmui;
 }
-echo "<table class='bottombar'>";
+echo "<table class='bottombar' id='bottombar'>";
 echo "<tr>";
 echo "<td>";
 if ($wmui_classnow=="about") {

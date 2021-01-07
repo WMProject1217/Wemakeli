@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 弹幕播放器核心
  * Created by acgit on 2015/7/23.
  * Copyright 2015 by Ruiko Of AcGit.cc
@@ -287,11 +287,13 @@
                 $(e.data.that.id).addClass("danmu-player-full-screen");
                 e.data.that.danmuPlayerFullScreen = true;
                 $(e.data.that.id + " .full-screen span").removeClass("glyphicon-resize-full").addClass("glyphicon-resize-small");
+                hidebottombar();
             }
             else {
                 $(e.data.that.id).removeClass("danmu-player-full-screen");
                 e.data.that.danmuPlayerFullScreen = false;
                 $(e.data.that.id + " .full-screen span").removeClass("glyphicon-resize-small").addClass("glyphicon-resize-full");
+                showbottombar();
             }
 
         });

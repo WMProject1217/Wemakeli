@@ -1,0 +1,1 @@
+%windir%\System32\certutil.exe -decode %1 %1.png

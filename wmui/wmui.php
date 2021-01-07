@@ -23,7 +23,7 @@ bottombar:
 if ($wmui_jumpoffbottombar=="1"){
     goto endwmui;
 }
-echo "<table class='bottombar'>";
+echo "<table class='bottombar' id='bottombar'>";
 echo "<tr>";
 echo "<td>";
 if ($wmui_classnow=="about") {

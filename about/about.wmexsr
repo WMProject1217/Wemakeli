@@ -15,3 +15,6 @@ Wemakeli is a danmaku video website project build with php, the copy of this pro
 
 请注意 : 由于内部原因，此工程将在版本1.0.0源码发布后停止开源。
 Warning : Because of the internal reasons , the source code of this project will stop open-source after version 1.0.0 publish.
+
+用户界面使用WMUI
+User Interface powered by WMUI

@@ -172,7 +172,7 @@ echo "<td>";
                             </label>
                         </div>
                         <div class="actions">
-                            <button class="btn" id="login">登录</button>
+                            <button class="wmuibutton" id="login">登录</button>
                         </div>
                     </div>
                     <div class="panel-narrow" id="p-u2f" style="display: none;">
