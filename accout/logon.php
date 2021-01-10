@@ -25,13 +25,8 @@ echo "</tr>";
 echo "</table>";*/
 echo "<!--By WMProject1217-->";
 echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
-echo "<script src='$wmsys_sysroot/main/js/fullpage.9.0.2.js'></script>";
-?>
-<script src="./gt.js"></script>
-<script src="./base.js"></script>
-<script src="./u2f-api.js"></script>
-<?php
-echo "<script src='.base.js'></script>";
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
+echo "<script src='./base.js'></script>";
 include('../config.php');
 $wmui_classnow = "user";
 $wmui_title = "$langstr_WMUI_User_4 - " . $wmsys_name;
@@ -51,42 +46,6 @@ echo "<td>";
         }
 </style>
 <script>
-        var u2f_data = {};
-
-        function u2f_try() {
-            $('#u2f_status').css('color', 'black')
-                .html('插入并点击');
-            u2f.sign('https://openid.13a.com', [u2f_data.challenges[0].challenge], u2f_data.challenges, function (data) {
-                if (data.errorCode) {
-                    $('#u2f_status').css('color', 'red')
-                        .html('出现错误:' + data.errorCode + ' <a href="javascript:u2f_try();">重试</a>');
-                } else {
-                    two_factor(JSON.stringify(data), (message) => $('#u2f_status').css('color', 'red')
-                        .html('出现错误:' + message + ' <a href="javascript:u2f_try();">重试</a>'));
-                }
-            }, 30);
-        }
-
-        function two_factor(data, callback) {
-            $.post('/ajax/two_factor', {
-                data: data
-            }, function (data) {
-                if (data.success) {
-                    notify.success('登录成功', '正在跳转, 请稍候...', -1);
-                    location.href = '/redirect';
-                } else {
-                    notify.error('验证失败', data.message);
-                    if (callback) {
-                        callback(data.message);
-                    }
-                }
-            }, 'json').fail(function () {
-                notify.error('验证失败', '网络错误或服务器出现错误, 请重试');
-                if (callback) {
-                    callback('未知错误');
-                }
-            });
-        }
 
         $(function () {
             loadGeetest('?login');
@@ -139,12 +98,11 @@ echo "<td>";
             });
         });
     </script>
-<script charset="UTF-8" async="" src="./Nyatwork OpenID - Login_files/gettype.php"></script><script charset="UTF-8" async="" crossorigin="anonymous" src="./Nyatwork OpenID - Login_files/fullpage.9.0.2.js"></script><script charset="UTF-8" src="./Nyatwork OpenID - Login_files/get.php"></script><link href="./style_https.1.5.8.css" rel="stylesheet"></head>
 
 <body>
-    <div id="app" class="login">
+    <div id="app" class="wmlogon">
         <div class="single-bg"></div>
-        <div class="notify-container"></div>
+        <div class="wmuinotify-container"></div>
         <div class="main padding-limiter">
             <div class="panel login-panel">
                 <div class="double-column">

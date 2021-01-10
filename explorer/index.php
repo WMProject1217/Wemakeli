@@ -116,11 +116,13 @@ if ($use_auth) {
         fm_show_header();
         fm_show_message();
         ?>
-        <div class="path">
+        <div style="height:320px;width:640px;"> <!--class="path"-->
             <form action="" method="post" style="margin:10px;text-align:center">
-                <input name="fm_usr" value="" placeholder="Username" required>
-                <input type="password" name="fm_pwd" value="" placeholder="Password" required>
-                <input type="submit" value="Login">
+            <div class="wmuinotify-container"></div>
+                <h3>文件资源管理器</h3>
+                <input class="controls" name="fm_usr" value="" placeholder="用户名" required>
+                <br><input class="controls" type="password" name="fm_pwd" value="" placeholder="密码" required>
+                <br><input class='wmuibutton' type="submit" value="登录">
             </form>
         </div>
         <?php
@@ -192,7 +194,7 @@ if (isset($_GET['new'])) {
         if (fm_mkdir($path . '/' . $new, false) === true) {
             fm_set_msg(sprintf('文件夹 <b>%s</b> 已被创建', fm_enc($new)));
         } elseif (fm_mkdir($path . '/' . $new, false) === $path . '/' . $new) {
-            fm_set_msg(sprintf('文件夹 <b>%s</b> 已经存在', fm_enc($new)), 'alert');
+            fm_set_msg(sprintf('文件夹 <b>%s</b> 已经存在', fm_enc($new)), 'warning');
         } else {
             fm_set_msg(sprintf('文件夹 <b>%s</b> 未创建', fm_enc($new)), 'error');
         }
@@ -230,7 +232,7 @@ if (isset($_GET['copy'], $_GET['finish'])) {
             if ($rename) {
                 fm_set_msg(sprintf('从 <b>%s</b> 移动到 <b>%s</b>', fm_enc($copy), fm_enc($msg_from)));
             } elseif ($rename === null) {
-                fm_set_msg('已存在此路径上的同名的文件或文件夹', 'alert');
+                fm_set_msg('已存在此路径上的同名的文件或文件夹', 'warning');
             } else {
                 fm_set_msg(sprintf('在从 <b>%s</b> 移动到 <b>%s</b> 时发生错误', fm_enc($copy), fm_enc($msg_from)), 'error');
             }
@@ -242,7 +244,7 @@ if (isset($_GET['copy'], $_GET['finish'])) {
             }
         }
     } else {
-        fm_set_msg('路径不能完全一致', 'alert');
+        fm_set_msg('路径不能完全一致', 'warning');
     }
     fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
 }
@@ -261,7 +263,7 @@ if (isset($_POST['file'], $_POST['copy_to'], $_POST['finish'])) {
         $copy_to_path .= '/' . $copy_to;
     }
     if ($path == $copy_to_path) {
-        fm_set_msg('路径不能完全一致', 'alert');
+        fm_set_msg('路径不能完全一致', 'warning');
         fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
     }
     if (!is_dir($copy_to_path)) {
@@ -303,7 +305,7 @@ if (isset($_POST['file'], $_POST['copy_to'], $_POST['finish'])) {
             fm_set_msg($msg, 'error');
         }
     } else {
-        fm_set_msg('没有已选择的内容', 'alert');
+        fm_set_msg('没有已选择的内容', 'warning');
     }
     fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
 }
@@ -388,7 +390,7 @@ if (isset($_POST['upl'])) {
     if ($errors == 0 && $uploads > 0) {
         fm_set_msg(sprintf('全部文件已经上传到 <b>%s</b>', fm_enc($path)));
     } elseif ($errors == 0 && $uploads == 0) {
-        fm_set_msg('没有文件被上传', 'alert');
+        fm_set_msg('没有文件被上传', 'warning');
     } else {
         fm_set_msg(sprintf('在上传文件时发生错误. 上传文件: %s', $uploads), 'error');
     }
@@ -420,7 +422,7 @@ if (isset($_POST['group'], $_POST['delete'])) {
             fm_set_msg('在删除项目时遇到问题', 'error');
         }
     } else {
-        fm_set_msg('没有已选择的项目', 'alert');
+        fm_set_msg('没有已选择的项目', 'warning');
     }
 
     fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
@@ -459,7 +461,7 @@ if (isset($_POST['group'], $_POST['zip'])) {
             fm_set_msg('压缩文件未创建', 'error');
         }
     } else {
-        fm_set_msg('没有已选择的项目', 'alert');
+        fm_set_msg('没有已选择的项目', 'warning');
     }
 
     fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
@@ -633,7 +635,7 @@ if (isset($_GET['upload'])) {
 if (isset($_POST['copy'])) {
     $copy_files = $_POST['file'];
     if (!is_array($copy_files) || empty($copy_files)) {
-        fm_set_msg('没有已选择的项目', 'alert');
+        fm_set_msg('没有已选择的项目', 'warning');
         fm_redirect(FM_SELF_URL . '?p=' . urlencode(FM_PATH));
     }
 
@@ -800,7 +802,7 @@ if (isset($_GET['view'])) {
                         $content = iconv(FM_ICONV_INPUT_ENC, 'UTF-8//IGNORE', $content);
                     }
                 }
-                echo 'Charset: ' . ($is_utf8 ? 'utf-8' : '8 bit') . '<br>';
+                echo '编码: ' . ($is_utf8 ? 'utf-8' : '8 bit') . '<br>';
             }
             ?>
         </p>
@@ -994,7 +996,7 @@ foreach ($folders as $f) {
 <td><?php echo fm_enc($owner['name'] . ':' . $group['name']) ?></td>
 <?php endif; ?>
 <td>
-<a title="删除" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;del=<?php echo urlencode($f) ?>" onclick="return confirm('Delete folder?');"><i class="icon-cross"></i></a>
+<a title="删除" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;del=<?php echo urlencode($f) ?>" onclick="return confirm('删除此文件夹?');"><i class="icon-cross"></i></a>
 <a title="重命名" href="#" onclick="rename('<?php echo fm_enc(FM_PATH) ?>', '<?php echo fm_enc($f) ?>');return false;"><i class="icon-rename"></i></a>
 <a title="复制" href="?p=&amp;copy=<?php echo urlencode(trim(FM_PATH . '/' . $f, '/')) ?>"><i class="icon-copy"></i></a>
 <a title="直接链接" href="<?php echo fm_enc(FM_ROOT_URL . (FM_PATH != '' ? '/' . FM_PATH : '') . '/' . $f . '/') ?>" target="_blank"><i class="icon-chain"></i></a>
@@ -1030,7 +1032,7 @@ foreach ($files as $f) {
 <td><?php echo fm_enc($owner['name'] . ':' . $group['name']) ?></td>
 <?php endif; ?>
 <td>
-<a title="删除" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;del=<?php echo urlencode($f) ?>" onclick="return confirm('Delete file?');"><i class="icon-cross"></i></a>
+<a title="删除" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;del=<?php echo urlencode($f) ?>" onclick="return confirm('删除此文件?');"><i class="icon-cross"></i></a>
 <a title="重命名" href="#" onclick="rename('<?php echo fm_enc(FM_PATH) ?>', '<?php echo fm_enc($f) ?>');return false;"><i class="icon-rename"></i></a>
 <a title="复制" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;copy=<?php echo urlencode(trim(FM_PATH . '/' . $f, '/')) ?>"><i class="icon-copy"></i></a>
 <a title="直接链接" href="<?php echo fm_enc(FM_ROOT_URL . (FM_PATH != '' ? '/' . FM_PATH : '') . '/' . $f) ?>" target="_blank"><i class="icon-chain"></i></a>
@@ -1349,7 +1351,7 @@ function fm_enc($text)
  * @param string $msg
  * @param string $status
  */
-function fm_set_msg($msg, $status = 'ok')
+function fm_set_msg($msg, $status = 'success')
 {
     $_SESSION['message'] = $msg;
     $_SESSION['status'] = $status;
@@ -1691,9 +1693,12 @@ function fm_show_nav_path($path)
  */
 function fm_show_message()
 {
+    echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+    echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
     if (isset($_SESSION['message'])) {
-        $class = isset($_SESSION['status']) ? $_SESSION['status'] : 'ok';
-        echo '<p class="message ' . $class . '">' . $_SESSION['message'] . '</p>';
+        $class = isset($_SESSION['status']) ? $_SESSION['status'] : 'success';
+        echo "<div class='wmuinotify-container'></div>";
+        echo "<script>notify.$class('文件资源管理器', '" . $_SESSION['message'] . "',10);</script>";
         unset($_SESSION['message']);
         unset($_SESSION['status']);
     }
@@ -1782,20 +1787,18 @@ code.maxheight,pre.maxheight{max-height:512px}input[type="checkbox"]{margin:0;pa
  */
 function fm_show_footer()
 {
-    //Edit here for footer and fixed auto execute
-    /*include('../config.php');
+    include('../config.php');
     $wmui_jumpoffheadbar = 1;
     $wmui_jumpoffbottombar = 0;
     $wmui_title = "文件资源管理器 - " . $wmsys_name;
     $wmui_backpath = "../";
-    include('../wmui/wmui.php');*/
+    include('../wmui/wmui.php');
     ?>
-    <link rel='stylesheet' href='./wmui.css'>
-    <title>文件资源管理器</title>
+<div class="single-bg"></div>
 </div>
 <script>
-function newfolder(p){var n=prompt('New folder name','folder');if(n!==null&&n!==''){window.location.search='p='+encodeURIComponent(p)+'&new='+encodeURIComponent(n);}}
-function rename(p,f){var n=prompt('New name',f);if(n!==null&&n!==''&&n!=f){window.location.search='p='+encodeURIComponent(p)+'&ren='+encodeURIComponent(f)+'&to='+encodeURIComponent(n);}}
+function newfolder(p){var n=prompt('新文件夹名称','文件夹');if(n!==null&&n!==''){window.location.search='p='+encodeURIComponent(p)+'&new='+encodeURIComponent(n);}}
+function rename(p,f){var n=prompt('新名称',f);if(n!==null&&n!==''&&n!=f){window.location.search='p='+encodeURIComponent(p)+'&ren='+encodeURIComponent(f)+'&to='+encodeURIComponent(n);}}
 function change_checkboxes(l,v){for(var i=l.length-1;i>=0;i--){l[i].checked=(typeof v==='boolean')?v:!l[i].checked;}}
 function get_checkboxes(){var i=document.getElementsByName('file[]'),a=[];for(var j=i.length-1;j>=0;j--){if(i[j].type='checkbox'){a.push(i[j]);}}return a;}
 function select_all(){var l=get_checkboxes();change_checkboxes(l,true);}

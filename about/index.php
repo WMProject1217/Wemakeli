@@ -3,7 +3,10 @@ include('../config.php');
 $wmui_classnow = "about";
 $wmui_title = "关于 - " . $wmsys_name;
 $wmui_backpath = "../";
+echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 echo "<table class='pagedatamain'>";
+echo "<div class='wmuinotify-container'></div>";
 echo "<tr>";
 echo "<td>";
 echo "<h3>$wmsys_name</h3>";
@@ -13,7 +16,7 @@ echo "<td>";
 echo "<h3>正在建设 " . $wmsys_name. " ...</h3>";
 ?>
 <div class="single-bg"></div>
-<button class='wmuibutton'>这个按钮懂得都懂</button>
+<button class='wmuibutton' onclick="WMUIBALLABOUT()">这个按钮懂得都懂</button>
 <?
 //print "Build on Wemakeli Danmaku Video Website System [Version 0.8.5 Build 771]<br>By WMProject1217<br>";
 //print "已进入第 2 开发阶段,在此阶段主要将修复特性以及修复样式<br>";

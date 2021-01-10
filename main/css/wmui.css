@@ -3,7 +3,7 @@
     font-family:"Microsoft YaHei","Segoe UI","Lucida Grande",Helvetica,Arial,FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",Arial,sans-serif;
     box-sizing:border-box;
 }
-/*WMUI Basic Style Control*/
+/*WMUI Basic Style Controls*/
 .wmuibutton{
     cursor:pointer;
     border-radius:500px;
@@ -34,7 +34,50 @@
 .wmuibutton:active:enabled{
     box-shadow:1px 1px 30px transparent,0 6px 15px transparent,inset 0 0 15px rgba(36,37,38,.2);
 }
-
+.wmuinotify-container{
+    position:fixed;
+    display:flex;
+    padding:60px 20px;
+    align-items:flex-end;
+    flex-direction:column;
+    width:100vw;
+    z-index:11;
+    pointer-events:none;
+    transition:all .5s;
+    height:100vh;
+}
+.wmuinotify-container .wmuinotify{
+    background-color:rgba(15,15,15,.6);
+    border-right:7px solid rgba(0,0,0,.4);
+    transition:all .5s;
+    color:#FFFFFF;
+    box-shadow:1px 1px 15px rgba(0,0,0,.15);
+    margin-bottom:15px;
+    padding:13px 15px;
+    min-height:72px;
+}
+.wmuinotify-container .wmuinotify .wmuinotify-title{
+    font-size:1.5rem;
+}
+.wmuinotify-container .wmuinotify .wmuinotify-content{
+    margin-top:5px;
+    color:#EEEEEE;
+    font-size:.85rem;
+}
+@keyframes wmuinotify-show-hide{
+    0%{
+        opacity:0;
+        transform:translate(100vw,0);
+        margin-bottom:15px;
+    }
+    
+    30%
+    {
+        opacity:1;
+        transform:translate(0,0);
+        margin-bottom:15px;
+    }
+}
 
 /*WMUI DDDD*/
 pre
@@ -87,7 +130,7 @@ pre
     text-align:center;
     font-size:44px;
     top:3px;
-    left:95%;
+    left:calc(100% - 54px);
     width:54px;
     height:54px;
 }
@@ -373,36 +416,6 @@ pre
     width:20%;
 }
 */
-.notify-container{
-    position:fixed;
-    display:flex;
-    padding:60px 20px;
-    align-items:flex-end;
-    flex-direction:column;
-    width:100vw;
-    z-index:11;
-    pointer-events:none;
-    transition:all .5s;
-    height:100vh;
-}
-.notify-container .notify{
-    background-color:rgba(15,15,15,.6);
-    border-right:7px solid rgba(0,0,0,.4);
-    transition:all .5s;
-    color:#FFFFFF;
-    box-shadow:1px 1px 15px rgba(0,0,0,.15);
-    margin-bottom:15px;
-    padding:13px 15px;
-    min-height:72px;
-}
-.notify-container .notify .notify-title{
-    font-size:1.5rem;
-}
-.notify-container .notify .notify-content{
-    margin-top:5px;
-    color:#EEEEEE;
-    font-size:.85rem;
-}
 .mdi{
     display:inline-block;
     font-family:"Material Design Icons";
@@ -522,20 +535,6 @@ body{
 .wmlogon .panel-wide{display:none}
 .wmlogon .control-group{padding:15px 25px}
 .wmlogon .wtf-fix{margin-right:6%!important}}*/
-@keyframes notify-show-hide{
-            0%{
-                opacity:0;
-                transform:translate(100vw,0);
-                margin-bottom:15px
-            }
-            
-            30%
-            {
-                opacity:1;
-                transform:translate(0,0);
-                margin-bottom:15px
-            }
-}
 @keyframes noise-anim {
             0% {
                 clip: rect(27px, 9999px, 90px, 0);
