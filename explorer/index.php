@@ -764,6 +764,10 @@ if (isset($_GET['view'])) {
 
     ?>
     <div class="path">
+    <?php
+    echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+    echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
+    ?>
         <p class="break-word"><b><?php echo $view_title ?> "<?php echo fm_enc(fm_convert_win($file)) ?>"</b></p>
         <p class="break-word">
             完整路径: <?php echo fm_enc(fm_convert_win($file_path)) ?><br>
