@@ -1,9 +1,11 @@
-<?php //By WMProject1217
+﻿<?php //By WMProject1217
 include('../config.php');
 $wmui_classnow = "video";
 $wmui_title = $wmsys_name;
 $wmui_jumpoffheadbar=1;
 echo "<head>";
+echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 echo "<title>视频列表_" . $wmsys_name . "</title>";
 echo "</head>";
 echo "<body>";

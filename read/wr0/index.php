@@ -1,5 +1,8 @@
-<?php //By WMProject1217
+﻿<?php //By WMProject1217
 include('../config.php');
+$wmui_backpath='../';
+$wmui_classnow='read';
+$wmui_jumpoffheadbar='1';
 $readinfofile = @ fopen("info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Read info load unsuccessful.");
 $title = fgets($readinfofile);
 $outputtime = fgets($readinfofile);
@@ -14,12 +17,11 @@ $countfile = @ fopen("count.wmst", "w");
 fwrite($countfile,$playnumber);
 fclose($countfile);
 echo "<head>";
-echo "<title>" . $title . "_" . $wmsys_name . "</title>";
-include('../pattern/autoexec.php');
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
+echo "<title>$title - $wmsys_name</title>";
 echo "</head>";
 echo "<body>";
-include('../pattern/topline.php');
-echo "<table class='maindataindex'>";
+echo "<table class='pagedatamainl'>";
 echo "<tr>";
 echo "<td>";
 echo "<h3>" . $title . "</h3>";
@@ -41,6 +43,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
+    include('../pattern/wmui.php');
     echo "</td>";
     echo "</tr>";
     echo "</table>";
@@ -55,6 +58,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
+    include('../pattern/wmui.php');
     echo "</td>";
     echo "</tr>";
     echo "</table>";

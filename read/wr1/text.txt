@@ -64,203 +64,56 @@ Mesmerism n. 催眠术；催眠状态 ; 铃仙·优昙华院·因幡符卡 月
 Voyage n. 航行；旅程 v. 航行；旅行 ; 音乐名 Voyage1969
 Brilliant adj. 灿烂的；杰出的；卓越的 n. 宝石 ; 蓬莱山辉夜符卡 神宝「Brilliant Dragon Bullet」
 Salamander n. 蝾螈；火蜥蜴；能耐高温的物体 ; 蓬莱山辉夜符卡 神宝「Salamander Shield」
-
-Volcano n. 火山
-
-藤原妹红符卡 蓬莱「凯风快晴 -Fujiyama Volcano-」
-
-Possessed (possess) adj. 拥有
-
-的；着魔的；冷静的
-
-藤原妹红符卡 「Possessed by Phoenix」
-
-
+Volcano n. 火山 ; 藤原妹红符卡 蓬莱「凯风快晴 -Fujiyama Volcano-」
+Possessed (possess) adj. 拥有 ; 藤原妹红符卡 「Possessed by Phoenix」
 东方萃梦想~Immaterial and Missing Power
-
 Immaterial adj. 非物质的；无形的；不重要的
-
-标题英文后缀 Immaterial and Missing Power
-
-Orreries n. 太阳系仪
-
-雾雨魔理沙符卡 仪符「Orreries Sun」
-
-Ambitious adj. 雄心勃勃的；有报复的
-
-十六夜咲夜技能 Ambitious Jack
-
-Inscribe v. 题写；铭刻于
-
-十六夜咲夜符卡 伤符「Inscribe Red Soul」
-
-Legion n. 军团
-
-爱丽丝·玛格特洛依德符卡 战符「Little Legion」
-
-Chanter n. 吟唱者 
-
-爱丽丝·玛格特洛依德符卡 符之一「Artful Chanter」
-
-Devilry n. 恶行；残暴
-
-爱丽丝·玛格特洛依德符卡 魔光「Devilry Light Ray」
-
-Gust n. 突然一阵；阵风
-
-帕秋莉诺雷姬符卡 金土符「Ginger Gust」
-
-Cradle n. 摇篮；发祥地
-
-蕾米莉亚·斯卡雷特技能  Demon Lord Cradle
-
-Demystify v. 使非神秘化
-
-音乐名 Demystify Feast
-
-Intermezzo n. 间奏；插曲
-
-音乐名 Intermezzo
-
-
+Orreries n. 太阳系仪 ; 雾雨魔理沙符卡 仪符「Orreries Sun」
+Ambitious adj. 雄心勃勃的；有报复的 ; 十六夜咲夜技能 Ambitious Jack
+Inscribe v. 题写；铭刻于 ; 十六夜咲夜符卡 伤符「Inscribe Red Soul」
+Legion n. 军团 ; 爱丽丝·玛格特洛依德符卡 战符「Little Legion」
+Chanter n. 吟唱者 ; 爱丽丝·玛格特洛依德符卡 符之一「Artful Chanter」
+Devilry n. 恶行；残暴 ; 爱丽丝·玛格特洛依德符卡 魔光「Devilry Light Ray」
+Gust n. 突然一阵；阵风 ; 帕秋莉诺雷姬符卡 金土符「Ginger Gust」
+Cradle n. 摇篮；发祥地 ; 蕾米莉亚·斯卡雷特技能  Demon Lord Cradle
+Demystify v. 使非神秘化 ; 音乐名 Demystify Feast
+Intermezzo n. 间奏；插曲 ; 音乐名 Intermezzo
 东方花映冢~Phantasmagoria of Flower View
-
 Phantasmagoria n. 千变万化的风景；幻觉效应
-
-标题英文后缀 Phantasmagoria of Flower View
-
-Metaphysical adj. 形而上学的；抽象的
-
-铃仙·优昙华院·因幡EX攻击 Metaphysical Mind
-
-Megalopolis n. 特大都市
-
-铃仙·优昙华院·因幡BOSS攻击 散符「荣华之梦（Luna Megalopolis）」
-
-Divinity n. 神性；神 
-
-琪露诺BOSS攻击 冻符「Cold Divinity」
-
-
+Metaphysical adj. 形而上学的；抽象的 ; 铃仙·优昙华院·因幡EX攻击 Metaphysical Mind
+Megalopolis n. 特大都市 ; 铃仙·优昙华院·因幡BOSS攻击 散符「荣华之梦（Luna Megalopolis）」
+Divinity n. 神性；神  ; 琪露诺BOSS攻击 冻符「Cold Divinity」
 东方文花帖~Shoot the Bullet
-
-Gassing n. 气体处理；吹嘘
-
-梅蒂欣·梅兰可莉 雾符「Gassing Garden」
-
-Delirium n. 精神错乱
-
-梅蒂欣·梅兰可莉符卡 谵妄「Into Delirium」
-
-Fluster n. 慌乱；混乱
-
-因幡てゐ符卡 脱兔「Fluster Escape」
-
-Hydrogenous adj. 氢的；含氢的
-
-帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
-
-Prominence n. 突出物；声望
-
-帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
-
-Phlogistic adj. 燃素的
-
-帕秋莉诺雷姬符卡 水&火符「Phlogistic Rain」
-
-Inflation n. 通货膨胀
-
-十六夜咲夜符卡 空虚「Inflation Square」
-
-Retrospective adj. 回顾的；追溯的
-
-音乐名 回忆（Retrospective）京都
-
-Mysterium n. 神秘物质
-
-蓬莱山辉夜符卡 新难题「mysterium」
-
-
+Gassing n. 气体处理；吹嘘 ; 梅蒂欣·梅兰可莉 雾符「Gassing Garden」
+Delirium n. 精神错乱 ; 梅蒂欣·梅兰可莉符卡 谵妄「Into Delirium」
+Fluster n. 慌乱；混乱 ; 因幡てゐ符卡 脱兔「Fluster Escape」
+Hydrogenous adj. 氢的；含氢的 ; 帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
+Prominence n. 突出物；声望 ; 帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
+Phlogistic adj. 燃素的 ; 帕秋莉诺雷姬符卡 水&火符「Phlogistic Rain」
+Inflation n. 通货膨胀 ; 十六夜咲夜符卡 空虚「Inflation Square」
+Retrospective adj. 回顾的；追溯的 ; 音乐名 回忆（Retrospective）京都
+Mysterium n. 神秘物质 ; 蓬莱山辉夜符卡 新难题「mysterium」
 东方风神录 ~ Mountain of Faith
-
-Inferno n. 火海；炼狱
-
-雾雨魔理沙魔法使装备 Cold Inferno
-
-Harvester n. 收获者；收割机
-
-秋穰子符卡 丰符「Otoshi Harvester」
-
-Misfortune n. 不幸；灾祸；厄运
-
-键山雏符卡 恶灵「Misfortune’s Wheel」
-
-Candid adj. 坦诚的；公正的；可信任的
-
-音乐名 芥川龙之介的河童 ~ Candid Friend
-
-Optical adj. 光学的；视觉的
-
-河城荷取符卡 光学「Optical Camouflage」
-
-Ooze v. 泄露；流露 n. 软泥；渗出物
-
-河城荷取符卡 洪水「Ooze Flooding」
-
-Diluvial n. 洪积层
-
-河城荷取符卡 洪水「Diluvial Mare」
-
-Cephalic adj. 头的；头部的
-
-河城荷取符卡 河童「Spin the Cephalic Plate」
-
-Thaumaturgy n. 奇术；魔术
-
-东风谷早苗符卡 秘术「Gray Thaumaturgy」
-
-Summon vt. 召唤；召集；振奋
-
-东风谷早苗符卡 准备「Summon Takeminakata」
-
-Foughten adj. 曾为战场的
-
-音乐名 神圣庄严的古战场 ~ Suwa Foughten Field
-
-Unremembered adj. 忘却的
-
-八坂神奈子符卡 忘谷「Unremembered」
-
-Divining n. 预言
-
-八坂神奈子符卡 神谷「Divining Crop」
-
-Torus n. 圆环面；花托；花床
-
-八坂神奈子符卡 神秘「Yamato Torus」
-
-Sylphid n. 体态轻盈的少女
-
-音乐名 神明降下恩惠之雨 ~ Sylphid Dream
-
-
+Inferno n. 火海；炼狱 ; 雾雨魔理沙魔法使装备 Cold Inferno
+Harvester n. 收获者；收割机 ; 秋穰子符卡 丰符「Otoshi Harvester」
+Misfortune n. 不幸；灾祸；厄运 ; 键山雏符卡 恶灵「Misfortune’s Wheel」
+Candid adj. 坦诚的；公正的；可信任的 ; 音乐名 芥川龙之介的河童 ~ Candid Friend
+Optical adj. 光学的；视觉的 ; 河城荷取符卡 光学「Optical Camouflage」
+Ooze v. 泄露；流露 n. 软泥；渗出物 ; 河城荷取符卡 洪水「Ooze Flooding」
+Diluvial n. 洪积层 ; 河城荷取符卡 洪水「Diluvial Mare」
+Cephalic adj. 头的；头部的 ; 河城荷取符卡 河童「Spin the Cephalic Plate」
+Thaumaturgy n. 奇术；魔术 ; 东风谷早苗符卡 秘术「Gray Thaumaturgy」
+Summon vt. 召唤；召集；振奋 ; 东风谷早苗符卡 准备「Summon Takeminakata」
+Foughten adj. 曾为战场的 ; 音乐名 神圣庄严的古战场 ~ Suwa Foughten Field
+Unremembered adj. 忘却的 ; 八坂神奈子符卡 忘谷「Unremembered」
+Divining n. 预言 ; 八坂神奈子符卡 神谷「Divining Crop」
+Torus n. 圆环面；花托；花床 ; 八坂神奈子符卡 神秘「Yamato Torus」
+Sylphid n. 体态轻盈的少女 ; 音乐名 神明降下恩惠之雨 ~ Sylphid Dream
 东方绯想天~Scarlet Weather Rhapsody
-
 Rhapsody n. 狂言；狂文；狂想曲
-
-标题英文后缀 Scarlet Weather Rhapsody
-
-Meteoric adj. 流星的；大气的
-
-雾雨魔理沙技能 Meteoric Debris
-
-Debris n. 碎片；残骸
-
-雾雨魔理沙技能 Meteoric Debris 
-
-Radial adj 光线的；放射状的
-
-雾雨魔理沙特殊技 Radial Strike
+Meteoric adj. 流星的；大气的 ; 雾雨魔理沙技能 Meteoric Debris
+Debris n. 碎片；残骸 ; 雾雨魔理沙技能 Meteoric Debris 
+Radial adj 光线的；放射状的 ; 雾雨魔理沙特殊技 Radial Strike
 
 Bosky adj. 有丛林的；矮林丛生的
 
@@ -1034,13 +887,3 @@ Unafraid adj. 不怕的；不畏惧的
 Hoi Polloi n. 大众；乌合之众
 
 骊驹早鬼符卡 「鬼形的Hoi Polloi」
-
-/*
-感谢阅读，剩下的会逐步补全的，祝各位英语考高分(
-
-在这里挂一只鸽子@六十年目の东方裁判，本来是他要帮我写的，结果咕了我一百多天，最后只能自己上了(
-
-本文为我原创
-作者：doge驴
-https://www.bilibili.com/read/cv6051858/
-出处： bilibili*/

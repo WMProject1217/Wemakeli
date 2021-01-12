@@ -1,5 +1,5 @@
-//WMUI
-console.log(`WMUI Version 0.8.7 Build 327`);
+﻿//WMUI
+console.log(`WMUI Version 0.8.8 Build 390`);
 var bottombaruserlsn;
 var debugval;
 var notify = {

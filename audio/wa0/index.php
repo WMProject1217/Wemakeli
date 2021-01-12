@@ -1,4 +1,9 @@
-<?php //By WMProject1217
+﻿<?php //By WMProject1217
+echo "<head>";
+include('../config.php');
+$wmui_backpath='../';
+$wmui_classnow='audio';
+$wmui_jumpoffheadbar='1';
 $audioinfofile = @ fopen("info.wmst", "r") or die("<title>Error 0x00000002</title>Error 0x00000002<br>Audio info load unsuccessful.");
 $title = fgets($audioinfofile);
 $outputtime = fgets($audioinfofile);
@@ -12,14 +17,13 @@ fclose($countfile);
 $countfile = @ fopen("count.wmst", "w");
 fwrite($countfile,$playnumber);
 fclose($countfile);
-include('../config.php');
-echo "<head>";
-echo "<title>" . $title . "_" . $wmsys_name . "</title>";
-include('../pattern/autoexec.php');
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
+echo "<script src='" . $wmsys_sysroot . "/main/js/APlayer.min.js'></script>"; 
+echo "<link rel='stylesheet' href='" . $wmsys_sysroot . "/main/css/APlayer.min.css'>";
+echo "<title>$title - $wmsys_name</title>";
 echo "</head>";
 echo "<body>";
-include('../pattern/topline.php');
-echo "<table class='maindataindex'>";
+echo "<table class='pagedatamainl'>";
 echo "<tr>";
 echo "<td>";
 echo "<h3>" . $title . "</h3>";
@@ -61,6 +65,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
+    include('../pattern/wmui.php');
     echo "</td>";
     echo "</tr>";
     echo "</table>";
@@ -75,6 +80,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
+    include('../pattern/wmui.php');
     echo "</td>";
     echo "</tr>";
     echo "</table>";

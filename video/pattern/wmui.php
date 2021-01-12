@@ -8,7 +8,7 @@ headbar:
 if ($wmui_jumpoffheadbar=="1"){
     goto bottombar;
 }
-echo "<table class='headbar'>";
+echo "<table class='headbar' id='headbar'>";
 echo "<tr>";
 echo "<td>";
 if ($wmui_classnow<>"mainpage") {
@@ -100,6 +100,6 @@ if ($wmui_classnow=="live") {
 echo "</td>";
 echo "</tr>";
 echo "</table>";
+echo "<script>autoexec()</script>";
 endwmui:
-echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 ?>

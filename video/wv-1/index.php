@@ -1,4 +1,4 @@
-<?php //by WMProject1217
+﻿<?php //by WMProject1217
 echo "<!DOCTYPE html>";
 echo "<html>";
 include('../config.php');
@@ -23,11 +23,13 @@ $danmakudata=@ fread($danmakufile,filesize("./$videolabel/danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
 fclose($danmakufile);
 echo "<head>";
-echo "<title>" . $title . "_" . $wmsys_name . "</title>";
+echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 echo "<link href='$wmsys_address/main/css/scojs.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/colpick.css' rel='stylesheet'>";
 echo "<link href='$wmsys_address/main/css/bootstrap.css' rel='stylesheet'>";
 echo "<link rel='stylesheet' href='$wmsys_address/main/css/main.css'>";
+echo "<title>$title - $wmsys_name</title>";
 echo "</head>";
 echo "<body>";
 echo "<table style='pagedatamainl'>";
