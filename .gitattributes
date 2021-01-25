@@ -1,0 +1,3 @@
+*.wml linguist-language=xml
+*.wmst linguist-language=Settings
+*.wmscript linguist-language=FCSH Script
