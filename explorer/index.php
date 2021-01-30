@@ -1697,8 +1697,9 @@ function fm_show_nav_path($path)
  */
 function fm_show_message()
 {
-    echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
-    echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
+    include('./config.php');
+    echo "<script src='$wmsys_assets/js/jquery-3.4.1.min.js'></script>";
+    echo "<script src='$wmsys_assets/wmui/wmui.js'></script>";
     if (isset($_SESSION['message'])) {
         $class = isset($_SESSION['status']) ? $_SESSION['status'] : 'success';
         echo "<div class='wmuinotify-container'></div>";
@@ -1791,14 +1792,20 @@ code.maxheight,pre.maxheight{max-height:512px}input[type="checkbox"]{margin:0;pa
  */
 function fm_show_footer()
 {
-    include('../config.php');
+    include('./config.php');
+    $wmui_classnow = "explorer";
     $wmui_jumpoffheadbar = 1;
     $wmui_jumpoffbottombar = 0;
     $wmui_title = "文件资源管理器 - " . $wmsys_name;
     $wmui_backpath = "../";
-    include('../wmui/wmui.php');
+    echo "<title>$wmui_title</title>";
+    include("$wmsys_assetsr\language\lang$wmsys_lang.php");
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    include('./wmui.php');
     ?>
-<div class="single-bg"></div>
+<div class="wmuibackgrounda"></div>
 </div>
 <script>
 function newfolder(p){var n=prompt('新文件夹名称','文件夹');if(n!==null&&n!==''){window.location.search='p='+encodeURIComponent(p)+'&new='+encodeURIComponent(n);}}

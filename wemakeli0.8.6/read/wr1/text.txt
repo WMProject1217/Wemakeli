@@ -1,0 +1,889 @@
+﻿Zunglish
+
+东方红魔乡 ~ the Embodiment of Scarlet Devil
+Embodiment n. 化身；体现 
+Scarlet n. 猩红；绯红
+Amulet n. 护身符；辟邪符 ; 博丽灵梦灵之御札bomb Homing Amulet
+Persuasion n. 劝说 ; 博丽灵梦梦之御札普通射击 Persuasion Needle
+Reverie n. 遐想；白日梦 ; 雾雨魔理沙魔之御札bomb 魔符「Stardust Reverie」
+Demarcation n. 划界；限界 ; 露米娅符卡  暗符「Demarcation」
+Icicle n. 冰柱；垂冰 ; 琪露诺符卡 冰符「Icicle Fall」
+Hailstorm n. 雹暴 ; 琪露诺符卡 雹符「Hailstorm」
+Selaginella n. 卷柏 ; 红美玲符卡 华符「Selaginella 9」
+Agni n. 印度神话中的火神 ; 帕秋莉·诺蕾姬符卡 火符「Agni Shine」
+Undine n. 水女神 ; 帕秋莉·诺蕾姬符卡 水符「Princess Undine」
+Sylphy (Sylph) n. 空气精灵 ; 帕秋莉·诺蕾姬符卡 木符「Sylphy Horn」
+Trilithon n. 巨石牌坊 ; 帕秋莉·诺蕾姬符卡 土符「Lazy Trilithon」
+Fatigue n. 疲劳；劳累 v. （使）疲劳 adj. 疲劳的 ; 帕秋莉·诺蕾姬符卡 金符「Metal Fatigue」
+Radiance n. 光辉；照射 ; 帕秋莉·诺蕾姬符卡 火符「Agni Radiance」
+Cromlech n. 环状列石 ; 帕秋莉·诺蕾姬符卡 火＆土符「Lava Cromlech」
+Selene n. 塞勒涅(月之女神) ; 帕秋莉·诺蕾姬符卡 月符「Silent Selene」
+Flare n. 闪光；信号弹；耀斑 v. 闪光；闪耀；爆发 ; 帕秋莉·诺蕾姬符卡 日符「Royal Flare」
+Misdirection n. 错误指导 ; 十六夜咲夜符卡 奇术「Misdirection」
+Meek adj. 温顺的；谦恭的 ; 十六夜咲夜符卡 奇术「Eternal Meek」
+Meister suf. 大师；有专才的人 ; 蕾米莉亚·斯卡雷特符卡 红符「Scarlet Meister」
+Cranberry n. 蔓越橘；小红莓 ; 芙兰朵露·斯卡雷特符卡 禁忌「Cranberry Trap」
+Starbow n. 当观察者在相对论速度下观察恒星产生的严重视差 ; 芙兰朵露·斯卡雷特符卡 禁弹「Starbow Break」
+Catadioptric adj. 反折射的 ; 芙兰朵露·斯卡雷特符卡 禁弹「Catadioptric」
+东方妖妖梦 ~ Perfect Cherry Blossom
+Petal n. 花瓣
+Exter­­­mination n. 灭绝；根绝 ; 博丽灵梦梦符慢速射击 Extermination
+Napalm n. 凝固汽油 v. 用凝固汽油攻击 ; 雾雨魔理沙魔符慢速射击 Magic Napalm
+Indiscriminate adj. 任意的；不加选择的；无差别的 ; 十六夜咲夜幻符bomb 幻符「Indiscriminate」
+Column n. 栏；圆柱；柱形物 ; 琪露诺符卡 霜符「Frost Columns」
+Crystallize v. (使)结晶 ; 音乐名 Crystallize Silver
+Lingering adj. 拖延的；逗留不去的 ; 蕾蒂·霍瓦特洛克符卡 寒符「Lingering Cold」
+Undulation n. 波动；起伏；弯曲 ; 蕾蒂·霍瓦特洛克符卡 白符「Undulation Ray」
+音乐英文后缀 幽灵乐团 ~ Phantom Ensemble
+Phantom n. 幻影；幻象 
+Ensemble n. 合奏；合唱
+Dinning n. 喧嚣 v. 喧闹 ; 骚灵姐妹合奏符卡 骚符「Phantom Dinning」
+Concerto n. 协奏曲 ; 骚灵姐妹合奏符卡 合葬「Prism Concerto」
+Stygian adj. 地狱的；幽暗的；冥河的 ; 骚灵姐妹合奏符卡 骚葬「Stygian Riverside」
+Swallowtail n. 燕子尾巴；燕尾服 ; 西行寺幽幽子符卡 华灵「Swallowtail Butterfly」
+Deep-rooted adj. 根深蒂固的 ; 西行寺幽幽子符卡 华灵「Deep-rooted Butterfly」
+Delusion n. 错觉；幻觉；妄想；欺骗 ; 西行寺幽幽子符卡 华灵「Butterfly Delusion」
+Unilateral adj. 单方面的；片面的 ; 八云蓝符卡 式弹「Unilateral Contact」
+东方永夜抄 ~ Imperishable Night
+Imperishable adj. 不朽的；不灭的
+Spectre n. 鬼怪；幽灵；幻觉 ; 爱丽丝·玛格特洛依德射击 「Sprectre Mistery」
+Artful adj. 狡猾的；巧妙的 ; 爱丽丝·玛格特洛依德Spell Card 魔符「Artful Sacrifice」
+Inanimateness adj. 无生命的 n. 无生命的事物 ; 爱丽丝·玛格特洛依德Last Spell 魔操「Return Inanimateness」
+Servant n. 仆人；雇人；下人 ; 蕾米莉亚·斯卡雷特使魔 「Servant Flyer」
+Ghastly adj. 可怕的；恐怖的 adv. 可怖地；惨白地 ; 西行寺幽幽子Spell Card 死符「Ghastly Dream」
+Ill-starred adj. 运气不佳的；不幸的 ; 米斯蒂娅·萝蕾拉符卡 鹰符「Ill-Starred Dive」
+Ephemerality n. 短命；无常的事物 ; 上白泽慧音符卡 始符「Ephemerality 137」
+Asteroid n. 小行星 adj. 星状的 ; 雾雨魔理沙符卡 魔空「Asteroid Belt」
+Blazing adj. 强烈的；燃烧的；炫目的 ; 雾雨魔理沙符卡 「Blazing Star」
+Duper(Dupe) n. 欺骗者；骗子 ; 因幡てゐ符卡 「Ancient Duper」
+Blowing (Blow) n. 吹制；吹气法 v. 吹；吹气 ; 铃仙·优昙华院·因幡符卡 幻波「赤眼催眠(Mind Blowing)」
+Visionary adj. 幻想的 n. 空想家；梦想者 ; 铃仙·优昙华院·因幡符卡 狂符「幻视调律(Visionary Tuning)」
+Tuning (Tune) n. 调谐；调整；调音 ; 铃仙·优昙华院·因幡符卡 狂符「幻视调律(Visionary Tuning)」
+Idling (Idle) n. 空转；闲置 ; 铃仙·优昙华院·因幡符卡  懒符「生神停止(Idling Wave)」
+Mesmerism n. 催眠术；催眠状态 ; 铃仙·优昙华院·因幡符卡 月眼「月兔远隔催眠术(Tele-Mesmerism)」
+Voyage n. 航行；旅程 v. 航行；旅行 ; 音乐名 Voyage1969
+Brilliant adj. 灿烂的；杰出的；卓越的 n. 宝石 ; 蓬莱山辉夜符卡 神宝「Brilliant Dragon Bullet」
+Salamander n. 蝾螈；火蜥蜴；能耐高温的物体 ; 蓬莱山辉夜符卡 神宝「Salamander Shield」
+Volcano n. 火山 ; 藤原妹红符卡 蓬莱「凯风快晴 -Fujiyama Volcano-」
+Possessed (possess) adj. 拥有 ; 藤原妹红符卡 「Possessed by Phoenix」
+东方萃梦想~Immaterial and Missing Power
+Immaterial adj. 非物质的；无形的；不重要的
+Orreries n. 太阳系仪 ; 雾雨魔理沙符卡 仪符「Orreries Sun」
+Ambitious adj. 雄心勃勃的；有报复的 ; 十六夜咲夜技能 Ambitious Jack
+Inscribe v. 题写；铭刻于 ; 十六夜咲夜符卡 伤符「Inscribe Red Soul」
+Legion n. 军团 ; 爱丽丝·玛格特洛依德符卡 战符「Little Legion」
+Chanter n. 吟唱者 ; 爱丽丝·玛格特洛依德符卡 符之一「Artful Chanter」
+Devilry n. 恶行；残暴 ; 爱丽丝·玛格特洛依德符卡 魔光「Devilry Light Ray」
+Gust n. 突然一阵；阵风 ; 帕秋莉诺雷姬符卡 金土符「Ginger Gust」
+Cradle n. 摇篮；发祥地 ; 蕾米莉亚·斯卡雷特技能  Demon Lord Cradle
+Demystify v. 使非神秘化 ; 音乐名 Demystify Feast
+Intermezzo n. 间奏；插曲 ; 音乐名 Intermezzo
+东方花映冢~Phantasmagoria of Flower View
+Phantasmagoria n. 千变万化的风景；幻觉效应
+Metaphysical adj. 形而上学的；抽象的 ; 铃仙·优昙华院·因幡EX攻击 Metaphysical Mind
+Megalopolis n. 特大都市 ; 铃仙·优昙华院·因幡BOSS攻击 散符「荣华之梦（Luna Megalopolis）」
+Divinity n. 神性；神  ; 琪露诺BOSS攻击 冻符「Cold Divinity」
+东方文花帖~Shoot the Bullet
+Gassing n. 气体处理；吹嘘 ; 梅蒂欣·梅兰可莉 雾符「Gassing Garden」
+Delirium n. 精神错乱 ; 梅蒂欣·梅兰可莉符卡 谵妄「Into Delirium」
+Fluster n. 慌乱；混乱 ; 因幡てゐ符卡 脱兔「Fluster Escape」
+Hydrogenous adj. 氢的；含氢的 ; 帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
+Prominence n. 突出物；声望 ; 帕秋莉诺蕾姬符卡 日&水符「Hydrogenous Prominence」
+Phlogistic adj. 燃素的 ; 帕秋莉诺雷姬符卡 水&火符「Phlogistic Rain」
+Inflation n. 通货膨胀 ; 十六夜咲夜符卡 空虚「Inflation Square」
+Retrospective adj. 回顾的；追溯的 ; 音乐名 回忆（Retrospective）京都
+Mysterium n. 神秘物质 ; 蓬莱山辉夜符卡 新难题「mysterium」
+东方风神录 ~ Mountain of Faith
+Inferno n. 火海；炼狱 ; 雾雨魔理沙魔法使装备 Cold Inferno
+Harvester n. 收获者；收割机 ; 秋穰子符卡 丰符「Otoshi Harvester」
+Misfortune n. 不幸；灾祸；厄运 ; 键山雏符卡 恶灵「Misfortune’s Wheel」
+Candid adj. 坦诚的；公正的；可信任的 ; 音乐名 芥川龙之介的河童 ~ Candid Friend
+Optical adj. 光学的；视觉的 ; 河城荷取符卡 光学「Optical Camouflage」
+Ooze v. 泄露；流露 n. 软泥；渗出物 ; 河城荷取符卡 洪水「Ooze Flooding」
+Diluvial n. 洪积层 ; 河城荷取符卡 洪水「Diluvial Mare」
+Cephalic adj. 头的；头部的 ; 河城荷取符卡 河童「Spin the Cephalic Plate」
+Thaumaturgy n. 奇术；魔术 ; 东风谷早苗符卡 秘术「Gray Thaumaturgy」
+Summon vt. 召唤；召集；振奋 ; 东风谷早苗符卡 准备「Summon Takeminakata」
+Foughten adj. 曾为战场的 ; 音乐名 神圣庄严的古战场 ~ Suwa Foughten Field
+Unremembered adj. 忘却的 ; 八坂神奈子符卡 忘谷「Unremembered」
+Divining n. 预言 ; 八坂神奈子符卡 神谷「Divining Crop」
+Torus n. 圆环面；花托；花床 ; 八坂神奈子符卡 神秘「Yamato Torus」
+Sylphid n. 体态轻盈的少女 ; 音乐名 神明降下恩惠之雨 ~ Sylphid Dream
+东方绯想天~Scarlet Weather Rhapsody
+Rhapsody n. 狂言；狂文；狂想曲
+Meteoric adj. 流星的；大气的 ; 雾雨魔理沙技能 Meteoric Debris
+Debris n. 碎片；残骸 ; 雾雨魔理沙技能 Meteoric Debris 
+Radial adj 光线的；放射状的 ; 雾雨魔理沙特殊技 Radial Strike
+
+Bosky adj. 有丛林的；矮林丛生的
+
+雾雨魔理沙特殊技 Bosky Sweeper
+
+Propelling（propel） adj. 推进的
+
+十六夜咲夜特殊技 Propelling Silver
+
+Ricochet v. 弹飞；跳射 n. 跳飞
+
+十六夜咲夜特殊技 Square Ricochet
+
+Condensed adj. 浓缩的
+
+帕秋莉·诺雷姬特殊技 Condensed Bubble
+
+Photosynthesis n. 光合作用 
+
+帕秋莉·诺蕾姬符卡 
+
+日木符「Photosynthesis」
+
+Ceiling n. 天花板；上限
+
+蕾米莉亚·斯卡雷特特殊技 Ceiling Fear
+
+Bombard v. 炮轰；攻击
+
+蕾米莉亚·斯卡雷特BOSS符卡 夜符「Bombard Night」
+
+Disbelief n. 怀疑；不相信
+
+铃仙·优昙华院·因幡必杀技 Disbelief Aspect
+
+Ripple n. 波纹；涟漪
+
+铃仙·优昙华院·因幡特殊技 Ripple Vision
+
+Discarder v. 丢弃；丢牌 n. 丢牌；废牌
+
+铃仙·优昙华院·因幡符卡 丧心「丧心疮痍(Discarder)」
+
+Obsessioner(自创?) n. 沉迷者；着魔者
+
+铃仙·优昙华院·因幡符卡 迫符「胁迫视觉(Obsessioner)」
+
+Bluff v. 虚张声势；吓唬 
+
+铃仙·优昙华院·因幡符卡 幻弹「幻想视差(Bluff Barrage)」
+
+
+东方地灵殿~Subterranean Animism
+
+Subterranean adj. 地下的；隐蔽的
+
+标题英文后缀 Subterranean Animism
+
+Animism n. 万物有灵论；泛灵论
+
+标题英文后缀 Subterranean Animism
+
+Miasma n. 瘴气；不良气氛
+
+黑谷山女符卡 瘴符「Field Miasma」
+
+Heartfelt adj. 衷心的
+
+音乐英文后缀 Heartfelt Fancy
+
+Souvenir n. 纪念品
+
+古明地觉符卡 回忆「Terrible Souvenir」
+
+Spleen n. 怒气；脾脏
+
+火焰猫燐符卡 恨灵「Spleen Eater」
+
+Fusion n. 融合；结合；聚变
+
+灵乌路空符卡 核热「Nuclear Fusion」
+
+Excursion n. 远足；偏移；偏振
+
+灵乌路空符卡 核热「Nuclear Excursion」
+
+Petit adj. 次要的；小的；琐碎的
+
+灵乌路空符卡 爆符「Petit Flare」
+
+Planetary adj. 行星的；有轨道的
+
+灵乌路空符卡 焰星「Planetary Revolution」
+
+Revolution n. 革命；变革；旋转
+
+灵乌路空符卡 焰星「Planetary Revolution」
+
+Ego n. 自我
+
+古明地恋符卡 抑制「Super Ego」
+
+
+东方星莲船~Undefined Fantastic Object
+
+Undefined adj. 未定义的；不明确的
+
+标题英文后缀 Undefined Fantastic Object
+
+Serpent n. 蛇；狡猾的人
+
+东风谷早苗依照神奈子大人所说机体射击 Sky Serpent
+
+Cobalt n. 钴
+
+东风谷早苗依照诹访子大人所说机体射击 Cobalt Spread
+
+Detector n. 探测器
+
+纳兹琳符卡 搜符「Gold Detector」
+
+Pendulum n. 钟摆；摆锤
+
+纳兹琳符卡 守符「Pendulum Guard」
+
+Parasol n. 阳伞；伞式单翼飞机
+
+多多良小伞符卡 伞符「Parasol Star Symphony」
+
+Symphony n. 交响乐
+
+多多良小伞符卡 伞符「Parasol Star Symphony」
+
+Vortex n. 旋涡；旋风
+
+村纱水蜜符卡 溺符「Deep Vortex」
+
+Sinkable adj. 会沉的
+
+村纱水蜜符卡 溺符「Sinkable Vortex」
+
+Radiant adj. 发光的；明亮的；辐射的
+
+寅丸星符卡 宝塔「Radiant Treasure」
+
+Cosmic adj. 宇宙的；无限的
+
+音乐名 感情的摩天楼 ~ Cosmic Mind
+
+Clarification n. 澄清
+
+寅丸星符卡 「Complete Clarification」
+
+Maelstrom n. 大漩涡；大动乱
+
+圣白莲符卡 光魔「Star Maelstrom」
+
+
+东方非想天则~追寻特大型人偶之谜 
+
+Ecological adj. 生态学的
+
+雾雨魔理沙符卡 魔废「Deep Ecological Bomb」
+
+Eccentric adj. 古怪的 n. 怪人
+
+雾雨魔理沙符卡 星符「Eccentric Asteroid」
+
+Sprinkler n. 洒水装置；洒水车
+
+琪露诺符卡 冰块「Cold Sprinkler」
+
+Iceberg n. 冰山
+
+琪露诺特殊技 Little Iceberg
+
+Geyser n. 间歇泉
+
+灵乌路空必杀技 Hell Geyser
+
+Lemming n. 旅鼠
+
+爱丽丝·玛格特洛依德符卡 人偶「Lemmings’ Parade」
+
+Automaton n. 机器人
+
+爱丽丝·玛格特洛依德BOSS符卡 人偶「Semi-Automaton」
+
+Thrasher n. 鞭笞者(?)
+
+帕秋莉·诺蕾姬特殊技 Fall Thrasher
+
+Elegance n. 优雅；典雅
+
+西行寺幽幽子特殊技 Sence of Elegance
+
+Stigmatizer n. 污名化者
+
+蕾米莉亚·斯卡雷特特殊技 Stigmanizer
+
+Ocular adj. 眼睛的；视觉的 n. 目镜
+
+铃仙·优昙华院·因幡特殊技 Ocular Spectrum
+
+Spectrum n. 光谱；范围 
+
+铃仙·优昙华院·因幡特殊技 Ocular Spectruim
+
+东方文花帖DS
+
+Windrow n. 料堆；成堆的干草 
+
+秋静叶符卡 枯道「Lost Windrow」
+
+Destructor n. 破坏者
+
+琪斯美符卡 钓瓶「Well Destructor」
+
+Rabies n. 狂犬病
+
+犬走椛符卡 狗符「Rabies Bite」
+
+Expellees n. 被驱出者
+
+犬走椛符卡 山窝「Expellees’ Canaan」
+
+Septentrion n. 北方 
+
+灵乌路空符卡 七星「Septentrion」
+
+Mythical adj. 神话的 
+
+泄矢诹访子符卡 铁轮「Mythical Ring」
+
+Paparazzi n. 狗仔队
+
+博丽灵梦符卡 结界「狗仔队（Paparazzi）击退结界」
+
+妖精大战争~东方三月精
+
+stillness n. 静止；沉静 
+
+露娜切云德符卡 月光「Dark Stillness」
+
+Rutile n. 金红石
+
+露娜切云德符卡 光符「Rutile Flection」
+
+Flection n. 弯曲的部分；屈体
+
+露娜切云德符卡 光符「Rutile Flection」
+
+Elfin adj. 小精灵的
+
+露娜切云德符卡 空符「Elfin Canopy」
+
+Canopy n. 天蓬；苍穹
+
+露娜切云德符卡 空符「Elfin Canopy」
+
+Comet n. 彗星
+
+斯塔萨菲雅符卡 流星「Petit Comet」
+
+Twinkle v. 闪烁；闪耀
+
+斯塔萨菲雅符卡 星符「Twinkle Sapphire」
+
+Sapphire n. 蓝宝石
+
+斯塔萨菲雅符卡 星符「Twinkle Sapphire」
+
+Deflection n. 歪斜；扰度
+
+桑尼米尔克符卡 光符「Biue Deflection」
+
+Beam n. 光线；光束
+
+雾雨魔理沙符卡 光符「Mysterious Beam」
+
+Crunch n. 关键时刻
+
+雾雨魔理沙符卡 闭符「Big Crunch」
+
+Perseids n. 英仙座
+
+雾雨魔理沙符卡 流星「Super Perseids」
+
+东方神灵庙~Ten Desires
+
+Mighty adj. 强大的；巨大的 adv. 很；极其
+
+东风谷早苗高速射击 Mighty Wind
+
+Scramble n. 争夺；混乱 v．争抢；攀爬
+
+幽谷响子符卡 响符「Mountain Echo Scramble」
+
+Resonance n. 共振；共鸣
+
+幽谷响子符卡 响符「Power Resonance」
+
+Amplify v. 扩大；增强；详述
+
+幽谷响子符卡 山彦「Amplify Echo」
+
+Cyclone n. 旋风；气旋；飓风
+
+多多良小伞符卡 虹符「Unbrella Cyclone」
+
+Rigid adj. 坚硬的；严格的；僵硬的
+
+音乐名 Rigid Paradise
+
+Raze v. 摧毁；夷为平地；消除
+
+宫古芳香符卡 毒爪「Poison Raze」
+
+Administrator n. 管理人；行政官
+
+音乐名 圣德传说 ~ True Administrator
+
+
+东方心绮楼~Hopeless Masquerade
+
+Masquerade n. 假面舞会
+
+标题英文后缀 Hopeless Masquerade
+
+Luminary n. 杰出人物；发光体
+
+雾雨魔理沙技能 Luminary Shot
+
+Sungrazer n. 掠日彗星
+
+雾雨魔理沙Lastword 「Sungrazer」
+
+Conditioned adj. 有条件的；受限制的
+
+古明地恋技能 Conditioned Teleport
+
+Fidgety adj. 烦躁的；不安的
+
+古明地恋技能 Fidgety Snatcher
+
+Snatcher n. 抢夺者；诱拐者
+
+古明地恋技能 Fidgety Snatcher
+
+Stinging(Sting) adj. 激烈的；刺人的；刺一般的
+
+古明地恋技能 Stinging Mind
+
+Brambly adj. 荆棘多的；有刺的
+
+古明地恋Lastword 「Brambly Rose Garden」
+
+Freudian adj. 佛洛伊德学说的
+
+古明地恋符卡 本能「Freudian」
+
+Confined adj. 被限制的；狭窄的
+
+古明地恋符卡 茨符「Confined innocent」
+
+Possession n. 拥有；财产；占据
+
+秦心符卡 「Monkey Possession」
+
+
+东方辉针城~Double Dealing Character
+
+Vanish v. 消失；绝迹
+
+十六夜咲夜不使用妖器Spell Card 时符「Dual Vanish」
+
+Absorber n. 减震器；阻尼器；吸收装置 
+
+雾雨魔理沙不使用妖器Spell Card Magic Absorber
+
+Fin n. 鳍；鱼翅；散热片
+
+若鹭姬符卡 水符「Tail Fin Slap」
+
+Multiplicative adj. 倍增的
+
+赤蛮奇符卡 飞头「Multiplicative Head」
+
+Fang n. 尖牙
+
+今泉影狼符卡 变身「Star Fang」
+
+Pounce v. 猛扑；抓住 n. 猛扑；袭击
+
+今泉影狼符卡 狼符「Star Ring Pounce」
+
+Reverse v. 逆转 adj. 相反的 n. 相反；背面
+
+音乐名 Reverse Ideology
+
+Ideology n. 意识形态
+
+音乐名 Reverse Ideology
+
+Hierarchy n. 等级制度；统治集团
+
+鬼人正邪符卡 逆转「Reverse Hierarchy」
+
+Percuss v. 叩诊；敲打
+
+堀川雷鼓符卡 死鼓「Land Percuss」
+
+Pristine adj. 原始的；纯朴的；清新的
+
+堀川雷鼓符卡 「Pristine Beat」
+
+
+弹幕天邪鬼~Impossible Spell Card
+
+Glacialist n. 冰河学者
+
+琪露诺符卡 冰符「Perfect Glacialist」
+
+Primal adj. 原始的；最初的 
+
+幽谷响子符卡 叫唤「Primal Scream」
+
+Piercing(Pierce) adj. 刺耳的；刺骨的
+
+幽谷响子符卡 劈音「Piercing Circle」
+
+Woofer n. 低音用扩音器
+
+堀川雷鼓符卡 太鼓「Fantastic Woofer」
+
+Panorama n. 全景
+
+姬海棠果符卡 写真「Full Panorama Shot」
+
+Changeling n. 低能儿；改变(?)
+
+十六夜咲夜符卡 时符「Changeling Magic」
+
+Imp n. 小恶魔；顽童；小鬼
+
+伊吹萃香符卡 鬼群「Imp Swarm」
+
+Swarm n. 群；蜂群
+
+伊吹萃香符卡 鬼群「Imp Swarm」
+
+
+东方深秘录~Urban Legend in Limbo
+
+Limbo n. 拘禁；中间或不定的状态；地狱边境
+
+标题英文后缀 Urban Legend In Limbo
+
+Occultation n. 掩蔽；掩星现象
+
+雾雨魔理沙符卡 星符「Occultation」
+
+Buddhist adj. 佛教的 n. 佛教徒
+
+圣白莲符卡 超人「大追踪！Buddhist Rider」
+
+Hermetic adj. 密封的；炼金术的；深奥的
+
+丰聪耳神子符卡 怪人「Hermetic Manto」
+
+Manto n. (法语)披肩；头蓬
+
+丰聪耳神子符卡 怪人「Hermetic Manto」
+
+Capsule n. 胶囊
+
+二岩猯藏灵异攻击 Alien Capsule、
+
+Psychokinesis n. 念力；精神驱动
+
+宇佐见堇子技能 Urban Psychokinesis
+
+Telekinesis n. 隔传动 
+
+宇佐见堇子技能 Telekinesis 钢筋
+
+Teleportation n. 远距传物；传送
+
+宇佐见堇子技能 Teleportation
+
+Hydrokinesis n. 水动力（超能力）
+
+宇佐见堇子技能 Hydrokinesis 下水井盖
+
+Occult adj. 神秘的；超自然的 n. 神秘学
+
+宇佐见堇子灵异攻击 Occult Ball
+
+Plosion n. 爆破音 
+
+宇佐见堇子符卡 念力「Psycho Plosion」
+
+
+东方绀珠传~Legacy of Lunatic Kingdom
+
+Legacy n. （物质）遗产；传代物；遗留
+
+标题英文后缀 Legacy of Lunatic Kingdom
+
+Influence v. 影响 n. 影响力
+
+铃湖符卡 兔符「Dango Influence」
+
+Eclipse n. 日或月食；没落
+
+克劳恩皮丝符卡 狱符「Hell Eclipse」
+
+Striped (Stripe) adj. 有条纹
+
+克劳恩皮丝符卡 地狱「Striped Abyss」
+
+Abyss n. 深渊；无底洞
+
+克劳恩皮丝符卡 地狱「Striped Abyss」
+
+Furies (Fury) n. 愤怒；希腊神话中的复仇女神
+
+音乐名 Pure Furies ~ 心之所在
+
+Purely adv. 纯粹地；纯洁地
+
+纯狐符卡 纯符「Purely Bullet Hell」
+
+Supplantation n. 代替；取代
+
+哆来咪·苏伊特符卡 蝴蝶「Butterfly Supplantation」
+
+Creeping (creep) adj. 爬行的；缓慢发展的
+
+哆来咪·苏伊特符卡 爬梦「Creeping Bullet」
+
+Pandemonic(ZUNglish) adj. 喧嚣的；嘈杂的(?)
+
+音乐名 Pandemonic Planet
+
+（查了一下，这个词可能是来自于Behemoth乐队的专辑Pandemonic Incantations）
+
+Trinitarian adj. 三位一体的
+
+赫卡提亚·拉碧斯拉祖利符卡 「Trinitarian Rhapsody」
+
+
+东方凭依华~Antinomy of Common Flowers
+
+Antinomy n. 矛盾；悖论
+
+标题英文后缀 Antinomy of Common Flowers
+
+Manhole n. （下水道）出入孔
+
+宇佐见堇子技能 Hydrokinesis Manhole
+
+Endless adj. 无止境的
+
+宇佐见堇子&哆来咪·苏伊特符卡 超能力「Phychokinesis Endless」
+
+Beads(Bead) n. 玻璃珠；珠子
+
+哆来咪·苏伊特必杀技 Beads Crash
+
+Mischance n. 不幸；灾难
+
+依神紫苑&八云紫符卡 贫符「Mischance Scatter」
+
+Scatter v. 散播；分散
+
+依神紫苑&八云紫符卡 贫符「Mischance Scatter」
+
+Celebrity n. 名人；社会名流
+
+依神女苑必杀技 Celebrity Burn
+
+Pluck  v. 拔；摘 n. 勇气
+
+依神女苑符卡 财祸「Pluck Pigeon」
+
+Egoistic adj. 利己主义的；自私自利的
+
+音乐名 今宵是飘逸的利己主义者 ~ Egoistic Flowers
+
+Primrose n. 报春花；淡黄色
+
+音乐名 地之色乃黄色 ~ Primrose
+
+
+东方天空璋~Hidden Star in Four Season
+
+Breezy adj. 有微风的；活泼的
+
+春子机 Breezy Cherry Blossom
+
+Minute adj. 微小的；仔细的 n. 分钟；片刻
+
+爱塔妮缇·拉尔瓦符卡 蝶符「Minute Scales」
+
+Fluttering (Flutter) n. 摆动；振翼 v. 摆动；振翼
+
+爱塔妮缇·拉尔瓦符卡 蝶符「Fluttering Summer」
+
+Curl n. 卷曲 v. 弄卷；弯曲
+
+高丽野阿吽符卡 陀螺「Curl Up and Die」
+
+Bodhi n. 菩提树；大彻大悟
+
+矢田寺成美符卡 魔符「Instant Bodhi」
+
+Golem n. 傀儡；有生命的假人
+
+矢田寺成美符卡 魔符「Bullet Golem」
+
+Salvation n. 拯救；救世；救助
+
+矢田寺成美符卡 地藏「Criminal Salvation」
+
+Scorch v. （使）烧焦；变焦 n. 烧焦
+
+摩多罗隐岐奈符卡 里夏「Scorch by Hot Summer」
+
+Famine n. 饥荒
+
+摩多罗隐岐奈符卡 里秋「Die of Famine」
+
+Invoker n. 祈求者
+
+摩多罗隐岐奈符卡 秘仪「Reverse Invoker」
+
+Dukkha n. 苦
+
+摩多罗隐岐奈符卡 秘仪「Matarah Dukkha」
+
+Anarchy n. 无政府；混乱；无秩序
+
+摩多罗隐岐奈符卡 「Anarchy Bullet Hell」
+
+
+秘封噩梦日记~Violet Detector
+
+Falconer n. 猎鹰驯养者
+
+清兰符卡 弹符「Rabbit Falconer」
+
+Bursting n. 爆裂
+
+克劳恩皮丝符卡 狱符「Bursting Grudge」
+
+Grudge n. 怨恨
+
+克劳恩皮丝符卡 狱符「Bursting Grudge」
+
+Labyrinth n. 迷宫
+
+丁礼田舞符卡 竹符「Bamboo Labyrinth」
+
+Distorted adj. 歪曲的；受到曲解的
+
+赫卡提亚·拉碧斯拉祖利符卡 异界「Distorted Fire」
+
+Radiation n. 辐射；放射线
+
+赫卡提亚·拉碧斯拉祖利符卡 月「Cosmic Radiation」
+
+Psychedelic adj. 引起幻觉的 n. 迷幻药
+
+纯狐符卡 「Psychedelic Mandara」
+
+Catastrophe n. 大灾难 
+
+蕾米莉亚·斯卡雷特&芙兰朵露·斯卡雷特符卡 红魔符「Bloody Catastrophe」
+
+Stellar adj. 一流的；主要的
+
+古明地恋&灵乌路空符卡 地灵符「Mind Stellar Still」
+
+东方鬼形兽~Wily Beast and Weakest Creature
+
+Wily adj. 狡猾的
+
+标题英文后缀 Wily Beast andWeakest Creature
+
+Jelly n. 果冻 v. 结冻
+
+音乐名 Jelly Stone
+
+Conifer n. 针叶树
+
+戎璎花符卡 石符「Stone Conifer」
+
+Siege n. 围攻；围城
+
+牛崎润美符卡 鬼符「Demon Siege」
+
+Seraphic adj. 如天使般的；美丽的
+
+音乐名 Seraphic Chicken
+
+Unlocated adj. 未放置的；未立界标的
+
+音乐名 Unlocated Hell
+
+Tortoise n. 龟
+
+音乐名 Tortoise Dragon ~ 幸运与不幸
+
+Metropolis n. 大都市；首府
+
+音乐名 Beast Metropolis
+
+Heritage n. （精神）遗产；继承物
+
+音乐名 Electric Heritage
+
+Idolatrize v. 奉为偶像
+
+音乐英文后缀 Idoratrize World
+
+Linear adj. 线性的；直线的
+
+埴安神袿姬符卡 线形「Linear Creature」
+
+Geometric adj. 几何学的
+
+埴安神袿姬符卡 「GeometricCreature」
+
+Idola(Idolum) n. 谬见；谬论
+
+埴安神袿姬符卡 「Idola Diabolus」
+
+Diabolus n. 恶魔
+
+埴安神袿姬符卡 「Idola Diabolus」
+
+Pegasus n. 希腊神话中双翼飞马；飞马座
+
+音乐名 圣德太子的天马 ~ Dark Pegasus
+
+Thrilling (Thrill) adj. 令人兴奋的；毛骨悚然的
+
+骊驹早鬼符卡 劲疾技「Thrilling Shoot」
+
+Neigh v. 马嘶叫 n. 马嘶声
+
+骊驹早鬼符卡 劲疾技「Lightning Neigh」
+
+Dense adj. 密集的；浓密的
+
+骊驹早鬼符卡 劲疾技「Dense Cloud」
+
+Epidemicity n. 流行性
+
+骊驹早鬼符卡 劲疾技「Beast Epidemicity」
+
+Chase v. 追赶；追捕；追求 n. 追捕；争取
+
+骊驹早鬼符卡 劲疾技「Triangle Chase」
+
+Unafraid adj. 不怕的；不畏惧的
+
+骊驹早鬼符卡 「Follow Me,Unafraid」
+
+Hoi Polloi n. 大众；乌合之众
+
+骊驹早鬼符卡 「鬼形的Hoi Polloi」

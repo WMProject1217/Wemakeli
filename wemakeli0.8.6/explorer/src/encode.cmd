@@ -1,0 +1,1 @@
+%windir%\System32\certutil.exe -encode %1 %1.txt

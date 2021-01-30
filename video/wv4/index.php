@@ -23,18 +23,13 @@ $danmakudata=@ fread($danmakufile,filesize("./$videolabel/danmaku.wml"));
 $danmakunumber=substr_count($danmakudata,"\n");
 fclose($danmakufile);
 echo "<head>";
-echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
-echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
-echo "<link href='$wmsys_address/main/css/scojs.css' rel='stylesheet'>";
-echo "<link href='$wmsys_address/main/css/colpick.css' rel='stylesheet'>";
-echo "<link href='$wmsys_address/main/css/bootstrap.css' rel='stylesheet'>";
-echo "<link rel='stylesheet' href='$wmsys_address/main/css/main.css'>";
+echo "<link href='$wmsys_assets/css/scojs.css' rel='stylesheet'>";
+echo "<link href='$wmsys_assets/css/colpick.css' rel='stylesheet'>";
+echo "<link href='$wmsys_assets/css/bootstrap.css' rel='stylesheet'>";
+echo "<link rel='stylesheet' href='$wmsys_assets/css/main.css'>";
 echo "<title>$title - $wmsys_name</title>";
 echo "</head>";
-echo "<body>";
-echo "<table style='pagedatamainl'>";
-echo "<tr>";
-echo "<td'>";
+include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $videonumber . " , 播放 " . $playnumber . " , 弹幕 " . $danmakunumber . "</div>";
 /*echo "<table>";
@@ -97,19 +92,15 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
-  include('../pattern/wmui.php');
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
-  echo "</body>";
+  include("$wmsys_assetsr\wmui\wmuilasload.php");
 }
 ?>
-<script src="<?php echo $wmsys_address?>/main/js/jquery-2.1.4.min.js"></script>
-<script src="<?php echo $wmsys_address?>/main/js/jquery.shCircleLoader.js"></script>
-<script src="<?php echo $wmsys_address?>/main/js/sco.tooltip.js"></script>
-<script src="<?php echo $wmsys_address?>/main/js/colpick.js"></script>
-<script src="<?php echo $wmsys_address?>/main/js/jquery.danmu.js"></script>
-<script src="<?php echo $wmsys_address?>/main/js/main.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/jquery-2.1.4.min.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/jquery.shCircleLoader.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/sco.tooltip.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/colpick.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/jquery.danmu.js"></script>
+<script src="<?php echo $wmsys_assets?>/js/main.js"></script>
 <script>
 
 $("#danmup").DanmuPlayer({
