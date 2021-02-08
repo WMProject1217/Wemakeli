@@ -1,5 +1,4 @@
 <?php //By WMProject1217
-//Main Page
 echo "<html>";
 echo "<head>";
 include('./config.php');

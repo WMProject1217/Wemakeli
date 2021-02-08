@@ -1,24 +1,17 @@
 ﻿<?php //By WMProject1217
-include('../config.php');
-$wmui_classnow = "video";
-$wmui_title = $wmsys_name;
-$wmui_jumpoffheadbar=1;
+echo "<html>";
 echo "<head>";
-echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
-echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
-echo "<title>视频列表_" . $wmsys_name . "</title>";
+include('./config.php');
+$wmui_classnow = "video";
+$wmui_title = "视频列表 - $wmsys_name";
+$wmui_backpath = "../";
+$wmui_jumpoffheadbar = "1";
+echo "<title>$wmui_title</title>";
 echo "</head>";
-echo "<body>";
-echo "<table class='maindataindex'>";
-echo "<tr>";
-echo "<td>";
+include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<h3>视频列表</h3>";
 echo "<pre>";
-readfile('../main/wmst/videolist.wmst');
+readfile("$wmsys_dbrootw\wmst" . '\videolist.wmst');
 echo "</pre>";
-echo "</td>";
-echo "</tr>";
-echo "</table>";
-echo "</body>";
-include('../wmui/wmui.php');
+include("$wmsys_assetsr\wmui\wmuilasload.php");
 ?>

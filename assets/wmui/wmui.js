@@ -137,7 +137,7 @@ function WMUINowTimeSC(){
     n = m / 64 + 1616;
     m = (n - parseInt(n)) * 64;
     n = parseInt(n);
-    $sctime=n+"-"+m+"-"+l+"-"+k+":"+j;
+    $sctime=n+"-"+m+"-"+l+"-"+k+":"+j+":"+i+":"+h;
     return $sctime;
 }
 function WMUIHeadbarNowTimeSC(){
