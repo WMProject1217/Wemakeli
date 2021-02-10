@@ -1,4 +1,4 @@
-﻿<?php //By WMProject1217
+<?php //By WMProject1217
 include('../config.php');
 $wmui_classnow = "about";
 $wmui_title = "关于 - $wmsys_name";

@@ -2232,4 +2232,4 @@
     }
     ]).default
 });
-//# sourceMappingURL=APlayer.min.js.map
+//# sourceMappingURL=APlayer.js.map
