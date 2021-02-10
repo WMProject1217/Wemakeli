@@ -6,7 +6,7 @@ include('../config.php');
 $wmui_classnow = "logon";
 $wmui_title = "登录 - $wmsys_name";
 $wmui_backpath = "../";
-echo "<title>登录 - $wmui_title</title>";
+echo "<title>$wmui_title</title>";
 echo "</head>";
 include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<div class='wmuibackgrounda'></div>";

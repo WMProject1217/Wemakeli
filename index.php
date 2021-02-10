@@ -11,7 +11,16 @@ echo "</head>";
 include("$wmsys_assetsr\wmui\wmuifirload.php");
 $asser = date("Y-m-d H:i:s");
 ?>
-<table border='1'>
+<style>
+.debug{
+    position:absolute;
+    top:511px;
+    z-index:0;
+    color:#66CCFF;
+    text-shadow: 1px 1px 3px #EE0000;
+}
+</style>
+<table class='debug' border='1' style='display:block;'>
 <tr>
 <td>
 <h3>Debug</h3>
@@ -91,7 +100,7 @@ m = (n - parseInt(n)) * 64;
 n = parseInt(n);
 document.getElementById("wmuisctimeblock").innerHTML="Time : [SC]"+n+"年"+m+"月"+l+"日  "+k+":"+j+":"+i+":"+h;
 }
-wmuiwelcomemessage();
+WMUIWelcomeMessage();
 notify.success('Buy Indihome now','IndiHome Paket Streamix<br>10 Mbps Rp320.000<br>20 Mbps Rp385.000<br>50 Mbps Rp615.000<br>100 Mbps Rp957.000' ,-1);
 </script>
 <?php
@@ -100,62 +109,153 @@ echo "用户访问时 IP : " .  $_SERVER['REMOTE_ADDR'] . "<br>";
 echo "用户访问时端口 : " .  $_SERVER['REMOTE_PORT'] . "<br>";
 echo "用户页面跳转 : " .  $_SERVER['HTTP_REFERER'] . "<br>";
 ?>
+<br><br><br><br><br><br><br>
 </td>
 </tr>
 </table>
-
-
-<style>
-.wmuitopshowimage{
-    z-index:0;
-    width:240px;
-    height:135px;
-}
-.wmuitopshowtitle{
-    position: relative;
-    z-index:1;
-    color:#EE0000;
-    font-size:20px;
-    top:-60px;
-    width:240px;
-    height:37px;
-    text-shadow: 1px 1px 3px #000000;
-}
-.wmuitopshowinfo{
-    position: relative;
-    z-index:1;
-    color:#EEEE00;
-    font-size:16px;
-    top:-74px;
-    width:240px;
-    height:24px;
-    text-shadow: 1px 1px 3px #000000;
-}
-.wmuitopshowupmaster{
-    position: relative;
-    z-index:1;
-    color:#66CCFF;
-    font-size:16px;
-    top:-82px;
-    width:240px;
-    height:37px;
-    text-shadow: 1px 1px 3px #000000;
-}
-.wmuitopshowlink{
-    position: relative;
-    z-index:2;
-    top:-230px;
-    width:240px;
-    height:135px;
-}
-</style>
-<img class='wmuitopshowimage' src='./library/image/videotop/wv-1.png'>
-<div class='wmuitopshowtitle'>Bad Apple!!</div>
-<div class='wmuitopshowinfo'>播放 560 弹幕 38</div>
-<div class='wmuitopshowupmaster'>UP : ?</div>
-<a href='./video/wv-1/'><div class='wmuitopshowlink'></div></a>
-
-
 <?php
+echo "<table class='wmuishowerblock'><tr><td>";
+$videoread = -1;
+$videoendfile = @ fopen("./video/videoend.wmst", "r") or die("<title>Error 0x00000007</title>Error 0x00000007<br>Page data load unsuccessful.");
+$videoendun = fgets($videoendfile);
+fclose($videoendfile);
+$videoendsplit = explode(';',$videoendun);
+$videoend = $videoendsplit[0];
+while ($videoread<>2) {
+    $videoinfofile = @ fopen("./video/wv$videoread/info.wmst", "r");
+    $title = @ fgets($videoinfofile);
+    $outputtime = @ fgets($videoinfofile);
+    $uploadmaster = @ fgets($videoinfofile);
+    $videonumber= @ fgets($videoinfofile);
+    @ fclose($videoinfofile);
+    $videonumber = str_replace(array("\r\n", "\r", "\n"), "", $videonumber);
+    $title = str_replace(array("\r\n", "\r", "\n"), "", $title);  
+    $outputtime = str_replace(array("\r\n", "\r", "\n"), "", $outputtime);  
+    $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
+    $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
+    $playnumber = @ fgets($countfile);
+    fclose($countfile);
+    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber=substr_count($danmakudata,"\n");
+    fclose($danmakufile);
+    if ($outputtime=="") {
+        goto offechooutline;
+    }
+    if ($playnumber > 10000) {
+        if (floor($playnumber / 10000) > 10000) {
+            $playnumber = floor($playnumber / 100000000) . " 亿";
+            goto playnumberfixend;
+        }
+        $playnumber = floor($playnumber / 10000) . " 万";
+        playnumberfixend:
+    }
+    echo "<div class='wmuishowerc'>";
+    echo "<a href='/video/$videonumber/'>";
+    echo "<img class='wmuishowerctop' src='/library/image/videotop/wv$videoread.png'></img>";
+    if (mb_strlen($title) > 16) {
+        echo "<div class='wmuishowerctitlel'>$title</div>";
+    } else {
+    echo "<div class='wmuishowerctitle'>$title</div>";
+    }
+    echo "<div class='wmuishowercplaycount'>播放 $playnumber 弹幕 $danmakunumber</div>";
+    echo "<div class='wmuishowercupmaster'>UP : $uploadmaster</div></a>";
+    echo "</div><br><br><br><br><br><br><br>";
+    offechooutline:
+    $videoread = $videoread + 1;
+}
+echo "<br><br></td></tr></table>";
+echo "<table class='wmuishowerblocka'><tr><td>";
+$videoread = 2;
+while ($videoread<>5) {
+    $videoinfofile = @ fopen("./video/wv$videoread/info.wmst", "r");
+    $title = @ fgets($videoinfofile);
+    $outputtime = @ fgets($videoinfofile);
+    $uploadmaster = @ fgets($videoinfofile);
+    $videonumber= @ fgets($videoinfofile);
+    @ fclose($videoinfofile);
+    $videonumber = str_replace(array("\r\n", "\r", "\n"), "", $videonumber);
+    $title = str_replace(array("\r\n", "\r", "\n"), "", $title);  
+    $outputtime = str_replace(array("\r\n", "\r", "\n"), "", $outputtime);  
+    $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
+    $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
+    $playnumber = @ fgets($countfile);
+    fclose($countfile);
+    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber=substr_count($danmakudata,"\n");
+    fclose($danmakufile);
+    if ($outputtime=="") {
+        goto offechooutlinea;
+    }
+    if ($playnumber > 10000) {
+        if (floor($playnumber / 10000) > 10000) {
+            $playnumber = floor($playnumber / 100000000) . " 亿";
+            goto playnumberfixenda;
+        }
+        $playnumber = floor($playnumber / 10000) . " 万";
+        playnumberfixenda:
+    }
+    echo "<div class='wmuishowerc'>";
+    echo "<a href='/video/$videonumber/'>";
+    echo "<img class='wmuishowerctop' src='/library/image/videotop/wv$videoread.png'></img>";
+    if (mb_strlen($title) > 16) {
+        echo "<div class='wmuishowerctitlel'>$title</div>";
+    } else {
+    echo "<div class='wmuishowerctitle'>$title</div>";
+    }
+    echo "<div class='wmuishowercplaycount'>播放 $playnumber 弹幕 $danmakunumber</div>";
+    echo "<div class='wmuishowercupmaster'>UP : $uploadmaster</div></a>";
+    echo "</div><br><br><br><br><br><br><br>";
+    offechooutlinea:
+    $videoread = $videoread + 1;
+}
+echo "</td></tr></table>";
+echo "<table class='wmuishowerblockb'><tr><td>";
+$videoread = 5;
+while ($videoread<>$videoend) {
+    $videoinfofile = @ fopen("./video/wv$videoread/info.wmst", "r");
+    $title = @ fgets($videoinfofile);
+    $outputtime = @ fgets($videoinfofile);
+    $uploadmaster = @ fgets($videoinfofile);
+    $videonumber= @ fgets($videoinfofile);
+    @ fclose($videoinfofile);
+    $videonumber = str_replace(array("\r\n", "\r", "\n"), "", $videonumber);
+    $title = str_replace(array("\r\n", "\r", "\n"), "", $title);  
+    $outputtime = str_replace(array("\r\n", "\r", "\n"), "", $outputtime);  
+    $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
+    $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
+    $playnumber = @ fgets($countfile);
+    fclose($countfile);
+    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber=substr_count($danmakudata,"\n");
+    fclose($danmakufile);
+    if ($outputtime=="") {
+        goto offechooutlineb;
+    }
+    if ($playnumber > 10000) {
+        if (floor($playnumber / 10000) > 10000) {
+            $playnumber = floor($playnumber / 100000000) . " 亿";
+            goto playnumberfixendb;
+        }
+        $playnumber = floor($playnumber / 10000) . " 万";
+        playnumberfixendb:
+    }
+    echo "<div class='wmuishowerc'>";
+    echo "<a href='/video/$videonumber/'>";
+    echo "<img class='wmuishowerctop' src='/library/image/videotop/wv$videoread.png'></img>";
+    if (mb_strlen($title) > 16) {
+        echo "<div class='wmuishowerctitlel'>$title</div>";
+    } else {
+    echo "<div class='wmuishowerctitle'>$title</div>";
+    }
+    echo "<div class='wmuishowercplaycount'>播放 $playnumber 弹幕 $danmakunumber</div>";
+    echo "<div class='wmuishowercupmaster'>UP : $uploadmaster</div></a>";
+    echo "</div><br><br><br><br><br><br><br>";
+    offechooutlineb:
+    $videoread = $videoread + 1;
+}
+echo "</td></tr></table>";
 include("$wmsys_assetsr\wmui\wmuilasload.php");
 ?>

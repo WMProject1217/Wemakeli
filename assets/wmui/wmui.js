@@ -2,7 +2,9 @@
 console.log(`WMUI Version 0.8.11 Build 570
 By WMProject1217`);
 var bottombaruserlsn;
+bottombaruserlsn = 0;
 var debugval;
+debugval = 0;
 var notify = {
     show: function (title, content, duration, style) {
         duration = duration || 5;
@@ -34,8 +36,6 @@ var notify = {
         }
     }
 }
-bottombaruserlsn = 0;
-debugval = 1;
 function wmuishowbottombar(){
     document.getElementById("wmuibottombar").style.display="block";
     if (debugval==1) {
@@ -75,17 +75,23 @@ function wmuibottombaruserls() {
     }
     }
 }
-function wmuiwelcomemessage() {
+function WMUIWelcomeMessage() {
     var text;
+    var timescdata;
+    var tempa;
+    var tempb;
     if (location.pathname === "/") {
-        const now = new Date().getHours();
-        if (now > 4 && now <= 7) text = "早上好，今天也要继续努力喵~";
-        else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛？<br>不要久坐，多起来走动走动哦！";
-        else if (now > 11 && now <= 13) text = "中午了，工作了一个上午，现在是午餐时间！";
-        else if (now > 13 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
-        else if (now > 17 && now <= 19) text = "傍晚了！<br>窗外夕阳的景色很美丽呢，最美不过夕阳红～";
-        else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
-        else if (now > 21 && now <= 23) text = "晚安，各位前辈要好好休息哦。<br>不要背着吾辈偷偷熬夜啦~";
+        timescdata = WMUINowTimeSC();
+        tempa = timescdata.split("-");
+        tempb = tempa[3].split(":");
+        now = tempb[0];
+        if (now > 7 && now <= 16) text = "早上好，今天也要继续努力喵~";
+        else if (now > 16 && now <= 27) text = "上午好！工作顺利嘛？<br>不要久坐，多起来走动走动哦！";
+        else if (now > 27 && now <= 36) text = "中午了，工作了一个上午，现在是午餐时间！";
+        else if (now > 36 && now <= 47) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
+        else if (now > 47 && now <= 51) text = "傍晚了！<br>窗外夕阳的景色很美丽呢，最美不过夕阳红～";
+        else if (now > 51 && now <= 57) text = "晚上好，今天过得怎么样？";
+        else if (now > 57 && now <= 63) text = "晚安，各位前辈要好好休息哦。<br>不要背着吾辈偷偷熬夜啦~";
         else text = "晚安，各位前辈要好好休息哦。<br>不要背着吾辈偷偷熬夜啦~";
     } else if (document.referrer !== "") {
         const referrer = new URL(document.referrer),

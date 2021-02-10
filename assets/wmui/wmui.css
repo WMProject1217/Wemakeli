@@ -51,7 +51,7 @@ a{
     align-items:flex-end;
     flex-direction:column;
     width:100vw;
-    z-index:11;
+    z-index:2800;
     pointer-events:none;
     transition:all .5s;
     height:100vh;
@@ -87,6 +87,70 @@ a{
         transform:translate(0,0);
         margin-bottom:15px;
     }
+}
+.wmuishowerblock{
+    position:absolute;
+    left:0px;
+}
+.wmuishowerblocka{
+    position:absolute;
+    left:260px;
+}
+.wmuishowerblockb{
+    position:absolute;
+    left:520px;
+}
+.wmuishowerc{
+    position:absolute;
+    width:240px;
+    height:135px;
+}
+.wmuishowerctop{
+    position:absolute;
+    z-index:2700;
+    width:240px;
+    height:135px;
+}
+.wmuishowerctitle{
+    position:absolute;
+    z-index:2701;
+    color:#EE0000;
+    font-size:20px;
+    margin-top:65px;
+    width:240px;
+    height:37px;
+    text-shadow: 1px 1px 3px #000000;
+}
+.wmuishowerctitlel{
+    position:absolute;
+    word-wrap: break-word;
+    z-index:2701;
+    color:#EE0000;
+    font-size:20px;
+    margin-top:0px;
+    width:240px;
+    height:37px;
+    text-shadow: 1px 1px 3px #000000;
+}
+.wmuishowercplaycount{
+    position:absolute;
+    z-index:2701;
+    color:#EEEE00;
+    font-size:16px;
+    margin-top:90px;
+    width:240px;
+    height:24px;
+    text-shadow: 1px 1px 3px #000000;
+}
+.wmuishowercupmaster{
+    position:absolute;
+    z-index:2701;
+    color:#66CCFF;
+    font-size:16px;
+    margin-top:110px;
+    width:240px;
+    height:24px;
+    text-shadow: 1px 1px 3px #000000;
 }
 .wmuiheadbar{
     position: fixed;

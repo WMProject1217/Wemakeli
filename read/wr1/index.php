@@ -1,4 +1,5 @@
 ﻿<?php //By WMProject1217
+echo "<html>";
 include('../config.php');
 $wmui_backpath='../';
 $wmui_classnow='read';
@@ -20,10 +21,7 @@ echo "<head>";
 echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
 echo "<title>$title - $wmsys_name</title>";
 echo "</head>";
-echo "<body>";
-echo "<table class='pagedatamainl'>";
-echo "<tr>";
-echo "<td>";
+include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<h3>" . $title . "</h3>";
 echo "<div>" . $outputtime . " , " . $readnumber . " , 阅读 " . $playnumber . " , UP : " . $uploadmaster . "</div>";
 echo "<pre>";
@@ -43,11 +41,7 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
-    include('../pattern/wmui.php');
-    echo "</td>";
-    echo "</tr>";
-    echo "</table>";
-    echo "</body>";
+    include("$wmsys_assetsr\wmui\wmuilasload.php");
   }else{
     echo "<table border='1'>";
     echo "<tr>";
@@ -58,10 +52,6 @@ if (isset($_COOKIE["username"])){
     echo "</td>";
     echo "</tr>";
     echo "</table>";
-    include('../pattern/wmui.php');
-    echo "</td>";
-    echo "</tr>";
-    echo "</table>";
-    echo "</body>";
+    include("$wmsys_assetsr\wmui\wmuilasload.php");
   }
 ?>

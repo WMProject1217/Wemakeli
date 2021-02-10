@@ -1,24 +1,40 @@
 ﻿<?php //By WMProject1217
-include('../config.php');
-$wmui_classnow = "audio";
-$wmui_title = $wmsys_name;
-$wmui_jumpoffheadbar=1;
+echo "<html>";
 echo "<head>";
-echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
-echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
-echo "<title>音频列表_" . $wmsys_name . "</title>";
+include('./config.php');
+$wmui_classnow = "audio";
+$wmui_title = "音频列表 - $wmsys_name";
+$wmui_backpath = "../";
+$wmui_jumpoffheadbar = "1";
+echo "<title>$wmui_title</title>";
 echo "</head>";
-echo "<body>";
-echo "<table class='maindataindex'>";
-echo "<tr>";
-echo "<td>";
+include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<h3>音频列表</h3>";
 echo "<pre>";
-readfile('../main/wmst/audiolist.wmst');
+$audioread = -1;
+$audioendfile = @ fopen("./audioend.wmst", "r") or die("<title>Error 0x00000007</title>Error 0x00000007<br>Page data load unsuccessful.");
+$audioendun = fgets($audioendfile);
+fclose($audioendfile);
+$audioendsplit = explode(';',$audioendun);
+$audioend = $audioendsplit[0];
+while ($audioread<>$audioend) {
+    $audioinfofile = @ fopen("./wa$audioread/info.wmst", "r");
+    $title = @ fgets($audioinfofile);
+    $outputtime = @ fgets($audioinfofile);
+    $uploadmaster = @ fgets($audioinfofile);
+    $audionumber= @ fgets($audioinfofile);
+    @ fclose($audioinfofile);
+    $audionumber = str_replace(array("\r\n", "\r", "\n"), "", $audionumber);
+    $title = str_replace(array("\r\n", "\r", "\n"), "", $title);  
+    $outputtime = str_replace(array("\r\n", "\r", "\n"), "", $outputtime);  
+    $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);  
+    if ($outputtime=="") {
+        goto offechooutline;
+    }
+    echo "<a href='/audio/$audionumber/'>[wa$audioread]    $title [$outputtime][$uploadmaster]</a><br>";
+    offechooutline:
+    $audioread = $audioread + 1;
+}
 echo "</pre>";
-echo "</td>";
-echo "</tr>";
-echo "</table>";
-echo "</body>";
-include('../wmui/wmui.php');
+include("$wmsys_assetsr\wmui\wmuilasload.php");
 ?>

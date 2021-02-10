@@ -87,12 +87,12 @@ if ($wmui_classnow=="read") {
     echo "<echo class='wmuibottombargtd'>$langstr_WMUI_tabs_3</echo>";
     echo "</a>";
 }
-if ($wmui_classnow=="live") {
-    echo "<a href='$wmsys_sysroot/live/'>";
+if ($wmui_classnow=="life") {
+    echo "<a href='$wmsys_sysroot/life/'>";
     echo "<echo class='wmuibottombarfte'>$langstr_WMUI_tabs_4</echo>";
     echo "</a>";
 } else {
-    echo "<a href='$wmsys_sysroot/live/'>";
+    echo "<a href='$wmsys_sysroot/life/'>";
     echo "<echo class='wmuibottombargte'>$langstr_WMUI_tabs_4</echo>";
     echo "</a>";
 }

@@ -114,14 +114,8 @@ Rhapsody n. 狂言；狂文；狂想曲
 Meteoric adj. 流星的；大气的 ; 雾雨魔理沙技能 Meteoric Debris
 Debris n. 碎片；残骸 ; 雾雨魔理沙技能 Meteoric Debris 
 Radial adj 光线的；放射状的 ; 雾雨魔理沙特殊技 Radial Strike
-
-Bosky adj. 有丛林的；矮林丛生的
-
-雾雨魔理沙特殊技 Bosky Sweeper
-
-Propelling（propel） adj. 推进的
-
-十六夜咲夜特殊技 Propelling Silver
+Bosky adj. 有丛林的；矮林丛生的 ; 雾雨魔理沙特殊技 Bosky Sweeper
+Propelling（propel） adj. 推进的 ; 十六夜咲夜特殊技 Propelling Silver
 
 Ricochet v. 弹飞；跳射 n. 跳飞
 
