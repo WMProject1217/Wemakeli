@@ -765,7 +765,7 @@ if (isset($_GET['view'])) {
     ?>
     <div class="path">
     <?php
-    echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.min.js'></script>";
+    echo "<script src='$wmsys_sysroot/main/js/jquery-3.4.1.js'></script>";
     echo "<script src='$wmsys_sysroot/main/js/wmui.js'></script>";
     ?>
         <p class="break-word"><b><?php echo $view_title ?> "<?php echo fm_enc(fm_convert_win($file)) ?>"</b></p>
@@ -1698,7 +1698,7 @@ function fm_show_nav_path($path)
 function fm_show_message()
 {
     include('./config.php');
-    echo "<script src='$wmsys_assets/js/jquery-3.4.1.min.js'></script>";
+    echo "<script src='$wmsys_assets/js/jquery-3.4.1.js'></script>";
     echo "<script src='$wmsys_assets/wmui/wmui.js'></script>";
     if (isset($_SESSION['message'])) {
         $class = isset($_SESSION['status']) ? $_SESSION['status'] : 'success';

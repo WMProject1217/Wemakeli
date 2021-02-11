@@ -13,8 +13,8 @@ echo "<h3>视频列表</h3>";
 echo "<pre>";
 $videoread = -1;
 $videoendfile = @ fopen("./videoend.wmst", "r") or die("<title>Error 0x00000007</title>Error 0x00000007<br>Page data load unsuccessful.");
-$videoendun = fgets($videoendfile);
-fclose($videoendfile);
+$videoendun = @ fgets($videoendfile);
+@ fclose($videoendfile);
 $videoendsplit = explode(';',$videoendun);
 $videoend = $videoendsplit[0];
 while ($videoread<>$videoend) {

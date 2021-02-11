@@ -20,7 +20,7 @@ $asser = date("Y-m-d H:i:s");
     text-shadow: 1px 1px 3px #EE0000;
 }
 </style>
-<table class='debug' border='1' style='display:block;'>
+<table class='debug' border='1' style='display:none;'>
 <tr>
 <td>
 <h3>Debug</h3>
@@ -134,11 +134,11 @@ while ($videoread<>2) {
     $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
     $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
     $playnumber = @ fgets($countfile);
-    fclose($countfile);
-    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
-    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
-    $danmakunumber=substr_count($danmakudata,"\n");
-    fclose($danmakufile);
+    @ fclose($countfile);
+    $danmakufile = @ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata = @ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber = @ substr_count($danmakudata,"\n");
+    @ fclose($danmakufile);
     if ($outputtime=="") {
         goto offechooutline;
     }
@@ -180,11 +180,11 @@ while ($videoread<>5) {
     $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
     $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
     $playnumber = @ fgets($countfile);
-    fclose($countfile);
-    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
-    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
-    $danmakunumber=substr_count($danmakudata,"\n");
-    fclose($danmakufile);
+    @ fclose($countfile);
+    $danmakufile = @ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata = @ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber = @ substr_count($danmakudata,"\n");
+    @ fclose($danmakufile);
     if ($outputtime=="") {
         goto offechooutlinea;
     }
@@ -210,7 +210,7 @@ while ($videoread<>5) {
     offechooutlinea:
     $videoread = $videoread + 1;
 }
-echo "</td></tr></table>";
+echo "<br><br></td></tr></table>";
 echo "<table class='wmuishowerblockb'><tr><td>";
 $videoread = 5;
 while ($videoread<>$videoend) {
@@ -226,11 +226,11 @@ while ($videoread<>$videoend) {
     $uploadmaster = str_replace(array("\r\n", "\r", "\n"), "", $uploadmaster);
     $countfile = @ fopen("./video/wv$videoread/count.wmst", "r");
     $playnumber = @ fgets($countfile);
-    fclose($countfile);
-    $danmakufile =@ fopen("./video/wv$videoread/danmaku.wml", "r");
-    $danmakudata=@ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
-    $danmakunumber=substr_count($danmakudata,"\n");
-    fclose($danmakufile);
+    @ fclose($countfile);
+    $danmakufile = @ fopen("./video/wv$videoread/danmaku.wml", "r");
+    $danmakudata = @ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
+    $danmakunumber = @ substr_count($danmakudata,"\n");
+    @ fclose($danmakufile);
     if ($outputtime=="") {
         goto offechooutlineb;
     }
@@ -256,6 +256,6 @@ while ($videoread<>$videoend) {
     offechooutlineb:
     $videoread = $videoread + 1;
 }
-echo "</td></tr></table>";
+echo "<br><br></td></tr></table>";
 include("$wmsys_assetsr\wmui\wmuilasload.php");
 ?>

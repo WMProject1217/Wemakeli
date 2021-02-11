@@ -3,8 +3,6 @@ console.log(`WMUI Version 0.8.11 Build 570
 By WMProject1217`);
 var bottombaruserlsn;
 bottombaruserlsn = 0;
-var debugval;
-debugval = 0;
 var notify = {
     show: function (title, content, duration, style) {
         duration = duration || 5;
@@ -19,60 +17,33 @@ var notify = {
     },
     success: function (title, content, duration) {
         this.show(title, content, duration, 'background: #13af17;');
-        if (debugval==1) {
-            console.log(`Debug : notify success `+title+" "+content);
-        }
     },
     warning: function (title, content, duration) {
         this.show(title, content, duration, 'background: #e28525;');
-        if (debugval==1) {
-            console.log(`Debug : notify warning `+title+" "+content);
-        }
     },
     error: function (title, content, duration) {
         this.show(title, content, duration, 'background: #fa4a44;');
-        if (debugval==1) {
-            console.log(`Debug : notify error `+title+" "+content);
-        }
     }
 }
 function wmuishowbottombar(){
     document.getElementById("wmuibottombar").style.display="block";
-    if (debugval==1) {
-    console.log(`Debug : function wmuishowbottombar()`);
-    }
 }
 function wmuihidebottombar(){
     document.getElementById("wmuibottombar").style.display="none";
-    if (debugval==1) {
-    console.log(`Debug : function wmuihidebottombar()`);
-    }
 }
 function wmuishowheadbar(){
     document.getElementById("wmuiheadbar").style.display="block";
-    if (debugval==1) {
-    console.log(`Debug : function wmuishowheadbar()`);
-    }
 }
 function wmuihideheadbar(){
     document.getElementById("wmuiheadbar").style.display="none";
-    if (debugval==1) {
-    console.log(`Debug : function wmuihideheadbar()`);
-    }
 }
 function wmuibottombaruserls() {
     if (bottombaruserlsn==0) {
     bottombaruserlsn = 1;
     document.getElementById("wmuibottombaruserls").style.display="block";
-    if (debugval==1) {
-    console.log(`Debug : function wmuibottombaruserls() show`);
-    }
     } else {
     bottombaruserlsn = 0;
     document.getElementById("wmuibottombaruserls").style.display="none"; 
-    if (debugval==1) {
-    console.log(`Debug : function wmuibottombaruserls() hide`);
-    }
     }
 }
 function WMUIWelcomeMessage() {
@@ -103,9 +74,6 @@ function WMUIWelcomeMessage() {
         else text = `Hello！来自 <span>${referrer.hostname}</span> 的朋友`;
     } else {
         text = `欢迎来到 Wemakeli!`;
-    }
-    if (debugval==1) {
-        console.log(`Debug : function welcomemessage() `+text);
     }
     notify.success('Wemakeli 弹幕视频网', text ,8);
 }

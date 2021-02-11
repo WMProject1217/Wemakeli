@@ -13,8 +13,8 @@ echo "<h3>音频列表</h3>";
 echo "<pre>";
 $audioread = -1;
 $audioendfile = @ fopen("./audioend.wmst", "r") or die("<title>Error 0x00000007</title>Error 0x00000007<br>Page data load unsuccessful.");
-$audioendun = fgets($audioendfile);
-fclose($audioendfile);
+$audioendun = @ fgets($audioendfile);
+@ fclose($audioendfile);
 $audioendsplit = explode(';',$audioendun);
 $audioend = $audioendsplit[0];
 while ($audioread<>$audioend) {

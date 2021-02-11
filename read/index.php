@@ -13,8 +13,8 @@ echo "<h3>专栏列表</h3>";
 echo "<pre>";
 $readread = -1;
 $readendfile = @ fopen("./readend.wmst", "r") or die("<title>Error 0x00000007</title>Error 0x00000007<br>Page data load unsuccessful.");
-$readendun = fgets($readendfile);
-fclose($readendfile);
+$readendun = @fgets($readendfile);
+@ fclose($readendfile);
 $readendsplit = explode(';',$readendun);
 $readend = $readendsplit[0];
 while ($readread<>$readend) {
