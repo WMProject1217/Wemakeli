@@ -58,6 +58,7 @@ if ($ert[3]=="pm") {
 */
 ?>
 <script>
+/*
 window.onload=function(){
 NowTimeSC();
 setInterval("NowTimeSC()",16);
@@ -99,16 +100,16 @@ n = m / 64 + 1616;
 m = (n - parseInt(n)) * 64;
 n = parseInt(n);
 document.getElementById("wmuisctimeblock").innerHTML="Time : [SC]"+n+"年"+m+"月"+l+"日  "+k+":"+j+":"+i+":"+h;
-}
+}*/
 WMUIWelcomeMessage();
 notify.success('Buy Indihome now','IndiHome Paket Streamix<br>10 Mbps Rp320.000<br>20 Mbps Rp385.000<br>50 Mbps Rp615.000<br>100 Mbps Rp957.000' ,-1);
 </script>
-<?php
+<!--?php
 echo "用户端应用程序 : " . $_SERVER['HTTP_USER_AGENT'] . "<br>";
 echo "用户访问时 IP : " .  $_SERVER['REMOTE_ADDR'] . "<br>";
 echo "用户访问时端口 : " .  $_SERVER['REMOTE_PORT'] . "<br>";
 echo "用户页面跳转 : " .  $_SERVER['HTTP_REFERER'] . "<br>";
-?>
+?-->
 <br><br><br><br><br><br><br>
 </td>
 </tr>

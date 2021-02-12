@@ -150,6 +150,21 @@ function WMUIHeadbarNowTimeSC(){
     n = parseInt(n);
     document.getElementById("wmuiheadbartimeblock").innerHTML="[SC]"+n+"年"+m+"月"+l+"日  "+k+":"+j;
 }
+function WMUIHTTPPost(URL, PARAMS) {
+    var temp = document.createElement("form");
+    temp.action = URL;
+    temp.method = "post";
+    temp.style.display = "none";
+    for (var x in PARAMS) {
+        var opt = document.createElement("textarea");
+        opt.name = x;
+        opt.value = PARAMS[x];
+        temp.appendChild(opt);
+    }
+    document.body.appendChild(temp);
+    temp.submit();
+    return temp;
+}
 function WMUIBALLABOUT(){
     notify.success('Wemakeli Project', '欢迎来到Wemakeli!',7);
     notify.warning('Wemakeli Project', '欢迎来到Wemakeli!',7);

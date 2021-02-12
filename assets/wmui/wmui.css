@@ -171,6 +171,12 @@ a {
     text-shadow: 1px 1px 3px #000000;
 }
 
+.wmuiaslinkm {
+    color: #1db4ff;
+    cursor: pointer;
+    transition-duration: .1s
+}
+
 .wmuiheadbar {
     position: fixed;
     background-color: #000000;
@@ -483,76 +489,6 @@ a {
     background: rgba(246, 246, 246, 0.520);
 }
 
-.logonpagela {
-    position: fixed;
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: left;
-    font-size: 30px;
-    top: 12%;
-    left: 2%;
-    height: 54px;
-    width: 30%;
-}
-
-.logonpagelb {
-    position: fixed;
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: left;
-    font-size: 30px;
-    top: 23%;
-    left: 2%;
-    height: 54px;
-    width: 30%;
-}
-
-.logonpagelc {
-    position: fixed;
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: left;
-    font-size: 30px;
-    top: 34%;
-    left: 2%;
-    height: 54px;
-    width: 30%;
-}
-
-.logonpageuserimage {
-    position: fixed;
-    top: 12%;
-    left: 34%;
-    height: 40%;
-    width: 21%;
-}
-
-.logonpageuseruid {
-    position: fixed;
-    font-size: 22px;
-    top: 12%;
-    left: 57%;
-    height: 54px;
-    width: 41%;
-}
-
-.logonpageuserpassword {
-    position: fixed;
-    font-size: 22px;
-    top: 23%;
-    left: 57%;
-    height: 54px;
-    width: 41%;
-}
-
-.logonpagelogonbutton {
-    position: fixed;
-    top: 34%;
-    left: 78%;
-    height: 54px;
-    width: 20%;
-}
-
 .mdi {
     display: inline-block;
     font-family: "Material Design Icons";
@@ -571,14 +507,6 @@ code,code * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-/*body {
-    margin: 0;
-    font-size: 1.6rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #FAFAFA;
-}*/
 
 .padding-limiter {
     padding-left: 15%;
@@ -819,6 +747,61 @@ code,code * {
     .wmlogon .wtf-fix {
         margin-right: 6%!important
     }
+}
+
+.joinaddlevel .title {
+    color:#00FFCC;
+    text-shadow: 1px 1px 10px rgba(255,255,255,0.48);
+    margin: 0;
+    padding: 10px 30px 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent!important;
+    font-size: 1.5em;
+    margin-top: -3px;
+    margin-right: 15px;
+}
+
+.joinaddlevel input {
+    margin-left: 10px;
+    border: none;
+    -webkit-appearance: none;
+    outline: 0;
+    font-size: 14px;
+    color: #222;
+    padding: 3px 5px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.joinaddlevel input:hover {
+    border-color: #aaa;
+}
+
+.joinaddlevel input:focus {
+    border-color: #999;
+}
+
+.joinaddlevel input::placeholder {
+    color: #999;
+}
+
+.joinaddlevel label {
+    color: #66CCFF;
+    overflow: hidden;
+    padding: 3px;
+    font-size: 14px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.joinaddlevel .control-group {
+    display: flex;
+    padding: 15px 40px;
 }
 
 @keyframes noise-anim {

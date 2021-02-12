@@ -11,7 +11,11 @@ echo "<table class='wmuiheadbar' id='wmuiheadbar'>";
 echo "<tr>";
 echo "<td>";
 if ($wmui_classnow<>"mainpage") {
+    if ($_SERVER['HTTP_REFERER']<>"") {
+        echo "<a class='wmuiheadbarbackbutton' href='" . $_SERVER['HTTP_REFERER'] . "'><</a>";
+    } else {
     echo "<a class='wmuiheadbarbackbutton' href='$wmui_backpath'><</a>";
+    }
     echo "<a class='wmuiheadbartimeblock' id='wmuiheadbartimeblock'>See this text means js error</a>";
 }
 echo "<div class='wmuiheadbartitle'>$wmui_title</div>";
