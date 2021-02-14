@@ -6,8 +6,15 @@
  *
  * 版本2.0 2015/08/12
  */
-
-
+/*Fixed for Wemakeli , By WMProject1217 , On 2021-02-13*/
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
 ;
 (function ($) {
 
@@ -68,8 +75,13 @@
         this.$ctrlMain.append('<div class="slash time-text ctrl-btn">/</div>');
         this.$ctrlMain.append('<div class="duration ctrl-btn time-text" >0:00</div>');
         this.$ctrlMain.append('<div class="opt-btn ctrl-btn " ><span class="glyphicon glyphicon-text-color" aria-hidden="true"></div>');
-        this.$ctrlMain.append('<input class="danmu-input ctrl-btn"   type="textarea" id="danmu_text" max=300 />'); // -> button あ
-        this.$ctrlMain.append('<div class=" send-btn  ctrl-btn"  >发送 ></div>');
+        var tmp=getCookie("username");
+        if (!tmp && typeof(tmp)!="undefined" && tmp!=0) {
+            //alert('由于没有登录，弹幕发送已经锁定');
+        } else {
+            this.$ctrlMain.append('<input class="danmu-input ctrl-btn"   type="textarea" id="danmu_text" max=300 />'); // -> button あ
+            this.$ctrlMain.append('<div class=" send-btn  ctrl-btn"  >发送 ></div>');
+        }
         this.$ctrlMain.append('<div class="full-screen   ctrl-btn-right"><span class=" glyphicon glyphicon-resize-full" aria-hidden="true"></span></div>');
         this.$ctrlMain.append('<div class="loop-btn   ctrl-btn-right"><span class="glyphicon glyphicon-retweet" aria-hidden="true"></span></div>');
         this.$ctrlMain.append('<div class="show-danmu  ctrl-btn-right ctrl-btn-right-active"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></div>');

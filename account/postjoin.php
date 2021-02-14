@@ -4,6 +4,7 @@ echo "页面Tag : 注册 - Wemakeli<br>";
 echo "POST 数据<br>";
 echo "username : " . $_POST['username'] . "<br>";
 echo "password : " . $_POST['password'] . "<br>";
+echo "backpath : " . $_POST['backpath'] . "<br>";
 echo "用户数据<br>";
 echo "用户端应用程序 : " . $_SERVER['HTTP_USER_AGENT'] . "<br>";
 echo "用户访问时 IP : " .  $_SERVER['REMOTE_ADDR'] . "<br>";

@@ -13,4 +13,10 @@ echo "<script src='$wmsys_assets/wmui/wmui.js'></script>";
 echo "<link rel='stylesheet' href='$wmsys_assets/wmui/wmui.css'>";
 echo "<link href='$wmsys_sysroot/favicon.ico' rel='icon' type='image/ico'>";
 include("$wmsys_assetsr/language/lang$wmsys_lang.php");
+if (isset($_COOKIE["username"])){
+    $wmsys_userlogon="1";
+    $wmsys_username=$_COOKIE['username'];
+    $wmsys_useruid=$_COOKIE['useruid'];
+    $wmsys_userfolder=$wmsys_sysroot . "/user/$wmsys_useruid";
+}
 ?>

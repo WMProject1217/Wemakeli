@@ -77,11 +77,7 @@ if (isset($_COOKIE["username"])){
   echo "</td>";
   echo "</tr>";
   echo "</table>";
-  include('../pattern/wmui.php');
-  echo "</td>";
-  echo "</tr>";
-  echo "</table>";
-  echo "</body>";
+  include("$wmsys_assetsr\wmui\wmuilasload.php");
 }else{
   echo "<table>";
   echo "<tr>";

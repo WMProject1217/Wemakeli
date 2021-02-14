@@ -11,7 +11,7 @@ include("$wmsys_assetsr\wmui\wmuifirload.php");
 [狗头]
 <a href='./yuzu/'>合成大柚子</a><br>
 [狗头]
-<a href='./wm0/'>[WM00]普通的游戏</a><br>
+<a href='./wm0/'>[WM00] Retworld for PHP</a><br>
 <?php
 include("$wmsys_assetsr\wmui\wmuilasload.php");
 echo "<script>window.onload=function(){";

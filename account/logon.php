@@ -35,7 +35,8 @@ userlogon();
 function userlogon(){
 var params = {
     "username": $('#username').val(),
-    "password": $('#password').val()
+    "password": $('#password').val(),
+    "backpath": document.referrer
 };
     WMUIHTTPPost("./postlogon.php", params);
 }

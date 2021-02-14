@@ -36,7 +36,8 @@ userjoin();
 function userjoin(){
 var params = {
     "username": $('#username').val(),
-    "password": $('#password').val()
+    "password": $('#password').val(),
+    "backpath": document.referrer
 };
     WMUIHTTPPost("./postjoin.php", params);
 }
