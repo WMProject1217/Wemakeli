@@ -102,7 +102,7 @@ n = parseInt(n);
 document.getElementById("wmuisctimeblock").innerHTML="Time : [SC]"+n+"年"+m+"月"+l+"日  "+k+":"+j+":"+i+":"+h;
 }*/
 WMUIWelcomeMessage();
-notify.success('Wemakeli 弹幕视频网','<p><span style="background-color: #FAF20B;" class="glitch_p">「<span class="glitch">Welcome to Wemakeli</span>」</span> </p>',7)
+notify.success('Wemakeli 弹幕视频网','<p><span style="background-color: #FAF20B;" class="glitch_p">「<span class="glitch">Welcome to Wemakeli</span>」</span> </p>',8)
 notify.success('Buy Indihome now','IndiHome Paket Streamix<br>10 Mbps Rp320.000<br>20 Mbps Rp385.000<br>50 Mbps Rp615.000<br>100 Mbps Rp957.000' ,-1);
 </script>
 <!--?php

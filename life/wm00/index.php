@@ -117,5 +117,11 @@ echo "WMUIHeadbarNowTimeSC();";
 echo "setInterval('WMUIHeadbarNowTimeSC()',256);";
 echo "}</script>";
 }
+function wmexsr0(){
+    /*
+    故事内容
+    eeeeee
+    */
+}
 sysendall:
 ?>

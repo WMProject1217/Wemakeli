@@ -18,7 +18,7 @@ echo "<table class='topline'>";
 echo "<tr>";
 echo "<td>";
 echo "<a href='" . $wmsys_address . "'>";
-echo "<img src=' $wmsys_address/main/picture/website/titleimage.png' class='websitetitleimage' title='$websitename' alt='$websitename'></img>";
+echo "<img src='titleimage.png' class='websitetitleimage' title='$websitename' alt='$websitename'></img>";
 echo "</a>";
 echo "<a href='" . $wmsys_address . "'>";
 echo "<input name='主页' type='button' class='topline_websitemain' title='主页' value='主页'>";
@@ -45,7 +45,7 @@ echo "<td>";
 if (isset($_COOKIE["username"])){
   $username=$_COOKIE['username'];
   echo "<a href='" . $wmsys_address . "/user/$useruid/index.php'>";
-  echo "<img src='$userimage' class='toplineuserimage' title='$username' alt='$username'></img>";
+  echo "<img src='user.png' class='toplineuserimage' title='$username' alt='$username'></img>";
   echo "<echo class=toplineecho>$username</echo>";
   echo "</a>";
   echo "<a href='" . $wmsys_address . "/accout/message.php'>";

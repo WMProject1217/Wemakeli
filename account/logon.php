@@ -19,28 +19,6 @@ include("$wmsys_assetsr\wmui\wmuifirload.php");
     width: 35px;
 }
 </style>
-<script>
-function logontest() {
-if (!$('#username').val()) {
-    notify.warning('错误', '请输入用户名',7);
-    return;
-}
-if (!$('#password').val()) {
-    notify.warning('错误', '请输入密码',7);
-    return;
-}
-$(this).attr('disabled', true).html('登录中...');
-userlogon();
-}
-function userlogon(){
-var params = {
-    "username": $('#username').val(),
-    "password": $('#password').val(),
-    "backpath": document.referrer
-};
-    WMUIHTTPPost("./postlogon.php", params);
-}
-</script>
 <div id="app" class="wmlogon">
     <div class="main padding-limiter">
         <div class="panel login-panel">
@@ -74,6 +52,38 @@ var params = {
         </div>
     </div>
 </div>
+<script>
+function logontest() {
+if (!$('#username').val()) {
+    notify.warning('错误', '请输入用户名',7);
+    return;
+}
+if (!$('#password').val()) {
+    notify.warning('错误', '请输入密码',7);
+    return;
+}
+$(this).attr('disabled', true).html('登录中...');
+userlogon();
+}
+function userlogon(){
+var params = {
+    "username": $('#username').val(),
+    "password": $('#password').val(),
+    "backpath": document.referrer
+};
+    WMUIHTTPPost("./postlogon.php", params);
+}
+<?php
+if ($_POST['active']=="ERROR") {
+    if ($_POST['string']<>"") {
+        echo "notify.warning('错误', '". $_POST['string'] . "',7);";
+        if ($_POST['username']<>"") {
+            echo 'document.getElementById("username").value = "' . $_POST['username'] . '";';
+        }
+    }
+}
+?>
+</script>
 <?php
 include("$wmsys_assetsr\wmui\wmuilasload.php");
 echo "<div class='wmuibackgrounda'></div>";

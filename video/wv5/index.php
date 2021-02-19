@@ -28,6 +28,8 @@ echo "<link href='$wmsys_assets/css/colpick.css' rel='stylesheet'>";
 echo "<link href='$wmsys_assets/css/bootstrap.css' rel='stylesheet'>";
 echo "<link rel='stylesheet' href='$wmsys_assets/css/main.css'>";
 echo "<title>$title - $wmsys_name</title>";
+echo "<link rel='stylesheet' href='$wmsys_assets/css/aliplayer.css'/>";
+echo "<script type='text/javascript' charset='utf-8' src='$wmsys_assets/js/aliplayer.js'></script>";
 echo "</head>";
 include("$wmsys_assetsr\wmui\wmuifirload.php");
 echo "<h3>" . $title . "</h3>";
@@ -49,19 +51,19 @@ echo "</td>";
 echo "</tr>";
 echo "</table>";*/
 ?>
-
-<div id="danmup" style="left: 2%;/*margin-left:-400px;*/">
-
-</div>
-<div style="display: none">
-  <span class="glyphicon" aria-hidden="true">&#xe072</span>
-  <span class="glyphicon" aria-hidden="true">&#xe073</span>
-  <span class="glyphicon" aria-hidden="true">&#xe242</span>
-  <span class="glyphicon" aria-hidden="true">&#xe115</span>
-  <span class="glyphicon" aria-hidden="true">&#xe111</span>
-  <span class="glyphicon" aria-hidden="true">&#xe096</span>
-  <span class="glyphicon" aria-hidden="true">&#xe097</span>
-</div>
+<div id="player-con"></div>
+<script>
+  var player = new Aliplayer({
+    id: "player-con",
+    source: "video.mp4",
+    width: "100%",
+    height: "500px",
+    cover: '/library/image/videotop/wv5.png',
+    autoplay: false,
+    preload: false,
+    isLive: false
+  });
+</script>
 <?php
 //td.talk
 if (isset($_COOKIE["username"])){
@@ -91,32 +93,4 @@ if (isset($_COOKIE["username"])){
   include("$wmsys_assetsr\wmui\wmuilasload.php");
 }
 ?>
-<script src="<?php echo $wmsys_assets?>/js/jquery-2.1.4.min.js"></script>
-<script src="<?php echo $wmsys_assets?>/js/jquery.shCircleLoader.js"></script>
-<script src="<?php echo $wmsys_assets?>/js/sco.tooltip.js"></script>
-<script src="<?php echo $wmsys_assets?>/js/colpick.js"></script>
-<script src="<?php echo $wmsys_assets?>/js/jquery.danmu.js"></script>
-<script src="<?php echo $wmsys_assets?>/js/main.js"></script>
-<script>
-
-$("#danmup").DanmuPlayer({
-    src:"video.mp4",
-    height: "480px", //区域的高度
-    width: "800px" //区域的宽度
-    ,urlToGetDanmu:"<?php echo $wmsys_address?>/video/<?php echo $videonumber?>/query.php"
-    ,urlToPostDanmu:"<?php echo $wmsys_address?>/video/<?php echo $videonumber?>/stone.php"
-  });
-
-  $("#danmup .danmu-div").danmu("addDanmu",[
-    <?php
-    $danmakufile = @ fopen("danmaku.wml", "r") or die("])");
-    echo ",";
-    while(!feof($danmakufile)) {
-    print fgets($danmakufile) . ",";
-  
-}
-fclose($danmakufile);
-    ?>
-  ])
-</script>
 </html>

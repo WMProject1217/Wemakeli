@@ -9,30 +9,78 @@ $wmui_backpath = "../";
 echo "<title>$wmui_title</title>";
 echo "</head>";
 include("$wmsys_assetsr\wmui\wmuifirload.php");
-/*
-echo "肥肠抱歉，此页面暂时遇到鸡术问题，请稍后再藏试访问<br><h3>调试信息</h3>";
-echo "页面Tag : 登录 - Wemakeli<br>";
-echo "POST 数据<br>";
-echo "username : " . $_POST['username'] . "<br>";
-echo "password : " . $_POST['password'] . "<br>";
-echo "backpath : " . $_POST['backpath'] . "<br>";
-echo "用户数据<br>";
-echo "用户端应用程序 : " . $_SERVER['HTTP_USER_AGENT'] . "<br>";
-echo "用户访问时 IP : " .  $_SERVER['REMOTE_ADDR'] . "<br>";
-echo "用户访问时端口 : " .  $_SERVER['REMOTE_PORT'] . "<br>";
-echo "用户页面跳转 : " .  $_SERVER['HTTP_REFERER'] . "<br>";
-echo "错误代码<br>";
-echo "<b>Fatal error</b>:  Uncaught Error: Call to undefined function logonofuser() in C:\Wemakeli\account\postlogon.php:14
-Stack trace:
-#0 {main}
-  thrown in <b>C:\Wemakeli\account\postlogon.php</b> on line <b>114514</b><br>";
-  */
-echo "肥肠抱歉，此页面暂时遇到鸡术问题，密码校验舞法执行，蒸菜修复此页面，在此之前将会纸接登录<br>";
-setcookie("username",$_POST['username'],time()+16777215,'/');
-setcookie("useraccout",$_POST['username'],time()+16777215,'/');
-setcookie("useruid","-1",time()+16777215,'/');
+$username=$_POST['username'];
+$password=$_POST['password'];
+$backpath=$_POST['backpath'];
+if($username=='rootadmin'){
+    echo"<meta http-equiv='refresh' content=0;url='/account/rootadmin.php'>";
+}else{
+$userdb= fopen("$wmsys_dbrootw/user/index.wmst", "r") or die("<meta http-equiv='refresh' content=128;url='/error/nouserdb.html'>");
+while(!feof($userdb)) {
+    $userutil=@ fgets($userdb);
+    $userlineg=explode(';',$userutil);
+    $userline=explode('=',$userlineg[0]);
+    if($userline[1]=="$username"){
+        $passwordck=$userline[2];
+        $passwordsha1=sha1($password);
+        if($passwordsha1 <> $passwordck){
+            echo "密码错误，请重新登录<br>";
+            echo $passwordck . "<br>";
+            echo $passwordsha1 . "<br>";
+            echo "如果浏览器未响应，请<a href='./accoutlogin.php'>单击此处</a>";
+            echo "<script>
+            var params = {
+            'active': 'ERROR',
+            'string': '密码错误，请重新登录',
+            'username' : '" . $_POST['username'] . "'
+            };
+            WMUIHTTPPost('./logon.php', params);
+            </script>";
+            goto expsk;
+        }else{
+            $useruid=$userline[0];
+            $usernamed=@ fopen("$wmsys_dbrootw/user/$useruid/settings.wmst", "r");
+            $userturename=@ fgets($usernamed);
+            @ fclose($usernamed);
+            setcookie("username",$userturename,time()+16777215,'/');
+            setcookie("useraccout",$userline[1],time()+16777215,'/');
+            setcookie("useruid",$useruid,time()+16777215,'/');
+            goto edxkx;
+        }
+    }else{
+        goto contrack;
+    }
+    contrack:
+}
+echo "用户不存在，请重新登录<br>";
+echo "如果浏览器未响应，请<a href='./accoutlogin.php'>单击此处</a><br>";
+//echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
+expsk:
+fclose($userdb);
+goto ends;
+}
+edxkx:
+echo "登录成功<br>";
+echo "如果浏览器未响应，请<a href='../index.php'>单击此处</a>";
+if ($backpath <> "") {
+    if (stripos($backpath,"postlogon.php") == false) {
+        echo "<meta http-equiv='refresh' content=0;url='$backpath'>";
+    } else {
+        echo "<meta http-equiv='refresh' content=0;url='$wmui_backpath'>";
+    }
+} else {
+    echo "<meta http-equiv='refresh' content=0;url='$wmui_backpath'>";
+}
+ends:
+
+//echo "肥肠抱歉，此页面暂时遇到鸡术问题，密码校验舞法执行，蒸菜修复此页面，在此之前将会纸接登录<br>";
+echo "肥肠抱歉，此页面暂时遇到鸡术问题，蒸菜修复此页面<br>";
+//setcookie("username",$_POST['username'],time()+16777215,'/');
+//setcookie("useraccout",$_POST['username'],time()+16777215,'/');
+//setcookie("useruid","-1",time()+16777215,'/');
 echo "<a href='" . $_POST['backpath'] . "'>如果浏览器未响应，请单击此处</a>";
 //echo "<meta http-equiv='refresh' content=0;url='" . $_POST['backpath'] . "'>";
+echo $WMDC_DEV_1;
 include("$wmsys_assetsr\wmui\wmuilasload.php");
 //echo "<div class='wmuibackgrounda'></div>";
 echo "<script>window.onload=function(){";
