@@ -4,7 +4,27 @@ echo "<head>";
 include('../config.php');
 $wmui_classnow = "logon";
 $wmui_title = "登录 - $wmsys_name";
-$wmui_backpath = "../";
+if ($_POST['backpath'] <> "") {
+    if (stripos($backpath,"postlogon.php") == false) {
+        if (stripos($backpath,"postjoin.php") == false) {
+            $wmui_backpath = $_POST['backpath'];
+        } else {
+            $wmui_backpath = "../";
+        }
+    } else {
+        $wmui_backpath = "../";
+    }
+} else {
+    if (stripos($_SERVER['HTTP_REFERER'],"postlogon.php") == false) {
+        if (stripos($_SERVER['HTTP_REFERER'],"postjoin.php") == false) {
+            $wmui_backpath = $_SERVER['HTTP_REFERER'];
+        } else {
+            $wmui_backpath = "../";
+        }
+    } else {
+        $wmui_backpath = "../";
+    }
+}
 //$wmui_opacityui = 1;
 echo "<title>$wmui_title</title>";
 echo "</head>";
@@ -19,6 +39,7 @@ include("$wmsys_assetsr\wmui\wmuifirload.php");
     width: 35px;
 }
 </style>
+
 <div id="app" class="wmlogon">
     <div class="main padding-limiter">
         <div class="panel login-panel">
@@ -52,6 +73,7 @@ include("$wmsys_assetsr\wmui\wmuifirload.php");
         </div>
     </div>
 </div>
+
 <script>
 function logontest() {
 if (!$('#username').val()) {
@@ -69,7 +91,7 @@ function userlogon(){
 var params = {
     "username": $('#username').val(),
     "password": $('#password').val(),
-    "backpath": document.referrer
+    "backpath": '<?php echo $wmui_backpath ;?>'
 };
     WMUIHTTPPost("./postlogon.php", params);
 }

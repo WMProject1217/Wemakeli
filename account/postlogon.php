@@ -5,7 +5,6 @@ include('../config.php');
 $wmui_classnow = "logon";
 $wmui_title = "登录 - $wmsys_name";
 $wmui_backpath = "../";
-//$wmui_opacityui = 1;
 echo "<title>$wmui_title</title>";
 echo "</head>";
 include("$wmsys_assetsr\wmui\wmuifirload.php");
@@ -15,7 +14,7 @@ $backpath=$_POST['backpath'];
 if($username=='rootadmin'){
     echo"<meta http-equiv='refresh' content=0;url='/account/rootadmin.php'>";
 }else{
-$userdb= fopen("$wmsys_dbrootw/user/index.wmst", "r") or die("<meta http-equiv='refresh' content=128;url='/error/nouserdb.html'>");
+$userdb= fopen("$wmsys_dbrootw/user/index.wmst", "r") or die("<meta http-equiv='refresh' content=0;url='/error/nouserdb.html'>");
 while(!feof($userdb)) {
     $userutil=@ fgets($userdb);
     $userlineg=explode(';',$userutil);
@@ -32,7 +31,8 @@ while(!feof($userdb)) {
             var params = {
             'active': 'ERROR',
             'string': '密码错误，请重新登录',
-            'username' : '" . $_POST['username'] . "'
+            'username' : '" . $_POST['username'] . "',
+            'backpath' : '" . $_POST['backpath'] . "'
             };
             WMUIHTTPPost('./logon.php', params);
             </script>";
@@ -54,7 +54,12 @@ while(!feof($userdb)) {
 }
 echo "用户不存在，请重新登录<br>";
 echo "如果浏览器未响应，请<a href='./accoutlogin.php'>单击此处</a><br>";
-//echo "<meta http-equiv='refresh' content=3;url='./accoutlogin.php'>";
+echo "<script>
+var params = {
+'backpath' : '" . $_POST['backpath'] . "'
+};
+WMUIHTTPPost('./logon.php', params);
+</script>";
 expsk:
 fclose($userdb);
 goto ends;
@@ -72,17 +77,7 @@ if ($backpath <> "") {
     echo "<meta http-equiv='refresh' content=0;url='$wmui_backpath'>";
 }
 ends:
-
-//echo "肥肠抱歉，此页面暂时遇到鸡术问题，密码校验舞法执行，蒸菜修复此页面，在此之前将会纸接登录<br>";
-echo "肥肠抱歉，此页面暂时遇到鸡术问题，蒸菜修复此页面<br>";
-//setcookie("username",$_POST['username'],time()+16777215,'/');
-//setcookie("useraccout",$_POST['username'],time()+16777215,'/');
-//setcookie("useruid","-1",time()+16777215,'/');
-echo "<a href='" . $_POST['backpath'] . "'>如果浏览器未响应，请单击此处</a>";
-//echo "<meta http-equiv='refresh' content=0;url='" . $_POST['backpath'] . "'>";
-echo $WMDC_DEV_1;
 include("$wmsys_assetsr\wmui\wmuilasload.php");
-//echo "<div class='wmuibackgrounda'></div>";
 echo "<script>window.onload=function(){";
 echo "WMUIHeadbarNowTimeSC();";
 echo "setInterval('WMUIHeadbarNowTimeSC()',256);";

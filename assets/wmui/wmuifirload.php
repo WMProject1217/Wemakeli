@@ -12,7 +12,13 @@ echo "<tr>";
 echo "<td>";
 if ($wmui_classnow<>"mainpage") {
     if ($_SERVER['HTTP_REFERER']<>"") {
-        echo "<a class='wmuiheadbarbackbutton' href='" . $_SERVER['HTTP_REFERER'] . "'><</a>";
+        if (stripos($_SERVER['HTTP_REFERER'],"postlogon.php") == false) {
+            if (stripos($_SERVER['HTTP_REFERER'],"postjoin.php") == false) {
+                echo "<a class='wmuiheadbarbackbutton' href='" . $_SERVER['HTTP_REFERER'] . "'><</a>";
+            }
+        } else {
+            echo "<a class='wmuiheadbarbackbutton' href='$wmui_backpath'><</a>";
+        }
     } else {
     echo "<a class='wmuiheadbarbackbutton' href='$wmui_backpath'><</a>";
     }

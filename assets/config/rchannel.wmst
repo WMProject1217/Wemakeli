@@ -1,0 +1,18 @@
+﻿!$_TYPE_WMProject Application Config File;
+!$_VERS_1.0_UTF-8;
+!$_NAME_Wemakeli Read Channel Config File;
+!$_ARST_WMProject1217;
+###用于Wemakeli专栏频道配置的文件
+!&_LISTMOST=7;
+!&_LISTNUMS=1;
+!&_LISTNUME=7;
+!&_LISTZETA=0;
+!*DATASTART*!;
+1=动画;
+2=游戏;
+3=影视;
+4=生活;
+5=兴趣;
+6=轻小说;
+7=科技;
+!*DATAEND*!;

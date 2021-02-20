@@ -4,7 +4,27 @@ echo "<head>";
 include('../config.php');
 $wmui_classnow = "join";
 $wmui_title = "注册 - $wmsys_name";
-$wmui_backpath = "../";
+if ($_POST['backpath'] <> "") {
+    if (stripos($backpath,"postlogon.php") == false) {
+        if (stripos($backpath,"postjoin.php") == false) {
+            $wmui_backpath = $_POST['backpath'];
+        } else {
+            $wmui_backpath = "../";
+        }
+    } else {
+        $wmui_backpath = "../";
+    }
+} else {
+    if (stripos($_SERVER['HTTP_REFERER'],"postlogon.php") == false) {
+        if (stripos($_SERVER['HTTP_REFERER'],"postjoin.php") == false) {
+            $wmui_backpath = $_SERVER['HTTP_REFERER'];
+        } else {
+            $wmui_backpath = "../";
+        }
+    } else {
+        $wmui_backpath = "../";
+    }
+}
 //$wmui_opacityui = 1;
 echo "<title>$wmui_title</title>";
 echo "</head>";
@@ -37,20 +57,21 @@ function userjoin(){
 var params = {
     "username": $('#username').val(),
     "password": $('#password').val(),
-    "backpath": document.referrer
+    "backpath": '<?php echo $wmui_backpath ;?>'
 };
     WMUIHTTPPost("./postjoin.php", params);
 }
 </script>
+
 <div class='joinaddlevel'>
     <div class="title">Wemakeli 注册</div>
     <div class="control-group">
-    <label style='font-size:18px;width: 60px;'>用户名</label>
-    <input style='font-size:16px;width: 220px;' id="username" type="text" placeholder="输入你喜欢的名称吧~" title="用户名">
+        <label style='font-size:18px;width: 60px;'>用户名</label>
+        <input style='font-size:16px;width: 220px;' id="username" type="text" placeholder="输入你喜欢的名称吧~" title="用户名">
     </div>
     <div class="control-group">
-    <label style='font-size:18px;width: 60px;'>密码</label>
-    <input style='font-size:16px;width: 220px;' id="password" type="password" title="密码">
+        <label style='font-size:18px;width: 60px;'>密码</label>
+        <input style='font-size:16px;width: 220px;' id="password" type="password" title="密码">
     </div>
     <div style="text-align: right">
         <label>
@@ -58,7 +79,7 @@ var params = {
         </label>
     </div>
     <div style='display: flex;align-items: center;justify-content: center;'>
-    <button class='wmuibutton' style='position: relative;top: 7px;text-align: center;padding: 15px 40px;' onclick="jointest();">注册</button>
+        <button class='wmuibutton' style='position: relative;top: 7px;text-align: center;padding: 15px 40px;' onclick="jointest();">注册</button>
     </div>
 </div>
 

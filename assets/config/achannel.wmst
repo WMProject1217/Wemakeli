@@ -1,0 +1,20 @@
+﻿!$_TYPE_WMProject Application Config File;
+!$_VERS_1.0_UTF-8;
+!$_NAME_Wemakeli Audio Channel Config File;
+!$_ARST_WMProject1217;
+###用于Wemakeli音频频道配置的文件
+!&_LISTMOST=9;
+!&_LISTNUMS=1;
+!&_LISTNUME=9;
+!&_LISTZETA=0;
+!*DATASTART*!;
+1=中文人声;
+2=日文人声;
+3=古风人声;
+4=英文人声;
+5=VOCALOID;
+6=ACG音乐;
+7=纯音乐·演奏;
+8=鬼畜;
+9=有声节目;
+!*DATAEND*!;
