@@ -1,0 +1,353 @@
+body {
+  padding: 0px 0 20px 0px;
+  margin: 0px;
+  font: 16px/1.5 OpenSansRegular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f0e7d5;
+  font-weight: normal;
+  background: #1c1c1c;
+  background-attachment: fixed !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e8e8e8;
+  margin: 0 0 10px;
+  font-family: OpenSansRegular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/*p, ul, ol, table, pre, dl {
+  margin: 0 0 20px;
+}*/
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top:15px;
+}
+
+h4, h5, h6 {
+  color: #e8e8e8;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: OpenSansRegular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  color: #b6b6b6;
+}
+
+a {
+  color: #4399EE;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover {
+  color: #88DDFF;
+}
+
+a small {
+  font-size: 11px;
+  color: #666;
+  margin-top: -0.6em;
+  display: block;
+}
+
+strong {
+  font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+section img {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 3px solid #ffcc00;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+code {
+  font-family: Consolas, Lucida Console, Terminal;
+  color: #aaffaa;
+  font-size: 13px;
+  margin: 0 4px;
+  padding: 4px 6px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+pre {
+  padding: 8px 15px;
+  background: #191919;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #121212;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  overflow-y: hidden;
+}
+pre code {
+  color: #88ff88;
+  text-shadow: 0px 1px 0px #000;
+  margin: 0;
+  padding: 0;
+}
+
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+}*/
+
+th {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #434343;
+  color: #b6b6b6;
+  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+}
+
+/*td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #434343;
+}*/
+
+hr {
+  border: 0;
+  outline: none;
+  border-bottom: 1px dotted;
+  height: 3px;
+  margin: 0 0 20px;
+}
+
+dt {
+  color: #F0E7D5;
+  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+}
+
+#header {
+  z-index: 100;
+  left: 0;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color:#353535;
+  border-bottom: 4px solid #434343;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+#header nav {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: blue;
+  margin: 6px auto;
+}
+#header nav li {
+  font-family: OpenSansLight, 'Open Sans Light', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  color: white;
+  line-height: 50px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+#header nav li a, .pbutton {
+  color: white;
+  border: 1px solid #09C;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
+  background-color: #4399EE;
+  padding: 10px 12px;
+  margin-top: 6px;
+  line-height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+#header nav li a:hover, .pbutton:hover {
+  background-color: #09C;
+  border: 1px solid #09C;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
+}
+#header nav li.fork {
+  float: left;
+  margin-left: 0px;
+}
+#header nav li.downloads {
+  float: right;
+  margin-left: 6px;
+}
+#header nav li.title {
+  float: right;
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+section {
+  max-width: 800px;
+  padding: 30px 0px 10px 0px;
+}
+section #title {
+  border: 0;
+  outline: none;
+  margin: 70px 0 50px 0;
+  padding: 0 0 5px 0;
+}
+section #title h1 {
+  font-family: OpenSansLight, 'Open Sans Light', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  line-height: 36px;
+}
+section #title p {
+  color: #d7cfbe;
+  font-family: OpenSansLight, 'Open Sans Light', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+section #title .credits {
+  font-size: 11px;
+  font-family: OpenSansRegular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #696969;
+  margin-top: -10px;
+}
+section #title .credits.left {
+  float: left;
+}
+section #title .credits.right {
+  float: right;
+}
+
+@media print, screen and (max-width: 720px) {
+  #title .credits {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+  }
+  #title .credits .left {
+    float: none;
+    display: block;
+  }
+  #title .credits .right {
+    float: none;
+    display: block;
+  }
+}
+@media print, screen and (max-width: 480px) {
+  #header {
+    margin-top: -20px;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+.highlight .hll { background-color: #404040 }
+.highlight  { color: #d0d0d0 }
+.highlight .c { color: #999999; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .g { color: #d0d0d0 } /* Generic */
+.highlight .k { color: #6ab825; font-weight: normal } /* Keyword */
+.highlight .l { color: #d0d0d0 } /* Literal */
+.highlight .n { color: #d0d0d0 } /* Name */
+.highlight .o { color: #d0d0d0 } /* Operator */
+.highlight .x { color: #d0d0d0 } /* Other */
+.highlight .p { color: #d0d0d0 } /* Punctuation */
+.highlight .cm { color: #999999; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #cd2828; font-weight: normal } /* Comment.Preproc */
+.highlight .c1 { color: #999999; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #e50808; font-weight: normal; background-color: #520000 } /* Comment.Special */
+.highlight .gd { color: #d22323 } /* Generic.Deleted */
+.highlight .ge { color: #d0d0d0; font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #d22323 } /* Generic.Error */
+.highlight .gh { color: #ffffff; font-weight: normal } /* Generic.Heading */
+.highlight .gi { color: #589819 } /* Generic.Inserted */
+.highlight .go { color: #cccccc } /* Generic.Output */
+.highlight .gp { color: #aaaaaa } /* Generic.Prompt */
+.highlight .gs { color: #d0d0d0; font-weight: normal } /* Generic.Strong */
+.highlight .gu { color: #ffffff; text-decoration: underline } /* Generic.Subheading */
+.highlight .gt { color: #d22323 } /* Generic.Traceback */
+.highlight .kc { color: #6ab825; font-weight: normal } /* Keyword.Constant */
+.highlight .kd { color: #6ab825; font-weight: normal } /* Keyword.Declaration */
+.highlight .kn { color: #6ab825; font-weight: normal } /* Keyword.Namespace */
+.highlight .kp { color: #6ab825 } /* Keyword.Pseudo */
+.highlight .kr { color: #6ab825; font-weight: normal } /* Keyword.Reserved */
+.highlight .kt { color: #6ab825; font-weight: normal } /* Keyword.Type */
+.highlight .ld { color: #d0d0d0 } /* Literal.Date */
+.highlight .m { color: #3677a9 } /* Literal.Number */
+.highlight .s { color: #9dd5f1 } /* Literal.String */
+.highlight .na { color: #bbbbbb } /* Name.Attribute */
+.highlight .nb { color: #24909d } /* Name.Builtin */
+.highlight .nc { color: #447fcf; text-decoration: underline } /* Name.Class */
+.highlight .no { color: #40ffff } /* Name.Constant */
+.highlight .nd { color: #ffa500 } /* Name.Decorator */
+.highlight .ni { color: #d0d0d0 } /* Name.Entity */
+.highlight .ne { color: #bbbbbb } /* Name.Exception */
+.highlight .nf { color: #447fcf } /* Name.Function */
+.highlight .nl { color: #d0d0d0 } /* Name.Label */
+.highlight .nn { color: #447fcf; text-decoration: underline } /* Name.Namespace */
+.highlight .nx { color: #d0d0d0 } /* Name.Other */
+.highlight .py { color: #d0d0d0 } /* Name.Property */
+.highlight .nt { color: #6ab825;} /* Name.Tag */
+.highlight .nv { color: #40ffff } /* Name.Variable */
+.highlight .ow { color: #6ab825; font-weight: normal } /* Operator.Word */
+.highlight .w { color: #666666 } /* Text.Whitespace */
+.highlight .mf { color: #3677a9 } /* Literal.Number.Float */
+.highlight .mh { color: #3677a9 } /* Literal.Number.Hex */
+.highlight .mi { color: #3677a9 } /* Literal.Number.Integer */
+.highlight .mo { color: #3677a9 } /* Literal.Number.Oct */
+.highlight .sb { color: #9dd5f1 } /* Literal.String.Backtick */
+.highlight .sc { color: #9dd5f1 } /* Literal.String.Char */
+.highlight .sd { color: #9dd5f1 } /* Literal.String.Doc */
+.highlight .s2 { color: #9dd5f1 } /* Literal.String.Double */
+.highlight .se { color: #9dd5f1 } /* Literal.String.Escape */
+.highlight .sh { color: #9dd5f1 } /* Literal.String.Heredoc */
+.highlight .si { color: #9dd5f1 } /* Literal.String.Interpol */
+.highlight .sx { color: #ffa500 } /* Literal.String.Other */
+.highlight .sr { color: #9dd5f1 } /* Literal.String.Regex */
+.highlight .s1 { color: #9dd5f1 } /* Literal.String.Single */
+.highlight .ss { color: #9dd5f1 } /* Literal.String.Symbol */
+.highlight .bp { color: #24909d } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #40ffff } /* Name.Variable.Class */
+.highlight .vg { color: #40ffff } /* Name.Variable.Global */
+.highlight .vi { color: #40ffff } /* Name.Variable.Instance */
+.highlight .il { color: #3677a9 } /* Literal.Number.Integer.Long */

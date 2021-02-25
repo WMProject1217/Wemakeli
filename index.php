@@ -24,8 +24,8 @@ $asser = date("Y-m-d H:i:s");
 <tr>
 <td>
 <h3>Debug</h3>
-<?php
-echo "<div id='wmuisctimeblock'>See this message means js error</div>";
+<!-?php
+//echo "<div id='wmuisctimeblock'>See this message means js error</div>";
 /*
 date()
 Y - 完整表示年份（四位数字：2019）
@@ -56,7 +56,7 @@ if ($ert[3]=="pm") {
     $ert[0] = $ert[0] + 12 ;
 }
 */
-?>
+?-->
 <script>
 /*
 window.onload=function(){
@@ -105,7 +105,7 @@ WMUIWelcomeMessage();
 notify.success('Wemakeli 弹幕视频网','<p><span style="background-color: #FAF20B;" class="glitch_p">「<span class="glitch">Welcome to Wemakeli</span>」</span> </p>',8)
 notify.success('Buy Indihome now','IndiHome Paket Streamix<br>10 Mbps Rp320.000<br>20 Mbps Rp385.000<br>50 Mbps Rp615.000<br>100 Mbps Rp957.000' ,-1);
 </script>
-<!-?php
+<!--?php
 echo "用户端应用程序 : " . $_SERVER['HTTP_USER_AGENT'] . "<br>";
 echo "用户访问时 IP : " .  $_SERVER['REMOTE_ADDR'] . "<br>";
 echo "用户访问时端口 : " .  $_SERVER['REMOTE_PORT'] . "<br>";
@@ -231,7 +231,13 @@ while ($videoread<>$videoend) {
     @ fclose($countfile);
     $danmakufile = @ fopen("./video/wv$videoread/danmaku.wml", "r");
     $danmakudata = @ fread($danmakufile,filesize("./video/wv$videoread/danmaku.wml"));
-    $danmakunumber = @ substr_count($danmakudata,"\n");
+    if ($videoread == "6") {
+        $danmakunumber = "-inf";
+    } else if ($videoread == "7") {
+        $danmakunumber = "-inf";
+    } else {
+        $danmakunumber = @ substr_count($danmakudata,"\n");
+    }
     @ fclose($danmakufile);
     if ($outputtime=="") {
         goto offechooutlineb;
@@ -247,7 +253,7 @@ while ($videoread<>$videoend) {
     echo "<div class='wmuishowerc'>";
     echo "<a href='/video/$videonumber/'>";
     echo "<img class='wmuishowerctop' src='/library/image/videotop/wv$videoread.png'></img>";
-    if (mb_strlen($title) > 16) {
+    if (mb_strlen($title) > 10) {
         echo "<div class='wmuishowerctitlel'>$title</div>";
     } else {
     echo "<div class='wmuishowerctitle'>$title</div>";

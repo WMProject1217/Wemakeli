@@ -13,6 +13,8 @@ https://github.com/DIYgod/APlayer
 
 https://github.com/alexantr/filemanager
 
+https://github.com/jabbany/ABPlayerHTML5
+
 Wemakeli 是基于PHP的弹幕视频网站工程,此工程的副本授权所有非商业永久使用
 Wemakeli is a danmaku video website project , the copy of this project authorize all non-commercial permanent use.
 

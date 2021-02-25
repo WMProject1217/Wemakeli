@@ -98,6 +98,14 @@ a {
     }
 }
 
+.wmuicenterutil {
+    display: flex;
+    width: 760px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 .wmuishowerblock {
     position: absolute;
     left: 0px;
@@ -169,6 +177,86 @@ a {
     width: 240px;
     height: 24px;
     text-shadow: 1px 1px 3px #000000;
+}
+
+.wmuishowert{
+    position: absolute;
+    width: 760px;
+    height: 135px;
+    background:rgba(102,204,255,0.32);
+}
+
+.wmuishowerttop {
+    position: absolute;
+    z-index: 2700;
+    width: 240px;
+    height: 135px;
+}
+
+.wmuishowerttitle {
+    position: absolute;
+    word-wrap: break-word;
+    z-index: 2701;
+    color: #EE0000;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 250px;
+    width: 500px;
+    height: 37px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.wmuishowertexsr {
+    position: absolute;
+    word-wrap: break-word;
+    z-index: 2701;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 500px;
+    height: 37px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.wmuishowertplaycount {
+    position: absolute;
+    z-index: 2701;
+    color: #EEEE00;
+    font-size: 16px;
+    margin-top: 90px;
+    margin-left: 250px;
+    width: 500px;
+    height: 24px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.wmuishowertupmaster {
+    position: absolute;
+    z-index: 2701;
+    color: #66CCFF;
+    font-size: 16px;
+    margin-top: 110px;
+    margin-left: 250px;
+    width: 500px;
+    height: 24px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.wmuivideolistr{
+    position: absolute;
+    left:-5px;
+    top:0px;
+    width:765px;
+    background:rgba(0,0,0,0.64);
+}
+
+.wmuivideolistt{
+    position: absolute;
+    left:765px;
+    top:0px;
+    width:230px;
+    background:rgba(0,0,0,0.64);
 }
 
 .wmuiaslinkm {

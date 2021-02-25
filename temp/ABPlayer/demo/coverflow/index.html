@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" value="IE=9">
+		<link rel="stylesheet" href="../../dist/css/base.min.css" />
+		<title>Coverflow Interface Demo</title>
+		<script src="../../dist/vendor/CommentCoreLibrary.min.js"></script>
+		<script src="../../dist/ABPlayerHTML5.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
+		<script src="js/coverflow.js"></script>
+		<script src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<style>
+		body{
+			background-color:#000;
+			overflow:hidden;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="coverflow">
+			<div id="video1" class="cover"></div>
+			<div id="video2" class="cover"></div>
+			<div id="video3" class="cover"></div>
+			<div id="video4" class="cover"></div>
+		</div>
+
+		<div style="display:none;">
+			<video id="v1" autobuffer="true" data-setup="{}">
+				<source src="http://static.cdn.moe/ccltestingvideos/outer_science.webm" type="video/webm">
+				<source src="http://static.cdn.moe/ccltestingvideos/outer_science.mp4" type="video/mp4">
+			</video>
+			<video id="v2" autobuffer="true" data-setup="{}">
+				<source src="http://static.cdn.moe/ccltestingvideos/otsukimi_recital.mp4" type="video/mp4">
+				<source src="http://static.cdn.moe/ccltestingvideos/otsukimi_recital.webm" type="video/webm">
+			</video>
+			<video id="v3" autobuffer="true" data-setup="{}">
+				<source src="http://content.bitsontherun.com/videos/bkaovAYt-52qL9xLP.mp4" type="video/mp4">
+				<source src="http://content.bitsontherun.com/videos/bkaovAYt-27m5HpIu.webm" type="video/webm">
+			</video>
+			<video id="v4" autobuffer="true" data-setup="{}">
+				<source src="http://tools.kanoha.org/experimental/demo.mp4" type="video/mp4">
+			</video>
+		</div>
+	</body>
+</html>
