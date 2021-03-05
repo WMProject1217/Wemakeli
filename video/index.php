@@ -95,7 +95,7 @@ function nextpage(){
 }
 
 function lastpage(){
-    window.location.href='./index.php?type=$viewtype&page=1152921504606846975';
+    window.location.href='./index.php?type=$viewtype&page=9223372036854775807';
 }</script>";
 echo "<br><br><br><br><br><br>";
 echo "</td>";
@@ -111,13 +111,6 @@ echo "<br><br><br><br><br><br>";
 echo "<br><br><br><br><br><br>";
 echo "<br><br><br><br><br><br>";
 echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br><br>";
-echo "<br><br><br><br><br>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
